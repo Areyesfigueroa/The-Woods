@@ -20,7 +20,7 @@ public class EnemyAi : MonoBehaviour {
     public float leftPosDelay = 0;
 
     private float timeSinceEnded = 0;
-
+    
     //Calculate movement left to right
     [Space(5)]
     [Header("Input the time it takes to reach left and right corners")]
@@ -34,11 +34,16 @@ public class EnemyAi : MonoBehaviour {
     private bool isLerping;
     public bool canMove = true;
     bool isGrounded = false;
+    //testing
+    bool runOnce = false;
 
     Vector2 startPos;
     Vector2 endPos;
 
     Rigidbody2D rb;
+
+    //testing
+    private float offSetRightTimer = 0;
 
     private float timeStartedLerping;
     #endregion
@@ -81,7 +86,9 @@ public class EnemyAi : MonoBehaviour {
         }
         else if(triggerRightPosDelay)
         {
-            timeStartedLerping = Time.time - timeSinceEnded; //offSet to start from the final right position
+            
+            //timeStartedLerping = (Time.time - timeSinceEnded); //offSet to start from the final right position
+            runOnce = true;
             StartCoroutine(CheckRightToggle(1));
         }
         isLerping = true;
@@ -92,7 +99,6 @@ public class EnemyAi : MonoBehaviour {
     {
         Debug.Log("Checking is off");
         yield return new WaitForSeconds(time);
-
         Debug.Log("Checking is on");
         checkRight = true;
     }
@@ -111,11 +117,23 @@ public class EnemyAi : MonoBehaviour {
     {
         if (isLerping)
         {
+            float percentageComplete;
             float timeSinceStarted = Time.time - timeStartedLerping; //This subtraction means it will start from the point where you leave it on when you start lerp = Start lerp when I decide.
+            float time = Time.time;
             //Debug.Log("timeSinceStarted: " + timeSinceStarted);
-            float percentageComplete = (timeSinceStarted / timeTakenDuringLerp); //calculate the ammount it takes to reach your destination over a period of time.
-            //Debug.Log("percentageComplete: " + percentageComplete);
+            if (triggerRightPosDelay && runOnce)
+            {
+                //change time since started
+                timeSinceStarted  = timeSinceEnded;
 
+                //change timeStartedLerping
+                timeStartedLerping = Time.time - timeSinceStarted;
+                runOnce = false;
+            }
+
+            percentageComplete = (timeSinceStarted / timeTakenDuringLerp); //calculate the ammount it takes to reach your destination over a period of time.
+                                                                                     //Debug.Log("percentageComplete: " + percentageComplete);
+            
 
             transform.position = Vector2.Lerp(startPos, new Vector2( endPos.x + distance, endPos.y), Mathf.PingPong(percentageComplete, 1f)); //0 init, 1 final 
             
@@ -135,6 +153,7 @@ public class EnemyAi : MonoBehaviour {
                 //tracks the timer of when you reach max right
                 timeSinceEnded = Time.time;
                 Debug.Log("Timer since ended: " + timeSinceEnded);
+                float finalPos = this.transform.position.x;
 
                 //Start delay
                 StartCoroutine(Delay(rightPosDelay));
