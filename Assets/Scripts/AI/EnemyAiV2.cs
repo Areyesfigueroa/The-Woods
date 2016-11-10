@@ -26,8 +26,6 @@ public class EnemyAiV2 : MonoBehaviour {
     public float rightPosDelay = 0;
     public float leftPosDelay = 0;
 
-    private float timeSinceEnded = 0;
-
     //Calculate movement left to right
     [Space(5)]
     [Header("Input the time it takes to reach left and right corners")]
@@ -87,15 +85,24 @@ public class EnemyAiV2 : MonoBehaviour {
         Debug.Log("Coroutine Start: ");
 
         yield return new WaitForSeconds(delay);
-        if (triggerRightPosDelay) //Move left next
+        if (startRight)
         {
-            SwitchLerping(leftDir);
-            isLerpingLeft = true;        
+            if (triggerRightPosDelay) //Move left next
+            {
+                SwitchLerping(leftDir);
+            }
+           /* else if (triggerLeftPosDelay) //Move right next
+            {
+                SwitchLerping(rightDir);
+            }*/
         }
-        else if (triggerLeftPosDelay) //Move right next
+        else
         {
-            SwitchLerping(rightDir);
-            isLerpingRight = true;
+            if (triggerLeftPosDelay) //Move right next
+            {
+                SwitchLerping(rightDir);
+            }
+            
         }
         Debug.Log("Coroutine End: ");
     }
@@ -144,6 +151,7 @@ public class EnemyAiV2 : MonoBehaviour {
             if (Mathf.Clamp01(percentageComplete) >= 1 && triggerLeftPosDelay)
             {
                 Debug.Log("Reached Min Position");
+                isLerpingLeft = false;
                 StartCoroutine(Delay(leftPosDelay));
             }
             else if (Mathf.Clamp01(percentageComplete) >= 1)
@@ -249,9 +257,6 @@ public class EnemyAiV2 : MonoBehaviour {
         if (col.gameObject.layer == 11) //Ground
         {
             StartLerping();
-
-            //StartLerpingRight();
-            //StartLerpingLeft();
             isGrounded = true;
         }
     }
