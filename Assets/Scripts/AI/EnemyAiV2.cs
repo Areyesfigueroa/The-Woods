@@ -1,17 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class EnemyAiV2 : MonoBehaviour {
 
     #region Data
+
+    [Space(5)]
+    [Header("Choose Your Starting Direction: ")]
+    public bool startLeft;
+    public bool startRight;
+    
     //Timer
     [Space(5)]
     [Header("Choose When To Delay: ")]
     [Tooltip("Triggers right delay")]
     public bool triggerRightPosDelay = false; //Lets me know which check to toggle
     public bool triggerLeftPosDelay = false;
-    private bool checkLeft = false; //toggles on and off to make sure you only check for max reach once
-    private bool checkRight = false;
+    private const int leftDir = -1; //toggles on and off to make sure you only check for max reach once
+    private const int rightDir = 1;
 
 
     [Space(5)]
@@ -35,19 +42,30 @@ public class EnemyAiV2 : MonoBehaviour {
     private bool isLerpingLeft;
     public bool canMove = true;
     bool isGrounded = false;
-    //testing
-    bool runOnce = false;
 
     Vector2 startPos;
     Vector2 endPos;
-
-    //testing
-    private float offSetRightTimer = 0;
 
     private float timeStartedLerping;
     #endregion
     void Start()
     {
+        //This makes sure you don't have them both checked or unchecked
+        if (startRight)
+        {
+            startLeft = false;
+        }
+        else if (startLeft)
+        {
+            startRight = false;
+        }
+        else
+        {
+            Debug.Log("Default is right direction");
+            startRight = true;
+        }
+        
+
     }
 
     void FixedUpdate()
@@ -55,7 +73,7 @@ public class EnemyAiV2 : MonoBehaviour {
         if (isGrounded && canMove)
         {
             Movement();
-            Debug.DrawLine(startPos, new Vector2(endPos.x + distance, endPos.y), Color.red);
+            Debug.DrawLine(startPos, endPos, Color.red);
         }
     }
 
@@ -67,7 +85,18 @@ public class EnemyAiV2 : MonoBehaviour {
     IEnumerator Delay(float delay)
     {
         Debug.Log("Coroutine Start: ");
+
         yield return new WaitForSeconds(delay);
+        if (triggerRightPosDelay) //Move left next
+        {
+            SwitchLerping(leftDir);
+            isLerpingLeft = true;        
+        }
+        else if (triggerLeftPosDelay) //Move right next
+        {
+            SwitchLerping(rightDir);
+            isLerpingRight = true;
+        }
         Debug.Log("Coroutine End: ");
     }
 
@@ -80,49 +109,149 @@ public class EnemyAiV2 : MonoBehaviour {
             float timeSinceStarted = Time.time - timeStartedLerping; //This subtraction means it will start from the point where you leave it on when you start lerp = Start lerp when I decide.
             float percentageComplete = (timeSinceStarted / timeTakenDuringLerp); //calculate the ammount it takes to reach your destination over a period of time.
 
-            transform.position = Vector2.Lerp(startPos, new Vector2(endPos.x + distance, endPos.y), percentageComplete);
+            transform.position = Vector2.Lerp(startPos, endPos, Mathf.Clamp01(percentageComplete));
 
-            if (startPos.x >= (endPos.x + distance) - .1f)
+
+            if (Mathf.Clamp01(percentageComplete) >= 1 && triggerRightPosDelay) //works
             {
+                isLerpingRight = false;
                 Debug.Log("Reached Max Position");
+                StartCoroutine(Delay(rightPosDelay));
+            }
+            else if(Mathf.Clamp01(percentageComplete) >= 1 && !triggerRightPosDelay)
+            {
+                isLerpingRight = false;
+                if (startRight) // if you started on the right side 
+                {
+                    SwitchLerping(leftDir); //go left
+                }
+                else if (!startRight)
+                {
+                    StartLerping();
+                }
             }
         }
 
+
         if (isLerpingLeft) //going left
         {
-            float timeSinceStarted = Time.time - timeStartedLerping; //This subtraction means it will start from the point where you leave it on when you start lerp = Start lerp when I decide.
+            float timeSinceStarted = Time.time - timeStartedLerping; 
             float percentageComplete = (timeSinceStarted / timeTakenDuringLerp); //calculate the ammount it takes to reach your destination over a period of time.
 
-            transform.position = Vector2.Lerp(startPos, new Vector2(endPos.x + distance, endPos.y), percentageComplete);
+            //Start from end back to start
+            transform.position = Vector2.Lerp(startPos, endPos, Mathf.Clamp01(percentageComplete));
+
+            if (Mathf.Clamp01(percentageComplete) >= 1 && triggerLeftPosDelay)
+            {
+                Debug.Log("Reached Min Position");
+                StartCoroutine(Delay(leftPosDelay));
+            }
+            else if (Mathf.Clamp01(percentageComplete) >= 1)
+            {
+                Debug.Log("Reached Min Pos");
+                isLerpingLeft = false;
+                if (startLeft) //if you started on the left
+                {
+                    SwitchLerping(rightDir); //goes right
+                }
+                else if(!startLeft) //if you started on right
+                {
+                    StartLerping();
+                }
+            }
         }
     }
 
-    //Lerping init
+    /*
+    BackUp
+    //Start from right side
     void StartLerpingRight()
     {
         isLerpingRight = true;
         timeStartedLerping = Time.time;
 
         startPos = transform.position; //anywhere
-        endPos = transform.position; //Distance will dynamically determine its ending position
+        endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis
     }
 
+    //Start from left Side
     void StartLerpingLeft()
     {
         isLerpingLeft = true;
         timeStartedLerping = Time.time;
 
-        startPos = endPos;
-        endPos = startPos;
+        startPos = transform.position; //anywhere
+        endPos = transform.position + Vector3.left * distance; //vector 3 is necessary since transform.position is of three axis
+    }
+    */
+
+    void StartLerping() //start settings based on startRight or startLeft
+    {
+        if (startRight)
+        {
+            isLerpingRight = true;
+            endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis
+        }
+        else
+        {
+            isLerpingLeft = true;
+            endPos = transform.position + Vector3.left * distance; //vector 3 is necessary since transform.position is of three axis
+        }
+
+        timeStartedLerping = Time.time;
+        startPos = transform.position; //anywhere
     }
 
+    void SwitchLerping(int direction)
+    {
+        if (direction == leftDir)
+        {
+            isLerpingLeft = true;
+        }
+        else if(direction == rightDir)
+        {
+            isLerpingRight = true;
+        }
+
+        timeStartedLerping = Time.time;
+
+        Vector2 temp = startPos; //hold the start pos, move left
+        startPos = endPos; //overwrites start with end
+        endPos = temp; //overwrite end with start using temp
+    }
+
+    /*
+    BackUp
+    void SwitchLerpingLeft()
+    {
+        isLerpingLeft = true;
+        timeStartedLerping = Time.time;
+
+        Vector2 temp = startPos; //hold the start pos, move left
+        startPos = endPos; //overwrites start with end
+        endPos = temp; //overwrite end with start using temp
+    }
+
+    void SwitchLerpingRight()
+    {
+        isLerpingRight = true;
+        timeStartedLerping = Time.time;
+
+        Vector2 temp = startPos; //hold the start pos, move left
+        startPos = endPos; //overwrites start with end
+        endPos = temp; //overwrite end with start using temp
+    }
+    */
 
     //check if we are grounded
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.layer == 11) //Ground
         {
-            StartLerpingRight();
+            StartLerping();
+
+            //StartLerpingRight();
+            //StartLerpingLeft();
             isGrounded = true;
         }
     }
