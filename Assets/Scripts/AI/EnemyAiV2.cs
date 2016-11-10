@@ -91,10 +91,6 @@ public class EnemyAiV2 : MonoBehaviour {
             {
                 SwitchLerping(leftDir);
             }
-           /* else if (triggerLeftPosDelay) //Move right next
-            {
-                SwitchLerping(rightDir);
-            }*/
         }
         else
         {
