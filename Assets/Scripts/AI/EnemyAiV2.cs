@@ -85,7 +85,31 @@ public class EnemyAiV2 : MonoBehaviour {
         Debug.Log("Coroutine Start: ");
 
         yield return new WaitForSeconds(delay);
-        if (startRight)
+
+        if (triggerLeftPosDelay && triggerRightPosDelay) //check for both triggers
+        {
+            if (startRight) //if going right turn left
+            {
+                SwitchLerping(leftDir);
+            }
+            else
+            {
+                SwitchLerping(rightDir);
+            }
+        }
+
+        if (triggerRightPosDelay && !triggerLeftPosDelay) //check for right trigger
+        {
+            SwitchLerping(leftDir);
+        }
+
+        if (triggerLeftPosDelay && !triggerRightPosDelay) //check for left trigger
+        {
+            SwitchLerping(rightDir);
+        }
+
+        /*
+        if (startRight) //if start right is on and you have left pos delay
         {
             if (triggerRightPosDelay) //Move left next
             {
@@ -99,7 +123,7 @@ public class EnemyAiV2 : MonoBehaviour {
                 SwitchLerping(rightDir);
             }
             
-        }
+        }*/
         Debug.Log("Coroutine End: ");
     }
 
