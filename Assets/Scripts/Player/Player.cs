@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Controller2D))]
 public class Player : MonoBehaviour {
 
+    #region Data
     [Space(5)]
     [Header("Player Jump Settings")]
     public float jumpHeight = 4;
@@ -49,26 +50,38 @@ public class Player : MonoBehaviour {
 	}
     float velocityXSmoothing;
 
+    //testing 
+    [HideInInspector]
+    public Vector2 input; //For audio event
     Controller2D controller;
 
-	// Use this for initialization
-	void Start () {
+    #endregion
+
+    #region Engine Functions
+
+    public static Player Instance { get { return instance; } } //getter for instance
+    static protected Player instance; //declaring instance variable
+
+    void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("There is alreade a player in play. Deleting old, instantiating new");
+            Destroy(Player.Instance.gameObject);
+            instance = null;
+        }
+        else
+        {
+            instance = this;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
         controller = GetComponent<Controller2D>();
         gravity = (-2 * jumpHeight) / Mathf.Pow(timeToApex, 2);
         jumpVelocity = Mathf.Abs(gravity * timeToApex);
         print("Gravity: " + gravity + "Jump Velocity: " + jumpVelocity);
-	}
-
-	public bool isJumpApex() //Not done
-	{
-		Debug.Log ("Velocity.y" + velocity.y + "Combined: " + velocity.y );
-
-		if (velocity.y == (velocity.y + jumpHeight)) {
-			Debug.Log ("Max Jump" + jumpHeight + "Velocity y:" + velocity.y);
-			return true;
-		} else {
-			return false;
-		}
 	}
 
     void Update()
@@ -77,8 +90,11 @@ public class Player : MonoBehaviour {
         {
             velocity.y = 0;
         }
-		Debug.Log ("Y velocity: " +velocity.y);
-        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+		//Debug.Log ("Y velocity: " +velocity.y);
+        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+        //Trigger Movement event
+        Debug.Log("Input: " + input);
 
         if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
         {
@@ -90,4 +106,21 @@ public class Player : MonoBehaviour {
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);  
     }
+    #endregion
+
+    #region Helper Functions
+    public bool isJumpApex() //Not done
+    {
+        Debug.Log("Velocity.y" + velocity.y + "Combined: " + velocity.y);
+
+        if (velocity.y == (velocity.y + jumpHeight))
+        {
+            Debug.Log("Max Jump" + jumpHeight + "Velocity y:" + velocity.y);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    #endregion
 }
