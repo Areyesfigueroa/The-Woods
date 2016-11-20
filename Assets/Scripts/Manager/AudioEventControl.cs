@@ -6,85 +6,117 @@ using System.Collections;
 /// Each function will be subscribed to their corresponding event. 
 /// Triggers have already been placed, just excute audio on the functions given for the events
 /// </summary>
-public class AudioEventControl : MonoBehaviour {
-
-
-    public static AudioEventControl Instance { get { return instance; } }
-    static protected AudioEventControl instance;
-
-    AudioSource audioSource;
-    public AudioClip[] audioClip;
-
-    #region Engine Functions
-    void Awake()
+namespace Audio
+{
+    public class AudioEventControl : MonoBehaviour
     {
-        if (instance != null)
+
+        //Prevents audio override
+        public bool playAudio = true;
+
+        public static AudioEventControl Instance { get { return instance; } }
+        static protected AudioEventControl instance;
+
+        [HideInInspector]
+        public AudioSource audioSource;
+        public AudioClip[] audioClip;
+
+        #region Engine Functions
+        void Awake()
         {
-            Debug.LogWarning("There is already an instance of InputManager, Deleting old and instantiating a new one");
-            Destroy(AudioEventControl.Instance.gameObject);
-            instance = null;
+            if (instance != null)
+            {
+                Debug.LogWarning("There is already an instance of InputManager, Deleting old and instantiating a new one");
+                Destroy(AudioEventControl.Instance.gameObject);
+                instance = null;
+            }
+            else
+            {
+                instance = this;
+            }
         }
-        else
+
+        void Start()
         {
-            instance = this;
+            audioSource = GetComponent<AudioSource>();
         }
 
-        AddSubscribers();
+        void OnEnable()
+        {
+            AddSubscribers();
+
+        }
+        void OnDisable()
+        {
+            RemoveSubscribers();
+        }
+
+        #endregion
+
+        #region Game Functions
+
+        public void AddSubscribers()
+        {
+            AudioEventSystem.onPlayerMove += this.PlayerMoving;
+            AudioEventSystem.onPlayerIdle += this.PlayerIdle;
+            AudioEventSystem.onPlayerJump += this.PlayerJumping;
+            AudioEventSystem.onPlayerDeath += this.PlayerDeath;
+            AudioEventSystem.onPlayerAttack += this.PlayerAttack;
+        }
+
+        public void RemoveSubscribers()
+        {
+            AudioEventSystem.onPlayerMove -= this.PlayerMoving;
+            AudioEventSystem.onPlayerIdle -= this.PlayerIdle;
+            AudioEventSystem.onPlayerJump -= this.PlayerJumping;
+            AudioEventSystem.onPlayerDeath -= this.PlayerDeath;
+            AudioEventSystem.onPlayerAttack -= this.PlayerDeath;
+        }
+        //Audio Event From Wise sound
+        //He will add AKSoundEngine.PostEvent(Calls my event EventName, gameObject);
+        //Player Audio Event functions
+
+        #region Player Delegate Functions
+
+        void PlayerMoving()
+        {
+            Debug.Log("Event: PlayerMovement Fired");
+
+        }
+        void PlayerIdle()
+        {
+            Debug.Log("Event: PlayerIdle Fired");
+
+        }
+        void PlayerJumping()
+        {
+            Debug.Log("Event: PlayerJumping Fired");
+        }
+
+        void PlayerDeath()
+        {
+             Debug.Log("Event: PlayerDeath Fired");
+        }
+
+        void PlayerAttack()
+        {
+            Debug.Log("Event: PlayerAttack Fired");
+        }
+        #endregion
+
+        #region Helper Functions
+        //Keeps audio from being overwritten
+        IEnumerator PlayAudio(float audioLength)
+        {
+            playAudio = false; //keeps it from overriding
+            audioSource.Play();
+            yield return new WaitForSeconds(audioLength + .03f); //Error margin
+            playAudio = true;
+          
+        }
+
+        #endregion
+
+        #endregion
     }
-
-    void Start()
-    {
-      audioSource = GetComponent<AudioSource>();
-    }
-
-    #endregion
-
-    #region Game Functions
-
-    public void AddSubscribers()
-    {
-        AudioEventSystem.onPlayerMoving += this.PlayerMoving;
-        AudioEventSystem.onPlayerIdle += this.PlayerIdle;
-        AudioEventSystem.onPlayerJumping += this.PlayerJumping;
-        AudioEventSystem.onPlayerDeath += this.PlayerDeath;
-    }
-
-    public void RemoveSubscribers()
-    {
-        AudioEventSystem.onPlayerMoving -= this.PlayerMoving;
-        AudioEventSystem.onPlayerIdle -= this.PlayerIdle;
-        AudioEventSystem.onPlayerJumping -= this.PlayerJumping;
-        AudioEventSystem.onPlayerDeath -= this.PlayerDeath;
-    }
-    //Audio Event From Wise sound
-    //Needs AKSoundEngine.PostEvent(EventName, gameObject);
-    //Player Audio Event functions
-    void PlayerMoving()
-    {
-        //Call audio
-        
-        //testing
-        audioSource.clip = audioClip[0];
-    }
-
-    void PlayerIdle()
-    {
-        //Call audio
-        //testing
-        audioSource.Stop();
-    }
-
-    void PlayerJumping()
-    {
-        //Call audio
-
-    }
-
-    void PlayerDeath()
-    {
-        //Call audio
-
-    }
-
-    #endregion
 }

@@ -51,8 +51,7 @@ public class Player : MonoBehaviour {
     float velocityXSmoothing;
 
     //testing 
-    [HideInInspector]
-    public Vector2 input; //For audio event
+    Vector2 input; //For audio event
     Controller2D controller;
 
     #endregion
@@ -94,7 +93,7 @@ public class Player : MonoBehaviour {
         input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
         //Trigger Movement event
-        Debug.Log("Input: " + input);
+        //Debug.Log("Input: " + input);
 
         if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
         {
@@ -109,6 +108,7 @@ public class Player : MonoBehaviour {
     #endregion
 
     #region Helper Functions
+
     public bool isJumpApex() //Not done
     {
         Debug.Log("Velocity.y" + velocity.y + "Combined: " + velocity.y);
@@ -119,6 +119,56 @@ public class Player : MonoBehaviour {
             return true;
         }
         else {
+            return false;
+        }
+    }
+
+    //Checks Player Behaviour
+
+    public bool isPlayerMoving() //Used for Audio Event firing
+    {
+        if (Mathf.Abs(input.x) > 0) //check if he is moving
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool isPlayerFalling()
+    {
+        if (!controller.collisions.below) //if there is no ground
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool isPlayerGrounded()
+    {
+        if (controller.collisions.below)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public bool isPlayerJumping()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
+        {
+            return true;
+        }
+        else
+        {
             return false;
         }
     }
