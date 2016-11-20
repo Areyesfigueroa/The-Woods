@@ -75,6 +75,8 @@
     <Compile Include="Assets\Scripts\ColliderTrigger.cs" />
     <Compile Include="Assets\Scripts\Enviroment\Ladders.cs" />
     <Compile Include="Assets\Scripts\Enviroment\MovingPlatform.cs" />
+    <Compile Include="Assets\Scripts\Events\AudioEventSystem.cs" />
+    <Compile Include="Assets\Scripts\Manager\AudioEventControl.cs" />
     <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
