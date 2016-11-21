@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class EnemyAiV2 : MonoBehaviour {
 
     #region Data
@@ -62,8 +63,6 @@ public class EnemyAiV2 : MonoBehaviour {
             Debug.Log("Default is right direction");
             startRight = true;
         }
-        
-
     }
 
     void FixedUpdate()
