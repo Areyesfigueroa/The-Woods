@@ -35,12 +35,13 @@ public class PowerUpPickUp : MonoBehaviour {
         transform.position = Vector2.Lerp(startPos, endPos, Mathf.PingPong(percentageComplete, 1f));
     }
 
-    void OnCollisionEnter(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             //Call Pick up AudioEvent
-            Destroy(this);
+            Debug.Log("Collided");
+            Destroy(this.gameObject);
         }
     }
 }
