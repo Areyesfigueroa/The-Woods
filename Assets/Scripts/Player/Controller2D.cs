@@ -21,9 +21,13 @@ public class Controller2D : MonoBehaviour
 
     public CollisionInfo collisions;
 
+    //Direction
+    SpriteRenderer sprite;
+
+
     void Start()
     {
-
+        sprite = GetComponent<SpriteRenderer>();
         collider = GetComponent<BoxCollider2D>();
         CalculateRaySpacing();
 
@@ -46,6 +50,42 @@ public class Controller2D : MonoBehaviour
         transform.Translate(velocity);
     }
 
+    //Changing direction Works, However I need to inverse the inputs or flip the sprite texture
+    public void Direction(Vector2 direction) //input
+    {
+        if (direction.x > 0) //going right
+        {
+            sprite.flipX = true;
+        }
+
+        if (direction.x < 0) //going left
+        {
+            sprite.flipX = false;
+        }
+    }
+
+    //attack in the correct direction
+    public void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            if (sprite.flipX) //facing right
+            {
+                Debug.Log("Attacking Right");
+                //Play Animation Here
+            }
+            else 
+            {
+                Debug.Log("Attacking Left");
+                //Play Animation Here
+            }
+        }
+    }
+
+    public void Invisibility()
+    {
+
+    }
 
 
     void HorizontalCollisions(ref Vector3 velocity)
