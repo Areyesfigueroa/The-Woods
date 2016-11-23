@@ -8,11 +8,7 @@ public class ConeOfVision : MonoBehaviour {
     //For Now grab the player GO
     public GameObject playerGO;
     public float degreesConeOfVision;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+
 	// Update is called once per frame
 	void Update ()
     {
