@@ -17,6 +17,8 @@ public class PowerUpPickUp : MonoBehaviour {
         startPos = transform.position;
         endPos = new Vector2(transform.position.x, destination);
         timeStartedLerping = Time.time;
+
+        AudioEventSystem.PowerUpIdle(); //loop the audio
 	}
 	
 	// Update is called once per frame
@@ -41,6 +43,7 @@ public class PowerUpPickUp : MonoBehaviour {
         {
             //Call Pick up AudioEvent
             Debug.Log("Collided");
+            AudioEventSystem.PowerUpPickUp();//play audio event
             Destroy(this.gameObject);
         }
     }

@@ -11,7 +11,7 @@ public class AudioEventSystem : MonoBehaviour
     public delegate void AudioEventHandler();
     //TODO:
 
-    //Player Movement Events
+    //Player Movement Events//Init done
     public static event AudioEventHandler onPlayerStep; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerIdle; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerJump; //SetUp Done, Need Animation
@@ -19,37 +19,36 @@ public class AudioEventSystem : MonoBehaviour
     public static event AudioEventHandler onPlayerDeath; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerAttack; //SetUp Done, Need Animation
 
-    public static event AudioEventHandler onPlayerPowerUp; //PlayerAbilities Script, Not implemented
-    public static event AudioEventHandler onPlayerVisibleWarning; //ConeOfVision Script
-    public static event AudioEventHandler onPlayerLand; //Player Script
+    //Init Done
+    public static event AudioEventHandler onPlayerInivisible;
+    public static event AudioEventHandler onPlayerVisibleWarning; //ConeOfVision Script, init done
+    public static event AudioEventHandler onPlayerLand; //Player Script, init done
 
-    //Need to be implemented, Player Enviroment Interaction Events
+    //Need to be implemented, Player Enviroment Interaction Events //Init done
     public static event AudioEventHandler onPlayerHide; //PlayerAbilities Script, Not implemented
     public static event AudioEventHandler onPlayerExitHide; //PlayerAbilities Script, Not implemented
     public static event AudioEventHandler onPlayerPowerUpPickUp; //PowerUpPickUp Script, Not implemented
     public static event AudioEventHandler onPlayerLadderClimb; //Ladders Script
 
-    //NPC Events
+    //NPC Events// Init Done
     public static event AudioEventHandler onEnemyStep; //EnemyMovement Script
     public static event AudioEventHandler onEnemyIdle; //EnemyMovement Script
     public static event AudioEventHandler onEnemyAlert; //ConeOfVision Script
     public static event AudioEventHandler onEnemyEscape; //EnemyMovement Script, Not Implemented
 
-    //Enviroment
+    //Enviroment //Init Done
     public static event AudioEventHandler onCabinLightsOn; //Cabin Lights Script
     public static event AudioEventHandler onCabinLightsOff; //Cabin Lights Script
     public static event AudioEventHandler onMovingPlatform; //Moving Platform Script
-    public static event AudioEventHandler onPowerUp; //power up idle sound, PowerUpPickUp Script, Not Implemented
+    public static event AudioEventHandler onPowerUpIdle; //power up idle sound, PowerUpPickUp Script, Not Implemented
     public static event AudioEventHandler onLockedDoor; //LockedDoor Script, Not implemented
 
-    //SoundTrack, in-game
-    public static event AudioEventHandler onGameBeginSoundTrack; //level manager Script, Not implemented
+    //SoundTrack //init done
+    public static event AudioEventHandler onInGameSoundTrack; //level manager Script, Not implemented, in game
+    public static event AudioEventHandler onButtonPress; //MainMenu Script, not implemented, Main Menu
+    public static event AudioEventHandler onMainMenuSoundTrack; //MainMenu Script, not implemented
 
-    //Main Menu
-    public static event AudioEventHandler onButtonPress; //MainMenu Script, not implemented
-    public static event AudioEventHandler onGameMenuSoundTrack; //MainMenu Script, not implemented
-
-    #region Init PlayerTriggeredEvents
+    #region Init Player Controls Events
 
     //NOT ALL EVENTS CALLS ARE IMPLEMENTED. WAITING ON ANIMATION CLIPS TO TIME THE FRAMES
     //Init Player Movement Event Triggers
@@ -95,6 +94,32 @@ public class AudioEventSystem : MonoBehaviour
             onPlayerAttack();
         }
     }
+
+    public static void PlayerInvisible() //not subscribed yet
+    {
+        if (onPlayerInivisible != null)
+        {
+            onPlayerInivisible();
+        }
+    }
+
+    public static void PlayerVisibleWarning() //new
+    {
+        if (onPlayerVisibleWarning != null)
+        {
+            onPlayerVisibleWarning();
+        }
+    }
+
+    public static void PlayerLand()
+    {
+        if (onPlayerLand != null)
+        {
+            onPlayerLand();
+        }
+    }
+
+
     #endregion
 
     #region Init Enemy Trigger events
@@ -133,5 +158,115 @@ public class AudioEventSystem : MonoBehaviour
 
     #endregion
 
+    #region Init Player Enviroment Interaction event
+
+    public static void PowerUpPickUp()  // not subscribed
+    {
+        if (onPlayerPowerUpPickUp != null)
+        {
+            onPlayerPowerUpPickUp();
+        }
+    }
+
+    public static void PlayerHide()
+    {
+        if (onPlayerHide != null)
+        {
+            onPlayerHide();
+        }
+    }
+    public static void PlayerExitHide()
+    {
+        if (onPlayerExitHide != null)
+        {
+            onPlayerExitHide();
+        }
+    }
+    public static void PlayerLadderClimb()
+    {
+        if (onPlayerLadderClimb != null)
+        {
+            onPlayerLadderClimb();
+        }
+    }
+
+
+    #endregion
+
+    #region Init Enviroment events
+
+    public static void PowerUpIdle() //loop audio
+    {
+        if (onPowerUpIdle != null)
+        {
+            onPowerUpIdle();
+        }
+    }
+
+    public static void CabinLightsOn()
+    {
+        if (onCabinLightsOn != null)
+        {
+            onCabinLightsOn();
+        }
+    }
+
+    public static void CabinLightsOff()
+    {
+        if (onCabinLightsOff != null)
+        {
+            onCabinLightsOff();
+        }
+    }
+
+    public static void MovingPlatforms()
+    {
+        if (onMovingPlatform != null)
+        {
+            onMovingPlatform();
+        }
+    }
+
+    public static void LockedDoor()
+    {
+        if (onLockedDoor != null)
+        {
+            onLockedDoor();
+        }
+    }
+
+    #endregion
+
+    #region Init Soundtracks
+
+    public static void InGameSoundtrack()
+    {
+        if (onInGameSoundTrack != null)
+        {
+            onInGameSoundTrack();
+        }
+    }
+
+    public static void MainMenuSoundtrack()
+    {
+        if (onMainMenuSoundTrack != null)
+        {
+            onMainMenuSoundTrack();
+        }
+    }
+
+    #endregion
+
+    #region Init UI Button
+
+    public static void ButtonPress()
+    {
+        if (onButtonPress != null)
+        {
+            onButtonPress();
+        }
+    }
+
+    #endregion
 }
 

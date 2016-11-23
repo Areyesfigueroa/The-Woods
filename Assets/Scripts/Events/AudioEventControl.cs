@@ -60,32 +60,79 @@ public class AudioEventControl : MonoBehaviour
         AudioEventSystem.onPlayerStep += this.PlayerStep;
         AudioEventSystem.onPlayerIdle += this.PlayerIdle;
         AudioEventSystem.onPlayerJump += this.PlayerJumping;
+        AudioEventSystem.onPlayerFall += this.PlayerFall;
         AudioEventSystem.onPlayerDeath += this.PlayerDeath;
         AudioEventSystem.onPlayerAttack += this.PlayerAttack;
+        AudioEventSystem.onPlayerInivisible += this.PlayerInvisible;
+        AudioEventSystem.onPlayerVisibleWarning += this.PlayerVisibleWarning;
+        AudioEventSystem.onPlayerLand += this.PlayerLand;
+
+        //Player Enviroment 
+        AudioEventSystem.onPlayerHide += this.PlayerHide;
+        AudioEventSystem.onPlayerExitHide += this.PlayerExitHide;
+        AudioEventSystem.onPlayerPowerUpPickUp += this.PlayerPowerUpPickUp;
+        AudioEventSystem.onPlayerLadderClimb += this.PlayerLadderClimb;
 
         //Testing Enemy Events
         AudioEventSystem.onEnemyStep += this.EnemyStep;
         AudioEventSystem.onEnemyIdle += this.EnemyIdle;
         AudioEventSystem.onEnemyEscape += this.EnemyEscape;
         AudioEventSystem.onEnemyAlert += this.EnemyAlert;
-       
+
+        //Enviroment Events
+        AudioEventSystem.onCabinLightsOn += this.CabinLightsOn;
+        AudioEventSystem.onCabinLightsOff += this.CabinLightsOff;
+        AudioEventSystem.onMovingPlatform += this.MovingPlatform;
+        AudioEventSystem.onPowerUpIdle += this.PowerUpIdle;
+        AudioEventSystem.onLockedDoor += this.LockedDoor;
+
+        //Soundtrack events
+        AudioEventSystem.onInGameSoundTrack += this.InGameSoundTrack;
+        AudioEventSystem.onMainMenuSoundTrack += this.MainMenuSoundTrack;
+
+        //Button Press Events
+        AudioEventSystem.onButtonPress += this.ButtonPress;
+
     }
 
     public void RemoveSubscribers()
     {
-        //Player Events
+        //Player Events, Set Up Done, Waiting on Animations
         AudioEventSystem.onPlayerStep -= this.PlayerStep;
         AudioEventSystem.onPlayerIdle -= this.PlayerIdle;
         AudioEventSystem.onPlayerJump -= this.PlayerJumping;
+        AudioEventSystem.onPlayerFall -= this.PlayerFall;
         AudioEventSystem.onPlayerDeath -= this.PlayerDeath;
-        AudioEventSystem.onPlayerAttack -= this.PlayerDeath;
+        AudioEventSystem.onPlayerAttack -= this.PlayerAttack;
+        AudioEventSystem.onPlayerInivisible -= this.PlayerInvisible;
+        AudioEventSystem.onPlayerVisibleWarning -= this.PlayerVisibleWarning;
+        AudioEventSystem.onPlayerLand -= this.PlayerLand;
 
-        //Enemy Events
+        //Player Enviroment 
+        AudioEventSystem.onPlayerHide -= this.PlayerHide;
+        AudioEventSystem.onPlayerExitHide -= this.PlayerExitHide;
+        AudioEventSystem.onPlayerPowerUpPickUp -= this.PlayerPowerUpPickUp;
+        AudioEventSystem.onPlayerLadderClimb -= this.PlayerLadderClimb;
+
+        //Testing Enemy Events
         AudioEventSystem.onEnemyStep -= this.EnemyStep;
         AudioEventSystem.onEnemyIdle -= this.EnemyIdle;
         AudioEventSystem.onEnemyEscape -= this.EnemyEscape;
         AudioEventSystem.onEnemyAlert -= this.EnemyAlert;
 
+        //Enviroment Events
+        AudioEventSystem.onCabinLightsOn -= this.CabinLightsOn;
+        AudioEventSystem.onCabinLightsOff -= this.CabinLightsOff;
+        AudioEventSystem.onMovingPlatform -= this.MovingPlatform;
+        AudioEventSystem.onPowerUpIdle -= this.PowerUpIdle;
+        AudioEventSystem.onLockedDoor -= this.LockedDoor;
+
+        //Soundtrack events
+        AudioEventSystem.onInGameSoundTrack -= this.InGameSoundTrack;
+        AudioEventSystem.onMainMenuSoundTrack -= this.MainMenuSoundTrack;
+
+        //Button Press Events
+        AudioEventSystem.onButtonPress -= this.ButtonPress;
     }
     //Audio Event From Wise sound
     //He will add AKSoundEngine.PostEvent(Calls my event EventName, gameObject);
@@ -106,6 +153,11 @@ public class AudioEventControl : MonoBehaviour
         Debug.Log("Jumping Sound");
     }
 
+    void PlayerFall()
+    {
+        Debug.Log("Fall sound");
+    }
+
     void PlayerDeath()
     {
         Debug.Log("Death Sound");
@@ -115,6 +167,22 @@ public class AudioEventControl : MonoBehaviour
     {
         Debug.Log("Attacking Sound");
     }
+
+    void PlayerInvisible()
+    {
+        Debug.Log("Invisible sound");
+    }
+
+    void PlayerVisibleWarning()
+    {
+        Debug.Log("Warning Visibility Sound");
+    }
+
+    void PlayerLand()
+    {
+        Debug.Log("Landing Sound");
+    }
+
     #endregion
 
     #region Enemy Events Functionality
@@ -141,7 +209,81 @@ public class AudioEventControl : MonoBehaviour
 
     #endregion
 
+    #region Player Enviroment Interactions Functionality
 
+    void PlayerPowerUpPickUp()
+    {
+        Debug.Log("PowerUp PickUp Sound Functionality");
+    }
+
+    void PlayerHide()
+    {
+        Debug.Log("Player Hide Sound");
+    }
+
+    void PlayerExitHide()
+    {
+        Debug.Log("Player Exit Sound");
+    }
+
+    void PlayerLadderClimb()
+    {
+        Debug.Log("Player Ladded Climb Sound");
+    }
+
+    #endregion
+
+    #region Enviroment Event Functionality
+
+    void CabinLightsOn()
+    {
+        Debug.Log("Cabin Lights on Sound");
+    }
+
+    void CabinLightsOff()
+    {
+        Debug.Log("Cabin Lights Off Sound");
+    }
+
+    void MovingPlatform()
+    {
+        Debug.Log("Moving Platform Sound");
+    }
+
+    void PowerUpIdle()
+    {
+        Debug.Log("PowerUpIdle Sound");
+    }
+
+    void LockedDoor()
+    {
+        Debug.Log("Locked");
+    }
+
+    #endregion
+
+    #region SoundTracks Event Functionality
+
+    void InGameSoundTrack()
+    {
+        Debug.Log("In Game Sound");
+    }
+
+    void MainMenuSoundTrack()
+    {
+        Debug.Log("Main Menu Sound");
+    }
+
+    #endregion
+
+    #region UI Button Functionality
+
+    void ButtonPress()
+    {
+        Debug.Log("Button Pressed Sound");
+    }
+
+    #endregion
 
     #region Helper Functions
     //Keeps audio from being overwritten
