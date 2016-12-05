@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 	[Space(5)]
 	[Header("Player Move Settings")]
     public float moveSpeed= 6;
+    public bool canMove = true;
 
     #region Jump physics formula
     /*
@@ -51,9 +52,12 @@ public class Player : MonoBehaviour {
     float velocityXSmoothing;
 
     //testing 
-    Vector2 input; //For audio event
+    [HideInInspector]
+    public Vector2 input; //For audio event
     Controller2D controller;
 
+
+  
     #endregion
 
     #region Engine Functions
@@ -85,25 +89,32 @@ public class Player : MonoBehaviour {
 
     void Update()
     {
-        if (controller.collisions.above || controller.collisions.below)
+        if (canMove)
         {
-            velocity.y = 0;
+            if (controller.collisions.above || controller.collisions.below)
+            {
+                velocity.y = 0;
+            }
+            //Debug.Log ("Y velocity: " +velocity.y);
+            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+
+            //Trigger Movement event
+            //Debug.Log("Input: " + input);
+
+            //Rotates the player obj based on direction
+            controller.Direction(input);
+            controller.Attack();
+
+            if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
+            {
+                velocity.y = jumpVelocity;
+            }
+
+            float targetVelocityX = input.x * moveSpeed; //smooth movement on x axis
+            velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded : accelerationTimeAirborne);
+            velocity.y += gravity * Time.deltaTime;
+            controller.Move(velocity * Time.deltaTime);
         }
-		//Debug.Log ("Y velocity: " +velocity.y);
-        input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
-        //Trigger Movement event
-        //Debug.Log("Input: " + input);
-
-        if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
-        {
-            velocity.y = jumpVelocity;
-        }
-
-        float targetVelocityX = input.x * moveSpeed; //smooth movement on x axis
-        velocity.x = Mathf.SmoothDamp(velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below) ? accelerationTimeGrounded:accelerationTimeAirborne);
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);  
     }
     #endregion
 

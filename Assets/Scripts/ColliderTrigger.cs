@@ -24,7 +24,7 @@ public class ColliderTrigger : MonoBehaviour {
         updateTrigger();
         if (playerObj != null)
         {
-            playerCollisionTrigger();
+            //playerCollisionTrigger();
         }
     }
 
