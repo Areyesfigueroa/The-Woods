@@ -10,6 +10,19 @@ public class PlayerManager : MonoBehaviour {
     public float playerMaxSpeed = 10;
     public Animator anim;
 
+    //keep track of the people collected
+    private int peopleKilled;
+    public int PeopleKilled
+    {
+        get { return peopleKilled; }
+        set { peopleKilled = value; }
+    }
+
+    void Start()
+    {
+        peopleKilled = 0;
+    } 
+
     void Awake()
     {
         if (instance != null)
@@ -32,10 +45,6 @@ public class PlayerManager : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             Attack();
-        }
-        if (Player.Instance.isPlayerJumping())
-        {
-            
         }
     }
 

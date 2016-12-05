@@ -21,12 +21,17 @@ public class Controller2D : MonoBehaviour
 
     public CollisionInfo collisions;
 
+    //Attack Bogus implementation
+    public GameObject attackLeft, attackRight;
+    public float attackCoolDown = 2;
     //Direction
     SpriteRenderer sprite;
 
 
     void Start()
     {
+        attackLeft.active = false;
+        attackRight.active = false; 
         sprite = GetComponent<SpriteRenderer>();
         collider = GetComponent<BoxCollider2D>();
         CalculateRaySpacing();
@@ -64,20 +69,29 @@ public class Controller2D : MonoBehaviour
         }
     }
 
+    IEnumerator hideAttackRadius(float time)
+    {
+        yield return new WaitForSeconds(time);
+        attackRight.active = false;
+        attackLeft.active = false;
+    }
+
     //attack in the correct direction
     public void Attack()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            if (sprite.flipX) //facing right
+            if (!sprite.flipX) //facing right
             {
                 Debug.Log("Attacking Right");
-                //Play Animation Here
+                attackRight.active = true;
+                StartCoroutine(hideAttackRadius(attackCoolDown));
             }
             else 
             {
                 Debug.Log("Attacking Left");
-                //Play Animation Here
+                attackLeft.active = true;
+                StartCoroutine(hideAttackRadius(attackCoolDown));
             }
         }
     }
