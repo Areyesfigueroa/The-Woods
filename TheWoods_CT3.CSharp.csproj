@@ -82,6 +82,7 @@
     <Compile Include="Assets\Scripts\Events\EnemyAnimationEvents.cs" />
     <Compile Include="Assets\Scripts\Events\PlayerAnimationEvents.cs" />
     <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\Manager\_UiManager.cs" />
     <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />

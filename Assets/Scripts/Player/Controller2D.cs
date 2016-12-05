@@ -55,12 +55,12 @@ public class Controller2D : MonoBehaviour
     {
         if (direction.x > 0) //going right
         {
-            sprite.flipX = true;
+            sprite.flipX = false;
         }
 
         if (direction.x < 0) //going left
         {
-            sprite.flipX = false;
+            sprite.flipX = true;
         }
     }
 
