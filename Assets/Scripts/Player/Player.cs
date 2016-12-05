@@ -52,7 +52,8 @@ public class Player : MonoBehaviour {
     float velocityXSmoothing;
 
     //testing 
-    Vector2 input; //For audio event
+    [HideInInspector]
+    public Vector2 input; //For audio event
     Controller2D controller;
 
 
