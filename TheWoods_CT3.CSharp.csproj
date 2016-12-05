@@ -87,6 +87,7 @@
     <Compile Include="Assets\Scripts\Player\Attack.cs" />
     <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\UI\ScoreCount.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Animations\AnimDocuments\EnemyWalkingEventFrames.txt" />

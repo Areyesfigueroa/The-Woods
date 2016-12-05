@@ -9,7 +9,7 @@ public class Attack : MonoBehaviour {
         {
             Debug.Log("Working");
             PlayerManager.Instance.PeopleKilled++;
-            Destroy(other.gameObject, .5f);
+            Destroy(other.gameObject, .2f);
         }
     }
 }
