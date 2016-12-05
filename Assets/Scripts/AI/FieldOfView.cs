@@ -8,7 +8,6 @@ public class FieldOfView : MonoBehaviour {
     //Run once for the audio event to be fired
     private bool isVisible = false;
     private bool runOnce = true;
-    private RunAway runAwayScript;
 
     public float viewRadius;
     [Range(0, 360)]
@@ -18,13 +17,15 @@ public class FieldOfView : MonoBehaviour {
     public LayerMask obstacleMask;
 
     [HideInInspector]
-    public List<Transform> visibleTargets = new List<Transform>(); 
-
+    public List<Transform> visibleTargets = new List<Transform>();
+    private EnemyAiV2 enemyAiScript;
+    private Collider2D col;
     void Start()
     {
+        enemyAiScript = GetComponentInParent<EnemyAiV2>();
+        col = GetComponentInParent<Collider2D>();
         //.2 sec so that they don't see you immediately
         StartCoroutine("FindTargetsWithDelay", .2f);
-        runAwayScript = this.GetComponent<RunAway>();
     }
 
     IEnumerator FindTargetsWithDelay(float delay)
@@ -33,6 +34,23 @@ public class FieldOfView : MonoBehaviour {
         {
             yield return new WaitForSeconds(delay);
             FindVisibleTargets2D();
+        }
+    }
+
+    void Update()
+    {
+        if (isVisible && !runOnce)
+        {
+            col.enabled = false; //disable colliders
+            enemyAiScript.enabled = false;//disable movement script
+            transform.parent.Translate(Vector2.right); //Move the ai away from the screen, goes opposite from the player
+            Debug.Log(Vector2.Distance(this.transform.position, Player.Instance.transform.position));
+
+            //Check the distance in order to destroy the gameObject
+            if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) > 100)
+            {
+                Destroy(transform.parent.gameObject);
+            }
         }
     }
 
@@ -83,7 +101,6 @@ public class FieldOfView : MonoBehaviour {
                         isVisible = true;
                         runOnce = false;
                         Debug.Log("Visible: " + isVisible);
-                        runAwayScript.RunOffScreen();
                     }
                     visibleTargets.Add(target);
                 }
