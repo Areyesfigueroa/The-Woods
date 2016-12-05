@@ -12,7 +12,7 @@ public class FieldOfView : MonoBehaviour {
     public LayerMask obstacleMask;
 
     [HideInInspector]
-    public List<Transform> visibleTargets = new List<Transform>();
+    public List<Transform> visibleTargets = new List<Transform>(); 
 
     void Start()
     {
@@ -55,8 +55,18 @@ public class FieldOfView : MonoBehaviour {
     {
         if (!angleIsGlobal)
         {
-            angleInDegrees += transform.eulerAngles.y;
+            angleInDegrees += transform.eulerAngles.y; //y
         }
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
+    }
+
+    //change to vector2
+    public Vector3 DirFromAngle2D(float angleInDegrees, bool angleIsGlobal)
+    {
+        if (!angleIsGlobal)
+        {
+            angleInDegrees -= transform.eulerAngles.y; //y
+        }
+        return new Vector3(-Mathf.Cos(angleInDegrees * Mathf.Deg2Rad), -Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0);
     }
 }
