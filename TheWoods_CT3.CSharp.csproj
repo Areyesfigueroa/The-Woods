@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\AI\EnemyAi.cs" />
     <Compile Include="Assets\Scripts\AI\EnemyAiV2.cs" />
     <Compile Include="Assets\Scripts\AI\FieldOfView.cs" />
+    <Compile Include="Assets\Scripts\AI\RunAway.cs" />
     <Compile Include="Assets\Scripts\ColliderTrigger.cs" />
     <Compile Include="Assets\Scripts\Enviroment\Ladders.cs" />
     <Compile Include="Assets\Scripts\Enviroment\MovingPlatform.cs" />

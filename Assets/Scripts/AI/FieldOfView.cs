@@ -8,6 +8,8 @@ public class FieldOfView : MonoBehaviour {
     //Run once for the audio event to be fired
     private bool isVisible = false;
     private bool runOnce = true;
+    private RunAway runAwayScript;
+
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
@@ -22,6 +24,7 @@ public class FieldOfView : MonoBehaviour {
     {
         //.2 sec so that they don't see you immediately
         StartCoroutine("FindTargetsWithDelay", .2f);
+        runAwayScript = this.GetComponent<RunAway>();
     }
 
     IEnumerator FindTargetsWithDelay(float delay)
@@ -80,6 +83,7 @@ public class FieldOfView : MonoBehaviour {
                         isVisible = true;
                         runOnce = false;
                         Debug.Log("Visible: " + isVisible);
+                        runAwayScript.RunOffScreen();
                     }
                     visibleTargets.Add(target);
                 }

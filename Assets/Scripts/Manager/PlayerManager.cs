@@ -10,7 +10,6 @@ public class PlayerManager : MonoBehaviour {
     public float playerMaxSpeed = 10;
     public Animator anim;
 
-
     void Awake()
     {
         if (instance != null)
@@ -23,10 +22,6 @@ public class PlayerManager : MonoBehaviour {
         {
             instance = this;
         }
-    }
-
-    void Start()
-    {
     }
 
     void Update()
