@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour {
 
+    //once true, enemy will dissapear, no need to worry about setting it back to false
+    //Run once for the audio event to be fired
+    private bool isVisible = false;
+    private bool runOnce = true;
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
@@ -16,6 +20,7 @@ public class FieldOfView : MonoBehaviour {
 
     void Start()
     {
+        //.2 sec so that they don't see you immediately
         StartCoroutine("FindTargetsWithDelay", .2f);
     }
 
@@ -28,7 +33,7 @@ public class FieldOfView : MonoBehaviour {
         }
     }
 
-    //Checks if they are visible Targets
+    //Checks if they are visible Targets 3D
     void FindVisibleTargets()
     {
         visibleTargets.Clear();
@@ -45,13 +50,13 @@ public class FieldOfView : MonoBehaviour {
 
                 if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, obstacleMask))
                 {
-                    visibleTargets.Add(target);
+                    visibleTargets.Add(target);    
                 }
             }
         }
     }
 
-    //Checks if they are visible Targets
+    //Checks if they are visible Targets 2D
     void FindVisibleTargets2D()
     {
         visibleTargets.Clear();
@@ -68,15 +73,21 @@ public class FieldOfView : MonoBehaviour {
             {
                 float distToTarget = Vector3.Distance(transform.position, target.position);
 
-                if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, obstacleMask))
+                if (!Physics2D.Raycast(transform.position, dirToTarget, distToTarget, obstacleMask))
                 {
+                    if (runOnce)
+                    {
+                        isVisible = true;
+                        runOnce = false;
+                        Debug.Log("Visible: " + isVisible);
+                    }
                     visibleTargets.Add(target);
                 }
             }
         }
     }
 
-    //change to vector2
+    //change to vector2 3D
     public Vector3 DirFromAngle(float angleInDegrees, bool angleIsGlobal)
     {
         if (!angleIsGlobal)
@@ -86,7 +97,7 @@ public class FieldOfView : MonoBehaviour {
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
 
-    //change to vector2
+    //change to vector2 2D
     public Vector3 DirFromAngle2D(float angleInDegrees, bool angleIsGlobal)
     {
         if (!angleIsGlobal)
