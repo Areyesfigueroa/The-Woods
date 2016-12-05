@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheWoods_CT3.CSharp", "TheWoods_CT3.CSharp.csproj", "{59500160-A1F7-0F32-5B89-251ECA14528B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheWoods_CT3.CSharp.Editor", "TheWoods_CT3.CSharp.Editor.csproj", "{4D806E0B-348A-DDD7-804E-0F96E2717771}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{59500160-A1F7-0F32-5B89-251ECA14528B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59500160-A1F7-0F32-5B89-251ECA14528B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59500160-A1F7-0F32-5B89-251ECA14528B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D806E0B-348A-DDD7-804E-0F96E2717771}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D806E0B-348A-DDD7-804E-0F96E2717771}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D806E0B-348A-DDD7-804E-0F96E2717771}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D806E0B-348A-DDD7-804E-0F96E2717771}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
