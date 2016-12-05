@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{388FB907-F6D0-3D65-1BB5-2888A9F1E957}</ProjectGuid>
+    <ProjectGuid>{170D25F7-1D4A-BF13-3E56-A77A68ADB5EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,12 +45,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\AI\ConeOfVision.cs" />
+     <Compile Include="Assets\Scripts\AI\EnemyAi.cs" />
+     <Compile Include="Assets\Scripts\AI\EnemyAiV2.cs" />
      <Compile Include="Assets\Scripts\ColliderTrigger.cs" />
      <Compile Include="Assets\Scripts\Enviroment\Ladders.cs" />
      <Compile Include="Assets\Scripts\Enviroment\MovingPlatform.cs" />
+     <Compile Include="Assets\Scripts\Events\AudioEventSystem.cs" />
+     <Compile Include="Assets\Scripts\Manager\AudioEventControl.cs" />
      <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\_UiManager.cs" />
      <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
+     <None Include="Assets\Sprites\DarkSaber\Howl\repeat the last 2 frames  in a loop, for the howl..txt" />
+     <None Include="Assets\Sprites\DarkSaber\run\Loop the run from frame 5 to 17.txt" />
+     <None Include="Assets\Sprites\DarkSaber\idle\the same animation repeats from frame 50, but with a shake.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
