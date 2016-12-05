@@ -49,6 +49,7 @@ public class EnemyAiV2 : MonoBehaviour {
     //rotations
     private float rotatePos;
     private bool flip; //true means flip right, false is left
+    private bool runOnce = true;
 
     #endregion
     void Start()
@@ -81,6 +82,17 @@ public class EnemyAiV2 : MonoBehaviour {
             Movement();
             Debug.DrawLine(startPos, endPos, Color.red);
         }
+
+        if (isLerpingLeft && flip)
+        {
+            Rotate();
+        }
+        if (isLerpingRight && !flip)
+        {
+            Rotate();
+        }
+        Debug.Log("Left " + isLerpingLeft);
+        Debug.Log("Right " + isLerpingRight);
     }
 
 
@@ -143,13 +155,13 @@ public class EnemyAiV2 : MonoBehaviour {
         {
             flip = false;
             rotatePos = 180f;
-            this.transform.Rotate(new Vector3(this.transform.position.y, rotatePos));
+            this.transform.Rotate(new Vector3(this.transform.rotation.x, rotatePos));
         }
         else if (!flip) //false
         {
             flip = true;
             rotatePos = 0f;
-            this.transform.Rotate(new Vector3(this.transform.position.y, rotatePos));
+            this.transform.Rotate(new Vector3(this.transform.rotation.x, rotatePos));
         }
     }
 
@@ -163,24 +175,27 @@ public class EnemyAiV2 : MonoBehaviour {
             transform.position = Vector2.Lerp(startPos, endPos, Mathf.Clamp01(percentageComplete));
 
 
+
             if (Mathf.Clamp01(percentageComplete) >= 1 && triggerRightPosDelay) //works
             {
                 isLerpingRight = false;
                 Debug.Log("Reached Max Position");
                 StartCoroutine(Delay(rightPosDelay));
             }
-            else if(Mathf.Clamp01(percentageComplete) >= 1 && !triggerRightPosDelay)
+            else if (Mathf.Clamp01(percentageComplete) >= 1 && !triggerRightPosDelay)
             {
                 isLerpingRight = false;
                 if (startRight) // if you started on the right side 
                 {
                     SwitchLerping(leftDir); //go left
+                    
                 }
                 else if (!startRight)
                 {
                     StartLerping();
                 }
             }
+            
         }
 
 
@@ -205,14 +220,16 @@ public class EnemyAiV2 : MonoBehaviour {
                 if (startLeft) //if you started on the left
                 {
                     SwitchLerping(rightDir); //goes right
-                    
+                      
                 }
                 else if(!startLeft) //if you started on right
                 {
                     StartLerping();
                 }
+
             }
         }
+        
     }
 
     /*
@@ -243,16 +260,13 @@ public class EnemyAiV2 : MonoBehaviour {
         if (startRight)
         {
             isLerpingRight = true;
-            Rotate();
             endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis
         }
         else
         {
             isLerpingLeft = true;
-            Rotate();
             endPos = transform.position + Vector3.left * distance; //vector 3 is necessary since transform.position is of three axis
         }
-
         timeStartedLerping = Time.time;
         startPos = transform.position; //anywhere
     }
@@ -262,12 +276,10 @@ public class EnemyAiV2 : MonoBehaviour {
         if (direction == leftDir)
         {
             isLerpingLeft = true;
-            Rotate();
         }
         else if(direction == rightDir)
         {
             isLerpingRight = true;
-            Rotate();
         }
 
         timeStartedLerping = Time.time;
