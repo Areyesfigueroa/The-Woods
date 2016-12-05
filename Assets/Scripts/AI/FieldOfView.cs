@@ -56,7 +56,7 @@ public class FieldOfView : MonoBehaviour {
     {
         visibleTargets.Clear();
         //returns target's collider that overlap the sphere
-        Collider[] targetInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask); 
+        Collider2D[] targetInViewRadius = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask); 
 
         //Loop through all targets
         for (int i = 0; i < targetInViewRadius.Length; i++)
