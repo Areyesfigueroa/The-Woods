@@ -24,10 +24,11 @@ public class FieldOfView : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(delay);
-            FindVisibleTargets();
+            FindVisibleTargets2D();
         }
     }
 
+    //Checks if they are visible Targets
     void FindVisibleTargets()
     {
         visibleTargets.Clear();
@@ -39,6 +40,31 @@ public class FieldOfView : MonoBehaviour {
             Vector3 dirToTarget = (target.position - transform.position).normalized;
 
             if (Vector3.Angle(transform.forward, dirToTarget) < viewAngle / 2)
+            {
+                float distToTarget = Vector3.Distance(transform.position, target.position);
+
+                if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, obstacleMask))
+                {
+                    visibleTargets.Add(target);
+                }
+            }
+        }
+    }
+
+    //Checks if they are visible Targets
+    void FindVisibleTargets2D()
+    {
+        visibleTargets.Clear();
+        //returns target's collider that overlap the sphere
+        Collider[] targetInViewRadius = Physics.OverlapSphere(transform.position, viewRadius, targetMask); 
+
+        //Loop through all targets
+        for (int i = 0; i < targetInViewRadius.Length; i++)
+        {
+            Transform target = targetInViewRadius[i].transform; //Transform of the target
+            Vector3 dirToTarget = (target.position - transform.position).normalized; //magnitude
+
+            if (Vector3.Angle(-transform.right, dirToTarget) < viewAngle / 2)
             {
                 float distToTarget = Vector3.Distance(transform.position, target.position);
 
