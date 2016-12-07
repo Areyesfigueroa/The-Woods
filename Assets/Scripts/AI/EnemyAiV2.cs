@@ -47,8 +47,8 @@ public class EnemyAiV2 : MonoBehaviour {
 
     private float timeStartedLerping;
     //rotations
-    private float rotatePos;
-    private bool flip; //true means flip right, false is left
+    private float rotRight;
+	private float rotLeft;
     private bool runOnce = true;
 
     #endregion
@@ -57,22 +57,21 @@ public class EnemyAiV2 : MonoBehaviour {
         //This makes sure you don't have them both checked or unchecked
         if (startRight)
         {
-            rotatePos = 180f; //right
-            flip = true;
             startLeft = false;
         }
         else if (startLeft)
         {
-            rotatePos = 0f; //left
-            flip = false;
             startRight = false;
         }
         else
         {
             Debug.Log("Default is right direction");
             startRight = true;
-            rotatePos = 180f; //right
+            rotRight = 180f; //right
         }
+		//init
+		rotRight = 180f; //right
+		rotLeft = 0f; //left
     }
 
     void FixedUpdate()
@@ -82,17 +81,6 @@ public class EnemyAiV2 : MonoBehaviour {
             Movement();
             Debug.DrawLine(startPos, endPos, Color.red);
         }
-
-        if (isLerpingLeft && flip)
-        {
-            Rotate();
-        }
-        if (isLerpingRight && !flip)
-        {
-            Rotate();
-        }
-        Debug.Log("Left " + isLerpingLeft);
-        Debug.Log("Right " + isLerpingRight);
     }
 
 
@@ -127,42 +115,16 @@ public class EnemyAiV2 : MonoBehaviour {
         {
             SwitchLerping(rightDir);
         }
-
-        /*
-        if (startRight) //if start right is on and you have left pos delay
-        {
-            if (triggerRightPosDelay) //Move left next
-            {
-                SwitchLerping(leftDir);
-            }
-        }
-        else
-        {
-            if (triggerLeftPosDelay) //Move right next
-            {
-                SwitchLerping(rightDir);
-            }
-            
-        }*/
+			
         Debug.Log("Coroutine End: ");
     }
 
     #endregion
 
-    void Rotate()
+    void Rotate(float rotatePos)
     {
-        if (flip) //update is not being accurate//true
-        {
-            flip = false;
-            rotatePos = 180f;
-            this.transform.Rotate(new Vector3(this.transform.rotation.x, rotatePos));
-        }
-        else if (!flip) //false
-        {
-            flip = true;
-            rotatePos = 0f;
-            this.transform.Rotate(new Vector3(this.transform.rotation.x, rotatePos));
-        }
+	    this.transform.Rotate(new Vector3(this.transform.rotation.x, rotatePos));
+        
     }
 
     void Movement()
@@ -231,41 +193,21 @@ public class EnemyAiV2 : MonoBehaviour {
         }
         
     }
-
-    /*
-    BackUp
-    //Start from right side
-    void StartLerpingRight()
-    {
-        isLerpingRight = true;
-        timeStartedLerping = Time.time;
-
-        startPos = transform.position; //anywhere
-        endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis
-    }
-
-    //Start from left Side
-    void StartLerpingLeft()
-    {
-        isLerpingLeft = true;
-        timeStartedLerping = Time.time;
-
-        startPos = transform.position; //anywhere
-        endPos = transform.position + Vector3.left * distance; //vector 3 is necessary since transform.position is of three axis
-    }
-    */
+		
 
     void StartLerping() //start settings based on startRight or startLeft
     {
         if (startRight)
         {
             isLerpingRight = true;
-            endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis
+            endPos = transform.position + Vector3.right * distance; //vector 3 is necessary since transform.position is of three axis'
+			Rotate(rotRight); 
         }
         else
         {
             isLerpingLeft = true;
             endPos = transform.position + Vector3.left * distance; //vector 3 is necessary since transform.position is of three axis
+			Rotate(rotLeft);
         }
         timeStartedLerping = Time.time;
         startPos = transform.position; //anywhere
@@ -276,10 +218,12 @@ public class EnemyAiV2 : MonoBehaviour {
         if (direction == leftDir)
         {
             isLerpingLeft = true;
+			Rotate (rotLeft);
         }
         else if(direction == rightDir)
         {
             isLerpingRight = true;
+			Rotate (rotRight);
         }
 
         timeStartedLerping = Time.time;
@@ -288,29 +232,6 @@ public class EnemyAiV2 : MonoBehaviour {
         startPos = endPos; //overwrites start with end
         endPos = temp; //overwrite end with start using temp
     }
-
-    /*
-    BackUp
-    void SwitchLerpingLeft()
-    {
-        isLerpingLeft = true;
-        timeStartedLerping = Time.time;
-
-        Vector2 temp = startPos; //hold the start pos, move left
-        startPos = endPos; //overwrites start with end
-        endPos = temp; //overwrite end with start using temp
-    }
-
-    void SwitchLerpingRight()
-    {
-        isLerpingRight = true;
-        timeStartedLerping = Time.time;
-
-        Vector2 temp = startPos; //hold the start pos, move left
-        startPos = endPos; //overwrites start with end
-        endPos = temp; //overwrite end with start using temp
-    }
-    */
 
     //check if we are grounded
     void OnCollisionEnter2D(Collision2D col)

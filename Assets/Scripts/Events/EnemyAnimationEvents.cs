@@ -3,26 +3,6 @@ using System.Collections;
 
 public class EnemyAnimationEvents : MonoBehaviour {
 
-    //instance
-
-    public static EnemyAnimationEvents Instance { get { return Instance; } }
-    public static EnemyAnimationEvents instance;
-
-	// Use this for initialization
-	void Awake ()
-    {
-        if (instance != null)
-        {
-            Debug.LogWarning("There is already an instance of EnemyAnimationEventManager, Deleting old and instantiating a new one");
-            Destroy(EnemyAnimationEvents.Instance.gameObject);
-            instance = null;
-        }
-        else
-        {
-            instance = this;
-        }
-    }
-
     //Enemy Animation events, Works
     public void onEnemyStep()
     {
