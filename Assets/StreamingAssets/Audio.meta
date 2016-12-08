@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 33792fa2ed3ae48d39376d246c404f99
 folderAsset: yes
+<<<<<<< HEAD
 timeCreated: 1480963952
+=======
+timeCreated: 1479676934
+>>>>>>> AudioBranch2
 licenseType: Free
 DefaultImporter:
   userData: 
