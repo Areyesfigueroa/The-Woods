@@ -28,7 +28,6 @@ public class PlayerAnimationEvents : MonoBehaviour {
     {
         Debug.Log("Player Move event Fired");
         AudioEventSystem.PlayerStep();
-		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
 
     }
 
