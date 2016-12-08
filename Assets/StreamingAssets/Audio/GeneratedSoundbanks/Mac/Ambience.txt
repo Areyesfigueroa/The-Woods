@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	680291572	Cabin			\Default Work Unit\Ambience\Cabin	
+	3692519760	Cabin_Lights			\Default Work Unit\Ambience\Cabin_Lights	
+	4122393694	Cave			\Default Work Unit\Ambience\Cave	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	256086945	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Silence\Wwise Silence	
+	272652410	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_OneShots\Silence\Wwise Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	170944976	Cabin_Creak	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\HouseCreak2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cabin_Amb\Cabin_Creak		24235508
+	176239266	Cabin_Wind	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cabin_Wind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cabin_Amb\Cabin_Wind		23832536
+	307085320	Cave_Drip-04	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Drip-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Cave_Drip-04		2988
+	516185914	CabinLights	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Buzzing light_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Lights\CabinLights		317730
+	519411598	Bats-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Bats-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_OneShots\Bats-02		28612
+	587789613	Bats-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Bats-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_OneShots\Bats-01		15004
+	697580543	Cave_Drip-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Drip-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Cave_Drip-01		6046
+	711795999	Cave_Drip-05	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Drip-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Cave_Drip-05		3260
+	791474579	Cave_Drip-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Drip-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Cave_Drip-02		3940
+	880613575	Bats-04	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Bats-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_OneShots\Bats-04		17672
+	902039150	Cave_Drip-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Drip-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Drips\Cave_Drip-03		9168
+	924944311	Bats-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Bats-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_OneShots\Bats-03		28612
+	1035249161	Cave_Wind	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Cave_Wind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Cave_Amb\Cave_Wind		23832536
+

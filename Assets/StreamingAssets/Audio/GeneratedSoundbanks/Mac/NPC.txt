@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3637320158	NPCFound			\Default Work Unit\NPC\NPCFound	
+	4108877698	NPCCap			\Default Work Unit\NPC\NPCCap	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	202832099	Muffled Scream New Better	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Scream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Scream New Better		192526
+	424582769	Muffled Screams-05	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-05		73274
+	569506862	Muffled Screams-06	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-06		71286
+	600567193	Muffled Screams-04	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-04		72446
+	674244328	Found	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\LongScream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Found		138380
+	683298703	Muffled Screams-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-03		85728
+	700368097	Muffled Screams-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-02		50122
+	991221962	Muffled Screams-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-01		145428
+

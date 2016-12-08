@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="118">
+	<RootPaths>
+		<ProjectRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Wwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Wwise/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>Y:\Desktop\The-Woods-MergedUpdate\Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles>
+		<File Id="497097725" Language="SFX">
+			<ShortName>Death1.wav</ShortName>
+			<Path>SFX/Death1_9E69E797.wem</Path>
+		</File>
+	</StreamedFiles>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="85412153" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience</ObjectPath>
+			<ShortName>Ambience</ShortName>
+			<Path>Ambience.bnk</Path>
+			<IncludedEvents>
+				<Event Id="680291572" Name="Cabin" ObjectPath="\Events\Default Work Unit\Ambience\Cabin" MaxAttenuation="75.000000"/>
+				<Event Id="3692519760" Name="Cabin_Lights" ObjectPath="\Events\Default Work Unit\Ambience\Cabin_Lights"/>
+				<Event Id="4122393694" Name="Cave" ObjectPath="\Events\Default Work Unit\Ambience\Cave" MaxAttenuation="50.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="170944976" Language="SFX">
+					<ShortName>HouseCreak2.wav</ShortName>
+					<Path>SFX/HouseCreak2_9E69E797.wem</Path>
+				</File>
+				<File Id="176239266" Language="SFX">
+					<ShortName>Cabin_Wind.wav</ShortName>
+					<Path>SFX/Cabin_Wind_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="307085320" Language="SFX">
+					<ShortName>Cave_Drip-04.wav</ShortName>
+					<Path>SFX/Cave_Drip-04_9E69E797.wem</Path>
+				</File>
+				<File Id="516185914" Language="SFX">
+					<ShortName>Buzzing light.wav</ShortName>
+					<Path>SFX/Buzzing light_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="519411598" Language="SFX">
+					<ShortName>Bats-02.wav</ShortName>
+					<Path>SFX/Bats-02_9E69E797.wem</Path>
+				</File>
+				<File Id="587789613" Language="SFX">
+					<ShortName>Bats-01.wav</ShortName>
+					<Path>SFX/Bats-01_9E69E797.wem</Path>
+				</File>
+				<File Id="697580543" Language="SFX">
+					<ShortName>Cave_Drip-01.wav</ShortName>
+					<Path>SFX/Cave_Drip-01_9E69E797.wem</Path>
+				</File>
+				<File Id="711795999" Language="SFX">
+					<ShortName>Cave_Drip-05.wav</ShortName>
+					<Path>SFX/Cave_Drip-05_9E69E797.wem</Path>
+				</File>
+				<File Id="791474579" Language="SFX">
+					<ShortName>Cave_Drip-02.wav</ShortName>
+					<Path>SFX/Cave_Drip-02_9E69E797.wem</Path>
+				</File>
+				<File Id="880613575" Language="SFX">
+					<ShortName>Bats-04.wav</ShortName>
+					<Path>SFX/Bats-04_9E69E797.wem</Path>
+				</File>
+				<File Id="902039150" Language="SFX">
+					<ShortName>Cave_Drip-03.wav</ShortName>
+					<Path>SFX/Cave_Drip-03_9E69E797.wem</Path>
+				</File>
+				<File Id="924944311" Language="SFX">
+					<ShortName>Bats-03.wav</ShortName>
+					<Path>SFX/Bats-03_9E69E797.wem</Path>
+				</File>
+				<File Id="1035249161" Language="SFX">
+					<ShortName>Cave_Wind.wav</ShortName>
+					<Path>SFX/Cave_Wind_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="662417162" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\NPC</ObjectPath>
+			<ShortName>NPC</ShortName>
+			<Path>NPC.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4108877698" Name="NPCCap" ObjectPath="\Events\Default Work Unit\NPC\NPCCap"/>
+				<Event Id="3637320158" Name="NPCFound" ObjectPath="\Events\Default Work Unit\NPC\NPCFound"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="202832099" Language="SFX">
+					<ShortName>Muffled Scream.wav</ShortName>
+					<Path>SFX/Muffled Scream_9E69E797.wem</Path>
+				</File>
+				<File Id="424582769" Language="SFX">
+					<ShortName>Muffled Screams-05.wav</ShortName>
+					<Path>SFX/Muffled Screams-05_9E69E797.wem</Path>
+				</File>
+				<File Id="569506862" Language="SFX">
+					<ShortName>Muffled Screams-06.wav</ShortName>
+					<Path>SFX/Muffled Screams-06_9E69E797.wem</Path>
+				</File>
+				<File Id="600567193" Language="SFX">
+					<ShortName>Muffled Screams-04.wav</ShortName>
+					<Path>SFX/Muffled Screams-04_9E69E797.wem</Path>
+				</File>
+				<File Id="674244328" Language="SFX">
+					<ShortName>LongScream.wav</ShortName>
+					<Path>SFX/LongScream_9E69E797.wem</Path>
+				</File>
+				<File Id="683298703" Language="SFX">
+					<ShortName>Muffled Screams-03.wav</ShortName>
+					<Path>SFX/Muffled Screams-03_9E69E797.wem</Path>
+				</File>
+				<File Id="700368097" Language="SFX">
+					<ShortName>Muffled Screams-07.wav</ShortName>
+					<Path>SFX/Muffled Screams-07_9E69E797.wem</Path>
+				</File>
+				<File Id="991221962" Language="SFX">
+					<ShortName>Muffled Screams-01.wav</ShortName>
+					<Path>SFX/Muffled Screams-01_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1017660553" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Ambience2</ObjectPath>
+			<ShortName>Ambience2</ShortName>
+			<Path>Ambience2.bnk</Path>
+			<IncludedEvents>
+				<Event Id="491961918" Name="Forest" ObjectPath="\Events\Default Work Unit\Ambience2\Forest" MaxAttenuation="100.000000"/>
+				<Event Id="1948881314" Name="MovingPlatform" ObjectPath="\Events\Default Work Unit\Ambience2\MovingPlatform"/>
+				<Event Id="3406215381" Name="NPC_Ambience" ObjectPath="\Events\Default Work Unit\Ambience2\NPC_Ambience"/>
+				<Event Id="1598590517" Name="Player_Ambience" ObjectPath="\Events\Default Work Unit\Ambience2\Player_Ambience"/>
+				<Event Id="3643401235" Name="Player_Idle" ObjectPath="\Events\Default Work Unit\Ambience2\Player_Idle"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="41490363" Language="SFX">
+					<ShortName>Heartbeat2.wav</ShortName>
+					<Path>SFX/Heartbeat2_9E69E797.wem</Path>
+				</File>
+				<File Id="42994206" Language="SFX">
+					<ShortName>Heartbeat3.wav</ShortName>
+					<Path>SFX/Heartbeat3_9E69E797.wem</Path>
+				</File>
+				<File Id="43325978" Language="SFX">
+					<ShortName>Monster Speech.wav</ShortName>
+					<Path>SFX/Monster Speech_9E69E797.wem</Path>
+				</File>
+				<File Id="122364332" Language="SFX">
+					<ShortName>Whimper.wav</ShortName>
+					<Path>SFX/Whimper_9E69E797.wem</Path>
+				</File>
+				<File Id="189147393" Language="SFX">
+					<ShortName>LightBreathing.wav</ShortName>
+					<Path>SFX/LightBreathing_9E69E797.wem</Path>
+				</File>
+				<File Id="193758149" Language="SFX">
+					<ShortName>Forest_Wind.wav</ShortName>
+					<Path>SFX/Forest_Wind_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="333950875" Language="SFX">
+					<ShortName>Crickets-02.wav</ShortName>
+					<Path>SFX/Crickets-02_9E69E797.wem</Path>
+				</File>
+				<File Id="346780615" Language="SFX">
+					<ShortName>Monster One Shot.wav</ShortName>
+					<Path>SFX/Monster One Shot_9E69E797.wem</Path>
+				</File>
+				<File Id="347510309" Language="SFX">
+					<ShortName>Branch Break.wav</ShortName>
+					<Path>SFX/Branch Break_9E69E797.wem</Path>
+				</File>
+				<File Id="359009475" Language="SFX">
+					<ShortName>Crickets_Loop.wav</ShortName>
+					<Path>SFX/Crickets_Loop_9E69E797.wem</Path>
+				</File>
+				<File Id="388443478" Language="SFX">
+					<ShortName>MonsterOneShot2.wav</ShortName>
+					<Path>SFX/MonsterOneShot2_9E69E797.wem</Path>
+				</File>
+				<File Id="400815517" Language="SFX">
+					<ShortName>Creepy.wav</ShortName>
+					<Path>SFX/Creepy_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="657890918" Language="SFX">
+					<ShortName>Crickets-01.wav</ShortName>
+					<Path>SFX/Crickets-01_9E69E797.wem</Path>
+				</File>
+				<File Id="795346543" Language="SFX">
+					<ShortName>MonsterOneShot3.wav</ShortName>
+					<Path>SFX/MonsterOneShot3_9E69E797.wem</Path>
+				</File>
+				<File Id="799385039" Language="SFX">
+					<ShortName>Heartbeat1.wav</ShortName>
+					<Path>SFX/Heartbeat1_9E69E797.wem</Path>
+				</File>
+				<File Id="862903648" Language="SFX">
+					<ShortName>MonsterPurr.wav</ShortName>
+					<Path>SFX/MonsterPurr_9E69E797.wem</Path>
+				</File>
+				<File Id="866941795" Language="SFX">
+					<ShortName>Owl-02.wav</ShortName>
+					<Path>SFX/Owl-02_9E69E797.wem</Path>
+				</File>
+				<File Id="867682134" Language="SFX">
+					<ShortName>Owl-01.wav</ShortName>
+					<Path>SFX/Owl-01_9E69E797.wem</Path>
+				</File>
+				<File Id="1022292028" Language="SFX">
+					<ShortName>MechanicalPlatforms.wav</ShortName>
+					<Path>SFX/MechanicalPlatforms_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="1067156602" Language="SFX">
+					<ShortName>Demogorgon.wav</ShortName>
+					<Path>SFX/Demogorgon_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1069431850" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Player</ObjectPath>
+			<ShortName>Player</ShortName>
+			<Path>Player.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3990868544" Name="Climbing" ObjectPath="\Events\Default Work Unit\Player\Climbing"/>
+				<Event Id="2925776965" Name="Collection" ObjectPath="\Events\Default Work Unit\Player\Collection"/>
+				<Event Id="681756373" Name="ExitHide" ObjectPath="\Events\Default Work Unit\Player\ExitHide"/>
+				<Event Id="3500475733" Name="Hide" ObjectPath="\Events\Default Work Unit\Player\Hide"/>
+				<Event Id="407595966" Name="InFlashlight" ObjectPath="\Events\Default Work Unit\Player\InFlashlight"/>
+				<Event Id="1594614136" Name="InLight" ObjectPath="\Events\Default Work Unit\Player\InLight"/>
+				<Event Id="68157183" Name="Jumping" ObjectPath="\Events\Default Work Unit\Player\Jumping"/>
+				<Event Id="37744199" Name="LockedDoor" ObjectPath="\Events\Default Work Unit\Player\LockedDoor"/>
+				<Event Id="1739301117" Name="OutFlashlight" ObjectPath="\Events\Default Work Unit\Player\OutFlashlight" MaxAttenuation="0.000000"/>
+				<Event Id="2676402489" Name="OutLight" ObjectPath="\Events\Default Work Unit\Player\OutLight" MaxAttenuation="0.000000"/>
+				<Event Id="3898542391" Name="PlayerDefeat" ObjectPath="\Events\Default Work Unit\Player\PlayerDefeat"/>
+				<Event Id="3111020472" Name="PlayerVictory" ObjectPath="\Events\Default Work Unit\Player\PlayerVictory"/>
+				<Event Id="1131585479" Name="PowerToggleOn" ObjectPath="\Events\Default Work Unit\Player\PowerToggleOn"/>
+				<Event Id="3741860307" Name="PowerUpCollection" ObjectPath="\Events\Default Work Unit\Player\PowerUpCollection"/>
+				<Event Id="208550326" Name="PowerUpToggleOff" ObjectPath="\Events\Default Work Unit\Player\PowerUpToggleOff" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="497097725"/>
+			</ReferencedStreamedFiles>
+			<IncludedMemoryFiles>
+				<File Id="108528293" Language="SFX">
+					<ShortName>Jump-03.wav</ShortName>
+					<Path>SFX/Jump-03_9E69E797.wem</Path>
+				</File>
+				<File Id="118694503" Language="SFX">
+					<ShortName>Jump-01.wav</ShortName>
+					<Path>SFX/Jump-01_9E69E797.wem</Path>
+				</File>
+				<File Id="172791182" Language="SFX">
+					<ShortName>InLight.wav</ShortName>
+					<Path>SFX/InLight_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="375974299" Language="SFX">
+					<ShortName>PowerUpCollect.wav</ShortName>
+					<Path>SFX/PowerUpCollect_9E69E797.wem</Path>
+				</File>
+				<File Id="378928499" Language="SFX">
+					<ShortName>LockedDoor.wav</ShortName>
+					<Path>SFX/LockedDoor_9E69E797.wem</Path>
+				</File>
+				<File Id="404403917" Language="SFX">
+					<ShortName>PowerUpCharacter.wav</ShortName>
+					<Path>SFX/PowerUpCharacter_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="464749404" Language="SFX">
+					<ShortName>InFlashlight.wav</ShortName>
+					<Path>SFX/InFlashlight_9E69E797.wem</Path>
+				</File>
+				<File Id="470469558" Language="SFX">
+					<ShortName>PowerUpPulseGrowl.wav</ShortName>
+					<Path>SFX/PowerUpPulseGrowl_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="481163220" Language="SFX">
+					<ShortName>Death2.wav</ShortName>
+					<Path>SFX/Death2_9E69E797.wem</Path>
+				</File>
+				<File Id="573936289" Language="SFX">
+					<ShortName>ExitHide.wav</ShortName>
+					<Path>SFX/ExitHide_9E69E797.wem</Path>
+				</File>
+				<File Id="616813507" Language="SFX">
+					<ShortName>PowerUpToggleOnFinal.wav</ShortName>
+					<Path>SFX/PowerUpToggleOnFinal_9E69E797.wem</Path>
+				</File>
+				<File Id="697489118" Language="SFX">
+					<ShortName>Climbing-01.wav</ShortName>
+					<Path>SFX/Climbing-01_9E69E797.wem</Path>
+				</File>
+				<File Id="770789818" Language="SFX">
+					<ShortName>Jump-02.wav</ShortName>
+					<Path>SFX/Jump-02_9E69E797.wem</Path>
+				</File>
+				<File Id="836712023" Language="SFX">
+					<ShortName>Climbing-04.wav</ShortName>
+					<Path>SFX/Climbing-04_9E69E797.wem</Path>
+				</File>
+				<File Id="1003263194" Language="SFX">
+					<ShortName>VictoryLaugh_Low.wav</ShortName>
+					<Path>SFX/VictoryLaugh_Low_9E69E797.wem</Path>
+				</File>
+				<File Id="1007028901" Language="SFX">
+					<ShortName>Climbing-02.wav</ShortName>
+					<Path>SFX/Climbing-02_9E69E797.wem</Path>
+				</File>
+				<File Id="1039063284" Language="SFX">
+					<ShortName>Enter Hide.wav</ShortName>
+					<Path>SFX/Enter Hide_9E69E797.wem</Path>
+				</File>
+				<File Id="1064878353" Language="SFX">
+					<ShortName>Climbing-03.wav</ShortName>
+					<Path>SFX/Climbing-03_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2385628198" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
+			<ShortName>Footsteps</ShortName>
+			<Path>Footsteps.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Default Work Unit\FootstepsFolder\Footsteps"/>
+				<Event Id="2548270042" Name="Landing" ObjectPath="\Events\Default Work Unit\FootstepsFolder\Landing"/>
+				<Event Id="4148702810" Name="NPC_Footsteps" ObjectPath="\Events\Default Work Unit\FootstepsFolder\NPC_Footsteps"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="39554517" Language="SFX">
+					<ShortName>NFootsteps_Wood-03.wav</ShortName>
+					<Path>SFX/NFootsteps_Wood-03_9E69E797.wem</Path>
+				</File>
+				<File Id="48646156" Language="SFX">
+					<ShortName>Grass_Footstep-01.wav</ShortName>
+					<Path>SFX/Grass_Footstep-01_9E69E797.wem</Path>
+				</File>
+				<File Id="121642622" Language="SFX">
+					<ShortName>Fur_Brush-03.wav</ShortName>
+					<Path>SFX/Fur_Brush-03_9E69E797.wem</Path>
+				</File>
+				<File Id="155493410" Language="SFX">
+					<ShortName>Footstep_Stone-01.wav</ShortName>
+					<Path>SFX/Footstep_Stone-01_9E69E797.wem</Path>
+				</File>
+				<File Id="174876507" Language="SFX">
+					<ShortName>Footsteps_Roof.wav</ShortName>
+					<Path>SFX/Footsteps_Roof_9E69E797.wem</Path>
+				</File>
+				<File Id="384951319" Language="SFX">
+					<ShortName>NFootsteps_Wood-02.wav</ShortName>
+					<Path>SFX/NFootsteps_Wood-02_9E69E797.wem</Path>
+				</File>
+				<File Id="391918238" Language="SFX">
+					<ShortName>Grass_Footstep-01-2.wav</ShortName>
+					<Path>SFX/Grass_Footstep-01-2_9E69E797.wem</Path>
+				</File>
+				<File Id="397845064" Language="SFX">
+					<ShortName>Fur_Brush-01.wav</ShortName>
+					<Path>SFX/Fur_Brush-01_9E69E797.wem</Path>
+				</File>
+				<File Id="446649755" Language="SFX">
+					<ShortName>NFootsteps_Wood-01.wav</ShortName>
+					<Path>SFX/NFootsteps_Wood-01_9E69E797.wem</Path>
+				</File>
+				<File Id="517053386" Language="SFX">
+					<ShortName>Footsteps_Roof3.wav</ShortName>
+					<Path>SFX/Footsteps_Roof3_9E69E797.wem</Path>
+				</File>
+				<File Id="551228805" Language="SFX">
+					<ShortName>Grass_Footstep-02-2.wav</ShortName>
+					<Path>SFX/Grass_Footstep-02-2_9E69E797.wem</Path>
+				</File>
+				<File Id="555351585" Language="SFX">
+					<ShortName>Footsteps_Wood-03.wav</ShortName>
+					<Path>SFX/Footsteps_Wood-03_9E69E797.wem</Path>
+				</File>
+				<File Id="572385803" Language="SFX">
+					<ShortName>NFootsteps_Wood-04.wav</ShortName>
+					<Path>SFX/NFootsteps_Wood-04_9E69E797.wem</Path>
+				</File>
+				<File Id="604036585" Language="SFX">
+					<ShortName>Footstep_Stone-02.wav</ShortName>
+					<Path>SFX/Footstep_Stone-02_9E69E797.wem</Path>
+				</File>
+				<File Id="610299344" Language="SFX">
+					<ShortName>Footsteps_Wood-02.wav</ShortName>
+					<Path>SFX/Footsteps_Wood-02_9E69E797.wem</Path>
+				</File>
+				<File Id="617287609" Language="SFX">
+					<ShortName>Footsteps_Wood-01.wav</ShortName>
+					<Path>SFX/Footsteps_Wood-01_9E69E797.wem</Path>
+				</File>
+				<File Id="704666959" Language="SFX">
+					<ShortName>Footsteps_Wood-05.wav</ShortName>
+					<Path>SFX/Footsteps_Wood-05_9E69E797.wem</Path>
+				</File>
+				<File Id="713927394" Language="SFX">
+					<ShortName>Footstep_Stone-03.wav</ShortName>
+					<Path>SFX/Footstep_Stone-03_9E69E797.wem</Path>
+				</File>
+				<File Id="725390082" Language="SFX">
+					<ShortName>Footsteps_Wood-04.wav</ShortName>
+					<Path>SFX/Footsteps_Wood-04_9E69E797.wem</Path>
+				</File>
+				<File Id="768837950" Language="SFX">
+					<ShortName>Grass_Footstep-02.wav</ShortName>
+					<Path>SFX/Grass_Footstep-02_9E69E797.wem</Path>
+				</File>
+				<File Id="837861088" Language="SFX">
+					<ShortName>Fur_Brush-02.wav</ShortName>
+					<Path>SFX/Fur_Brush-02_9E69E797.wem</Path>
+				</File>
+				<File Id="890355700" Language="SFX">
+					<ShortName>Grass_Footstep-04.wav</ShortName>
+					<Path>SFX/Grass_Footstep-04_9E69E797.wem</Path>
+				</File>
+				<File Id="922392338" Language="SFX">
+					<ShortName>Footsteps_Roof4.wav</ShortName>
+					<Path>SFX/Footsteps_Roof4_9E69E797.wem</Path>
+				</File>
+				<File Id="970063983" Language="SFX">
+					<ShortName>Grass_Footstep-03.wav</ShortName>
+					<Path>SFX/Grass_Footstep-03_9E69E797.wem</Path>
+				</File>
+				<File Id="1057733784" Language="SFX">
+					<ShortName>Footsteps_Roof2.wav</ShortName>
+					<Path>SFX/Footsteps_Roof2_9E69E797.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="2607556080" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Menu</ObjectPath>
+			<ShortName>Menu</ShortName>
+			<Path>Menu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="733168346" Name="Game_Start" ObjectPath="\Events\Default Work Unit\Menu\Game_Start" MaxAttenuation="0.000000"/>
+				<Event Id="938529747" Name="Menu_Button" ObjectPath="\Events\Default Work Unit\Menu\Menu_Button"/>
+				<Event Id="4055567060" Name="Menu_Music" ObjectPath="\Events\Default Work Unit\Menu\Menu_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="371202491" Language="SFX">
+					<ShortName>Menu_Click2.wav</ShortName>
+					<Path>SFX/Menu_Click2_9E69E797.wem</Path>
+				</File>
+				<File Id="907556213" Language="SFX">
+					<ShortName>Evil Vortex.wav</ShortName>
+					<Path>SFX/Evil Vortex_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2009803003" Name="Dawn" ObjectPath="\Events\Default Work Unit\Music\Dawn"/>
+				<Event Id="311764537" Name="Day" ObjectPath="\Events\Default Work Unit\Music\Day"/>
+				<Event Id="1011622525" Name="Night" ObjectPath="\Events\Default Work Unit\Music\Night"/>
+				<Event Id="3852896201" Name="Twilight" ObjectPath="\Events\Default Work Unit\Music\Twilight"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="137171961" Language="SFX">
+					<ShortName>Rocking Flashback.wav</ShortName>
+					<Path>SFX/Rocking Flashback_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="468798595" Language="SFX">
+					<ShortName>LookingThroughBrokenGlass.wav</ShortName>
+					<Path>SFX/LookingThroughBrokenGlass_4B8CC0C5.wem</Path>
+				</File>
+				<File Id="496580417" Language="SFX">
+					<ShortName>Crusher.wav</ShortName>
+					<Path>SFX/Crusher_9E69E797.wem</Path>
+				</File>
+				<File Id="815332817" Language="SFX">
+					<ShortName>Stalking.wav</ShortName>
+					<Path>SFX/Stalking_4B8CC0C5.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="The Woods Wwise" Platform="Mac" BasePlatform="Mac">
+	<Plugins>
+		<Plugin Name="Wwise Silence" ID="6619138" DLL="SilenceGenerator"/>
+		<Plugin Name="Wwise Delay" ID="6946819" DLL="AkDelay"/>
+		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb"/>
+		<Plugin Name="Wwise Flanger" ID="8192003" DLL="AkFlanger"/>
+		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer"/>
+	</Plugins>
+</PluginInfo>

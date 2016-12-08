@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationCache Version="1" SchemaVersion="72">
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="671852059" DateHigh="30555668"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Attenuations\Default Work Unit.wwu" DateLow="1517560263" DateHigh="30554094"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Audio Devices\Default Work Unit.wwu" DateLow="3572881345" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="3572906342" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Conversion Settings\Default Work Unit.wwu" DateLow="3572416910" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Conversion Settings\Factory Conversion Settings.wwu" DateLow="3238239934" DateHigh="30546399"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3572671318" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Effects\Default Work Unit.wwu" DateLow="3572566975" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Effects\Factory Effects.wwu" DateLow="430252934" DateHigh="30555663"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Events\Default Work Unit.wwu" DateLow="671922005" DateHigh="30555668"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Game Parameters\Default Work Unit.wwu" DateLow="3572486909" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3572791331" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3737389525" DateHigh="30554212"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Mixing Sessions\Default Work Unit.wwu" DateLow="3572836387" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Modulators\Default Work Unit.wwu" DateLow="3572861340" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Presets\Default Work Unit.wwu" DateLow="3572771340" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Queries\Default Work Unit.wwu" DateLow="3572586921" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Queries\Factory Queries.wwu" DateLow="3236414672" DateHigh="30546399"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\SoundBanks\Default Work Unit.wwu" DateLow="4035307254" DateHigh="30555625"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3572646307" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\States\Default Work Unit.wwu" DateLow="3755184624" DateHigh="30554102"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Switches\Default Work Unit.wwu" DateLow="2449926894" DateHigh="30554067"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\The Woods Wwise.Andrew.wsettings" DateLow="1070989995" DateHigh="30555668"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\The Woods Wwise.wproj" DateLow="3572376905" DateHigh="30554065"/>
+	<ValidationCacheItem File="C:\Users\Andrew\Desktop\The Woods Wwise\Triggers\Default Work Unit.wwu" DateLow="3572616925" DateHigh="30554065"/>
+</ValidationCache>
