@@ -143,6 +143,8 @@ public class AudioEventControl : MonoBehaviour
     void PlayerStep()
     {
         Debug.Log("Stepping Sound");
+		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
+
     }
     void PlayerIdle()
     {
@@ -161,6 +163,7 @@ public class AudioEventControl : MonoBehaviour
     void PlayerDeath()
     {
         Debug.Log("Death Sound");
+		AkSoundEngine.PostEvent ("Death_Player", gameObject);
     }
 
     void PlayerAttack()
@@ -190,6 +193,8 @@ public class AudioEventControl : MonoBehaviour
     void EnemyStep()
     {
         Debug.Log("Stepping Sound");
+		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
+
     }
 
     void EnemyIdle()
