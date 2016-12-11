@@ -3,48 +3,48 @@
 	<Platform GUID="{F5B3564D-4693-4409-9D94-D1562B3AF06B}">
 		<Banks>
 			<Language ID="0">
-				<File Name="Ambience" Hash="261530131" Timestamp="131253641510000000"/>
-				<File Name="Ambience2" Hash="18429669" Timestamp="131253641510000000"/>
-				<File Name="Footsteps" Hash="662100247" Timestamp="131253641510000000"/>
+				<File Name="Ambience" Hash="261530131" Timestamp="131258878870000000"/>
+				<File Name="Ambience2" Hash="1539719535" Timestamp="131258921130000000"/>
+				<File Name="Footsteps" Hash="2901197564" Timestamp="131258929910000000"/>
 				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
-				<File Name="Init" Hash="1216749302" Timestamp="131253641510000000"/>
-				<File Name="Menu" Hash="1350002154" Timestamp="131253682720000000"/>
+				<File Name="Init" Hash="1216749302" Timestamp="131258878870000000"/>
+				<File Name="Menu" Hash="3368106367" Timestamp="131258921130000000"/>
 				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
-				<File Name="Music" Hash="2554518234" Timestamp="131253685060000000"/>
+				<File Name="Music" Hash="2334015528" Timestamp="131258878870000000"/>
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983870000000"/>
-				<File Name="NPC" Hash="3418013015" Timestamp="131253641510000000"/>
+				<File Name="NPC" Hash="4120816529" Timestamp="131258935950000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="531208001" Timestamp="131253641510000000"/>
+				<File Name="Player" Hash="2149815790" Timestamp="131258926010000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983870000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="190814688" Timestamp="131253685060000000"/>
+				<File Name="" Hash="3065967180" Timestamp="131258935950000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{B2F188F0-53C8-47FA-8DE1-902F1ECCD59E}">
 		<Banks>
 			<Language ID="0">
-				<File Name="Ambience" Hash="261530131" Timestamp="131253641490000000"/>
-				<File Name="Ambience2" Hash="18429669" Timestamp="131253641490000000"/>
-				<File Name="Footsteps" Hash="662100247" Timestamp="131253641490000000"/>
+				<File Name="Ambience" Hash="261530131" Timestamp="131258878860000000"/>
+				<File Name="Ambience2" Hash="1539719535" Timestamp="131258921130000000"/>
+				<File Name="Footsteps" Hash="2901197564" Timestamp="131258929910000000"/>
 				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
-				<File Name="Init" Hash="3492723720" Timestamp="131253641500000000"/>
-				<File Name="Menu" Hash="1350002154" Timestamp="131253682710000000"/>
+				<File Name="Init" Hash="3492723720" Timestamp="131258878860000000"/>
+				<File Name="Menu" Hash="3368106367" Timestamp="131258921130000000"/>
 				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
-				<File Name="Music" Hash="2554518234" Timestamp="131253685060000000"/>
+				<File Name="Music" Hash="2334015528" Timestamp="131258878860000000"/>
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983860000000"/>
-				<File Name="NPC" Hash="3418013015" Timestamp="131253641490000000"/>
+				<File Name="NPC" Hash="4120816529" Timestamp="131258935940000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="531208001" Timestamp="131253641490000000"/>
+				<File Name="Player" Hash="2149815790" Timestamp="131258926010000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983860000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="551552546" Timestamp="131254299280000000"/>
+				<File Name="" Hash="1063941094" Timestamp="131258935940000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

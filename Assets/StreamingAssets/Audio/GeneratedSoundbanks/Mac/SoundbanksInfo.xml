@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="118">
 	<RootPaths>
-		<ProjectRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Wwise/</ProjectRoot>
-		<SourceFilesRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Wwise/.cache/Mac/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The-Woods-MergedUpdate/Assets/StreamingAssets/Audio/GeneratedSoundbanks/Mac/</SoundBanksRoot>
+		<ProjectRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The Woods/The-Woods/Wwise/</ProjectRoot>
+		<SourceFilesRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The Woods/The-Woods/Wwise/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/acloud/Library/Application Support/Wwise2016/Bottles/wwise/dosdevices/y:/Desktop/The Woods/The-Woods/Assets/StreamingAssets/Audio/GeneratedSoundbanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>Y:\Desktop\The-Woods-MergedUpdate\Wwise\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>Y:\Desktop\The Woods\The-Woods\Wwise\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -89,37 +89,33 @@
 				<Event Id="3637320158" Name="NPCFound" ObjectPath="\Events\Default Work Unit\NPC\NPCFound"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="202832099" Language="SFX">
-					<ShortName>Muffled Scream.wav</ShortName>
-					<Path>SFX/Muffled Scream_9E69E797.wem</Path>
+				<File Id="144900218" Language="SFX">
+					<ShortName>PlayerFound-01.wav</ShortName>
+					<Path>SFX/PlayerFound-01_9E69E797.wem</Path>
 				</File>
-				<File Id="424582769" Language="SFX">
-					<ShortName>Muffled Screams-05.wav</ShortName>
-					<Path>SFX/Muffled Screams-05_9E69E797.wem</Path>
+				<File Id="482439562" Language="SFX">
+					<ShortName>NPCCapped.wav</ShortName>
+					<Path>SFX/NPCCapped_9E69E797.wem</Path>
 				</File>
-				<File Id="569506862" Language="SFX">
-					<ShortName>Muffled Screams-06.wav</ShortName>
-					<Path>SFX/Muffled Screams-06_9E69E797.wem</Path>
+				<File Id="553291230" Language="SFX">
+					<ShortName>PlayerFound-05.wav</ShortName>
+					<Path>SFX/PlayerFound-05_9E69E797.wem</Path>
 				</File>
-				<File Id="600567193" Language="SFX">
-					<ShortName>Muffled Screams-04.wav</ShortName>
-					<Path>SFX/Muffled Screams-04_9E69E797.wem</Path>
+				<File Id="689404725" Language="SFX">
+					<ShortName>CoinCollected.wav</ShortName>
+					<Path>SFX/CoinCollected_9E69E797.wem</Path>
 				</File>
-				<File Id="674244328" Language="SFX">
-					<ShortName>LongScream.wav</ShortName>
-					<Path>SFX/LongScream_9E69E797.wem</Path>
+				<File Id="765460409" Language="SFX">
+					<ShortName>PlayerFound-02.wav</ShortName>
+					<Path>SFX/PlayerFound-02_9E69E797.wem</Path>
 				</File>
-				<File Id="683298703" Language="SFX">
-					<ShortName>Muffled Screams-03.wav</ShortName>
-					<Path>SFX/Muffled Screams-03_9E69E797.wem</Path>
+				<File Id="807241287" Language="SFX">
+					<ShortName>PlayerFound-03.wav</ShortName>
+					<Path>SFX/PlayerFound-03_9E69E797.wem</Path>
 				</File>
-				<File Id="700368097" Language="SFX">
-					<ShortName>Muffled Screams-07.wav</ShortName>
-					<Path>SFX/Muffled Screams-07_9E69E797.wem</Path>
-				</File>
-				<File Id="991221962" Language="SFX">
-					<ShortName>Muffled Screams-01.wav</ShortName>
-					<Path>SFX/Muffled Screams-01_9E69E797.wem</Path>
+				<File Id="855468080" Language="SFX">
+					<ShortName>PlayerFound-04.wav</ShortName>
+					<Path>SFX/PlayerFound-04_9E69E797.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -142,10 +138,6 @@
 				<File Id="42994206" Language="SFX">
 					<ShortName>Heartbeat3.wav</ShortName>
 					<Path>SFX/Heartbeat3_9E69E797.wem</Path>
-				</File>
-				<File Id="43325978" Language="SFX">
-					<ShortName>Monster Speech.wav</ShortName>
-					<Path>SFX/Monster Speech_9E69E797.wem</Path>
 				</File>
 				<File Id="122364332" Language="SFX">
 					<ShortName>Whimper.wav</ShortName>
@@ -254,6 +246,10 @@
 					<ShortName>InLight.wav</ShortName>
 					<Path>SFX/InLight_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="317191113" Language="SFX">
+					<ShortName>teeth.wav</ShortName>
+					<Path>SFX/teeth_9E69E797.wem</Path>
+				</File>
 				<File Id="375974299" Language="SFX">
 					<ShortName>PowerUpCollect.wav</ShortName>
 					<Path>SFX/PowerUpCollect_9E69E797.wem</Path>
@@ -294,13 +290,21 @@
 					<ShortName>Jump-02.wav</ShortName>
 					<Path>SFX/Jump-02_9E69E797.wem</Path>
 				</File>
+				<File Id="822934434" Language="SFX">
+					<ShortName>VictoryLaugh_Low2.wav</ShortName>
+					<Path>SFX/VictoryLaugh_Low2_9E69E797.wem</Path>
+				</File>
 				<File Id="836712023" Language="SFX">
 					<ShortName>Climbing-04.wav</ShortName>
 					<Path>SFX/Climbing-04_9E69E797.wem</Path>
 				</File>
-				<File Id="1003263194" Language="SFX">
-					<ShortName>VictoryLaugh_Low.wav</ShortName>
-					<Path>SFX/VictoryLaugh_Low_9E69E797.wem</Path>
+				<File Id="840245676" Language="SFX">
+					<ShortName>PLayer_growl.wav</ShortName>
+					<Path>SFX/PLayer_growl_9E69E797.wem</Path>
+				</File>
+				<File Id="858915653" Language="SFX">
+					<ShortName>playergrowls.wav</ShortName>
+					<Path>SFX/playergrowls_9E69E797.wem</Path>
 				</File>
 				<File Id="1007028901" Language="SFX">
 					<ShortName>Climbing-02.wav</ShortName>
@@ -422,6 +426,10 @@
 				<File Id="922392338" Language="SFX">
 					<ShortName>Footsteps_Roof4.wav</ShortName>
 					<Path>SFX/Footsteps_Roof4_9E69E797.wem</Path>
+				</File>
+				<File Id="946331753" Language="SFX">
+					<ShortName>footstep_claws.wav</ShortName>
+					<Path>SFX/footstep_claws_9E69E797.wem</Path>
 				</File>
 				<File Id="970063983" Language="SFX">
 					<ShortName>Grass_Footstep-03.wav</ShortName>

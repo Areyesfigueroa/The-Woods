@@ -3,12 +3,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	4108877698	NPCCap			\Default Work Unit\NPC\NPCCap	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	202832099	Muffled Scream New Better	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Scream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Scream New Better		192526
-	424582769	Muffled Screams-05	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-05		73274
-	569506862	Muffled Screams-06	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-06_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-06		71286
-	600567193	Muffled Screams-04	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-04		72446
-	674244328	Found	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\LongScream_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Found		138380
-	683298703	Muffled Screams-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-03		85728
-	700368097	Muffled Screams-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-07_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-02		50122
-	991221962	Muffled Screams-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Mac\SFX\Muffled Screams-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\Muffled Screams-01		145428
+	144900218	PlayerFound-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-01		89666
+	482439562	NPCCapped	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NPCCapped_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\NPCCapped		50388
+	553291230	PlayerFound-05	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-05		122892
+	689404725	NPCPoints	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\CoinCollected_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPCPoints		79354
+	765460409	PlayerFound-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-02		81320
+	807241287	PlayerFound-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-03		70926
+	855468080	PlayerFound-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-04		85100
 

@@ -321,6 +321,16 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Play" ID="{A0779C1E-42E1-4723-BE19-1AAF891C6CA2}" ShortID="965957487" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E85EE0E6-685F-4B9A-9B80-67D2D26874C5}" Global="false">
+											<ObjectRef Name="NPCPoints" ID="{BEEC3393-E848-4DAD-8182-D25A7A7FC83C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="NPCFound" ID="{0A8F12C3-5E15-454A-A658-E04306E45C8C}">
@@ -328,7 +338,7 @@
 								<Action Name="Play" ID="{9F471CBB-57D7-4165-9B4A-0574A15F93C6}" ShortID="140128963" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{EA1E856D-9116-4115-8B33-EE35CE19A36A}" Global="false">
-											<ObjectRef Name="Found" ID="{D209D4A3-98E7-4ACD-B68F-06FD6B79C99E}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+											<ObjectRef Name="PlayerFound" ID="{DAB75AA2-18ED-4B9B-A0E0-36B3EF62B441}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
 										</Element>
 									</ElementList>
 								</Action>
