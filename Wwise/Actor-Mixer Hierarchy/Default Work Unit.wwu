@@ -5572,7 +5572,7 @@
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -5585,13 +5585,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Evil Vortex" ID="{43FC38AB-0991-4E0C-B213-5668076AF535}" ShortID="907556213">
+						<AudioFileSource Name="Evil Vortex_Long" ID="{C38F93A9-A3CD-4C5B-A474-C6C5B745F3B9}" ShortID="1054609367">
 							<Language>SFX</Language>
-							<AudioFile>Evil Vortex.wav</AudioFile>
+							<AudioFile>Evil Vortex_Long.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Evil Vortex" ID="{43FC38AB-0991-4E0C-B213-5668076AF535}" Platform="Linked"/>
+						<ActiveSource Name="Evil Vortex_Long" ID="{C38F93A9-A3CD-4C5B-A474-C6C5B745F3B9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Menu_Button" ID="{4784B9F6-E1D9-4A40-B91E-BDD0C3785ADB}" ShortID="349750993" Type="SoundFX">

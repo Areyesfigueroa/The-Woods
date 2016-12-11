@@ -156,7 +156,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PowerToggleOn" ID="{FB515A3F-ED77-49CE-BBB2-1B21996BDE50}">
+						<Event Name="PowerUpToggleOn" ID="{FB515A3F-ED77-49CE-BBB2-1B21996BDE50}">
 							<ChildrenList>
 								<Action Name="Play" ID="{4B9D50FF-7E21-48D0-8E8C-23DF570B60EE}" ShortID="214549977" Type="Play" Scope="One" Global="false">
 									<PropertyList>
@@ -230,38 +230,6 @@
 									<ElementList>
 										<Element ID="{71E16A45-C07F-4CA1-8412-8A2E3578A098}" Global="false">
 											<ObjectRef Name="Player_Victory" ID="{0A5241E2-4BD4-46FA-A073-B94E5F6473D5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="OutFlashlight" ID="{FA84CE30-C0DA-4991-BF64-FDB2DC6DE1D4}">
-							<ChildrenList>
-								<Action Name="Mute" ID="{69966F13-3FE2-49B0-8FC2-A3C27F2051AC}" ShortID="1044014682" Type="Mute" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeCurve" Type="int16" Value="0"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{E51DC467-ACED-40F2-9DA6-DF62888F58FF}" Global="false">
-											<ObjectRef Name="InFlashlight" ID="{F8F82B91-138C-4E39-A05F-3D2E50B3CE78}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Mute" ID="{838D6A92-296C-41BE-92AB-D829B994E617}" ShortID="788674963" Type="Mute" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeCurve" Type="int16" Value="0"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{D2A88E7A-3523-44AE-8109-002F0F9D03C4}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{C957C4BD-867A-4041-BE42-28B36F38E4F1}" Global="false">
-											<ObjectRef Name="InLight" ID="{0B92596A-E768-49F7-9D75-0232869F5272}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
 										</Element>
 									</ElementList>
 								</Action>

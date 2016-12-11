@@ -222,13 +222,12 @@
 				<Event Id="1594614136" Name="InLight" ObjectPath="\Events\Default Work Unit\Player\InLight"/>
 				<Event Id="68157183" Name="Jumping" ObjectPath="\Events\Default Work Unit\Player\Jumping"/>
 				<Event Id="37744199" Name="LockedDoor" ObjectPath="\Events\Default Work Unit\Player\LockedDoor"/>
-				<Event Id="1739301117" Name="OutFlashlight" ObjectPath="\Events\Default Work Unit\Player\OutFlashlight" MaxAttenuation="0.000000"/>
 				<Event Id="2676402489" Name="OutLight" ObjectPath="\Events\Default Work Unit\Player\OutLight" MaxAttenuation="0.000000"/>
 				<Event Id="3898542391" Name="PlayerDefeat" ObjectPath="\Events\Default Work Unit\Player\PlayerDefeat"/>
 				<Event Id="3111020472" Name="PlayerVictory" ObjectPath="\Events\Default Work Unit\Player\PlayerVictory"/>
-				<Event Id="1131585479" Name="PowerToggleOn" ObjectPath="\Events\Default Work Unit\Player\PowerToggleOn"/>
 				<Event Id="3741860307" Name="PowerUpCollection" ObjectPath="\Events\Default Work Unit\Player\PowerUpCollection"/>
 				<Event Id="208550326" Name="PowerUpToggleOff" ObjectPath="\Events\Default Work Unit\Player\PowerUpToggleOff" MaxAttenuation="0.000000"/>
+				<Event Id="416825592" Name="PowerUpToggleOn" ObjectPath="\Events\Default Work Unit\Player\PowerUpToggleOn"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
 				<File Id="497097725"/>
@@ -483,9 +482,9 @@
 					<ShortName>Menu_Click2.wav</ShortName>
 					<Path>SFX/Menu_Click2_9E69E797.wem</Path>
 				</File>
-				<File Id="907556213" Language="SFX">
-					<ShortName>Evil Vortex.wav</ShortName>
-					<Path>SFX/Evil Vortex_4B8CC0C5.wem</Path>
+				<File Id="1054609367" Language="SFX">
+					<ShortName>Evil Vortex_Long.wav</ShortName>
+					<Path>SFX/Evil Vortex_Long_4B8CC0C5.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

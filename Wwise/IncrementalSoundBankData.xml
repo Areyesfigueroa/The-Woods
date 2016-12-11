@@ -8,19 +8,19 @@
 				<File Name="Footsteps" Hash="1551866564" Timestamp="131258999060000000"/>
 				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
 				<File Name="Init" Hash="1216749302" Timestamp="131258946270000000"/>
-				<File Name="Menu" Hash="176027023" Timestamp="131258946270000000"/>
+				<File Name="Menu" Hash="804141838" Timestamp="131259033290000000"/>
 				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
 				<File Name="Music" Hash="2352432335" Timestamp="131258953030000000"/>
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983870000000"/>
 				<File Name="NPC" Hash="1318688363" Timestamp="131258946270000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="3279116307" Timestamp="131258973310000000"/>
+				<File Name="Player" Hash="351389527" Timestamp="131259044290000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983870000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="721043720" Timestamp="131258999060000000"/>
+				<File Name="" Hash="2393684333" Timestamp="131259044290000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -32,19 +32,19 @@
 				<File Name="Footsteps" Hash="1551866564" Timestamp="131258999050000000"/>
 				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
 				<File Name="Init" Hash="3492723720" Timestamp="131258946260000000"/>
-				<File Name="Menu" Hash="176027023" Timestamp="131258946260000000"/>
+				<File Name="Menu" Hash="804141838" Timestamp="131259033290000000"/>
 				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
 				<File Name="Music" Hash="2352432335" Timestamp="131258953030000000"/>
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983860000000"/>
 				<File Name="NPC" Hash="1318688363" Timestamp="131258946260000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="3279116307" Timestamp="131258973300000000"/>
+				<File Name="Player" Hash="351389527" Timestamp="131259044280000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983860000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4047351562" Timestamp="131258999050000000"/>
+				<File Name="" Hash="2025533507" Timestamp="131259044280000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
