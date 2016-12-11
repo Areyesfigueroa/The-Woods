@@ -22,7 +22,7 @@
 			<Path>Ambience.bnk</Path>
 			<IncludedEvents>
 				<Event Id="680291572" Name="Cabin" ObjectPath="\Events\Default Work Unit\Ambience\Cabin" MaxAttenuation="75.000000"/>
-				<Event Id="3692519760" Name="Cabin_Lights" ObjectPath="\Events\Default Work Unit\Ambience\Cabin_Lights"/>
+				<Event Id="3692519760" Name="Cabin_Lights" ObjectPath="\Events\Default Work Unit\Ambience\Cabin_Lights" MaxAttenuation="30.000000"/>
 				<Event Id="4122393694" Name="Cave" ObjectPath="\Events\Default Work Unit\Ambience\Cave" MaxAttenuation="50.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -125,7 +125,7 @@
 			<Path>Ambience2.bnk</Path>
 			<IncludedEvents>
 				<Event Id="491961918" Name="Forest" ObjectPath="\Events\Default Work Unit\Ambience2\Forest" MaxAttenuation="100.000000"/>
-				<Event Id="1948881314" Name="MovingPlatform" ObjectPath="\Events\Default Work Unit\Ambience2\MovingPlatform"/>
+				<Event Id="1948881314" Name="MovingPlatform" ObjectPath="\Events\Default Work Unit\Ambience2\MovingPlatform" MaxAttenuation="20.000000"/>
 				<Event Id="3406215381" Name="NPC_Ambience" ObjectPath="\Events\Default Work Unit\Ambience2\NPC_Ambience"/>
 				<Event Id="1598590517" Name="Player_Ambience" ObjectPath="\Events\Default Work Unit\Ambience2\Player_Ambience"/>
 				<Event Id="3643401235" Name="Player_Idle" ObjectPath="\Events\Default Work Unit\Ambience2\Player_Idle"/>
@@ -339,6 +339,10 @@
 					<ShortName>NFootsteps_Wood-03.wav</ShortName>
 					<Path>SFX/NFootsteps_Wood-03_9E69E797.wem</Path>
 				</File>
+				<File Id="41403297" Language="SFX">
+					<ShortName>Footsteps_Branches-03.wav</ShortName>
+					<Path>SFX/Footsteps_Branches-03_9E69E797.wem</Path>
+				</File>
 				<File Id="48646156" Language="SFX">
 					<ShortName>Grass_Footstep-01.wav</ShortName>
 					<Path>SFX/Grass_Footstep-01_9E69E797.wem</Path>
@@ -354,6 +358,10 @@
 				<File Id="174876507" Language="SFX">
 					<ShortName>Footsteps_Roof.wav</ShortName>
 					<Path>SFX/Footsteps_Roof_9E69E797.wem</Path>
+				</File>
+				<File Id="353590317" Language="SFX">
+					<ShortName>Footsteps_Branches-01.wav</ShortName>
+					<Path>SFX/Footsteps_Branches-01_9E69E797.wem</Path>
 				</File>
 				<File Id="384951319" Language="SFX">
 					<ShortName>NFootsteps_Wood-02.wav</ShortName>
@@ -375,6 +383,10 @@
 					<ShortName>Footsteps_Roof3.wav</ShortName>
 					<Path>SFX/Footsteps_Roof3_9E69E797.wem</Path>
 				</File>
+				<File Id="544544869" Language="SFX">
+					<ShortName>Nails-01.wav</ShortName>
+					<Path>SFX/Nails-01_9E69E797.wem</Path>
+				</File>
 				<File Id="551228805" Language="SFX">
 					<ShortName>Grass_Footstep-02-2.wav</ShortName>
 					<Path>SFX/Grass_Footstep-02-2_9E69E797.wem</Path>
@@ -382,6 +394,10 @@
 				<File Id="555351585" Language="SFX">
 					<ShortName>Footsteps_Wood-03.wav</ShortName>
 					<Path>SFX/Footsteps_Wood-03_9E69E797.wem</Path>
+				</File>
+				<File Id="572108169" Language="SFX">
+					<ShortName>Nails-02.wav</ShortName>
+					<Path>SFX/Nails-02_9E69E797.wem</Path>
 				</File>
 				<File Id="572385803" Language="SFX">
 					<ShortName>NFootsteps_Wood-04.wav</ShortName>
@@ -399,6 +415,14 @@
 					<ShortName>Footsteps_Wood-01.wav</ShortName>
 					<Path>SFX/Footsteps_Wood-01_9E69E797.wem</Path>
 				</File>
+				<File Id="645866459" Language="SFX">
+					<ShortName>Branches_Foley-02.wav</ShortName>
+					<Path>SFX/Branches_Foley-02_9E69E797.wem</Path>
+				</File>
+				<File Id="696391001" Language="SFX">
+					<ShortName>Branches_Foley-01.wav</ShortName>
+					<Path>SFX/Branches_Foley-01_9E69E797.wem</Path>
+				</File>
 				<File Id="704666959" Language="SFX">
 					<ShortName>Footsteps_Wood-05.wav</ShortName>
 					<Path>SFX/Footsteps_Wood-05_9E69E797.wem</Path>
@@ -414,6 +438,10 @@
 				<File Id="768837950" Language="SFX">
 					<ShortName>Grass_Footstep-02.wav</ShortName>
 					<Path>SFX/Grass_Footstep-02_9E69E797.wem</Path>
+				</File>
+				<File Id="802926983" Language="SFX">
+					<ShortName>Footsteps_Branches-02.wav</ShortName>
+					<Path>SFX/Footsteps_Branches-02_9E69E797.wem</Path>
 				</File>
 				<File Id="837861088" Language="SFX">
 					<ShortName>Fur_Brush-02.wav</ShortName>

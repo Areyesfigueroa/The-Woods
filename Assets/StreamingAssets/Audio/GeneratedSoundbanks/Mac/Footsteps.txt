@@ -10,32 +10,45 @@ Switch	ID	Name	Switch Group			Notes
 	680291572	Cabin	Terrain			
 	1216965916	Stone	Terrain			
 	2077253475	Roof	Terrain			
+	3041563226	Silence	Terrain			
+	3513072909	Branches	Terrain			
 	4248645337	Grass	Terrain			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	37247302	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footstep_Foley\Silence_01\Wwise Silence	
 	64641274	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footstep_Foley\Silence\Wwise Silence	
+	226403251	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Foley\Silence\Wwise Silence	
+	352699868	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Silence\Wwise Silence	
+	954545982	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Nails\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	39554517	NFootsteps_Wood-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NFootsteps_Wood-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Cabin\NFootsteps_Wood-03		19138
+	41403297	Footsteps_Branches-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Branches-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Branches\Footsteps_Branches-03		36402
 	48646156	Grass_Footstep-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Grass_Footstep-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Grass\Grass_Footstep-01		18930
 	121642622	Fur_Brush-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Fur_Brush-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footstep_Foley\Fur_Brush-03		87684
 	155493410	Footstep_Stone-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footstep_Stone-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Stone\Footstep_Stone-01		9158
 	174876507	Footsteps_Roof	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Roof_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Roof\Footsteps_Roof		22150
+	353590317	Footsteps_Branches-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Branches-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Branches\Footsteps_Branches-01		47758
 	384951319	NFootsteps_Wood-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NFootsteps_Wood-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Cabin\NFootsteps_Wood-02		17282
 	391918238	Grass_Footstep-01-2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Grass_Footstep-01-2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Grass\Grass_Footstep-01-2		17514
 	397845064	Fur_Brush-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Fur_Brush-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footstep_Foley\Fur_Brush-01		60538
 	446649755	NFootsteps_Wood-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NFootsteps_Wood-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Cabin\NFootsteps_Wood-01		35668
 	517053386	Footsteps_Roof3	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Roof3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Roof\Footsteps_Roof3		22150
+	544544869	Nails-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Nails-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Nails\Nails-01		21662
 	551228805	Grass_Footstep-02-2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Grass_Footstep-02-2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Grass\Grass_Footstep-02-2		23728
 	555351585	Footsteps_Wood-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Wood-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Cabin\Footsteps_Wood-03		16498
+	572108169	Nails-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Nails-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Nails\Nails-02		24540
 	572385803	NFootsteps_Wood-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NFootsteps_Wood-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Cabin\NFootsteps_Wood-04		26660
 	604036585	Footstep_Stone-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footstep_Stone-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Stone\Footstep_Stone-02		9790
 	610299344	Footsteps_Wood-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Wood-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Cabin\Footsteps_Wood-02		15738
 	617287609	Footsteps_Wood-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Wood-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Cabin\Footsteps_Wood-01		28516
+	645866459	Branches_Foley-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Branches_Foley-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Foley\Branches_Foley-02		244526
+	696391001	Branches_Foley-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Branches_Foley-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Foley\Branches_Foley-01		199514
 	704666959	Footsteps_Wood-05	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Wood-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Cabin\Footsteps_Wood-05		12414
 	713927394	Footstep_Stone-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footstep_Stone-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Stone\Footstep_Stone-03		9790
 	725390082	Footsteps_Wood-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Wood-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Cabin\Footsteps_Wood-04		15548
 	768837950	Grass_Footstep-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Grass_Footstep-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC_Footsteps_Final\NPC_Footsteps\Grass\Grass_Footstep-02		18930
+	802926983	Footsteps_Branches-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Branches-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Branch\Branches\Footsteps_Branches-02		39220
 	837861088	Fur_Brush-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Fur_Brush-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footstep_Foley\Fur_Brush-02		72364
 	890355700	Grass_Footstep-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Grass_Footstep-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Grass\Grass_Footstep-04		14972
 	922392338	Footsteps_Roof4	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Footsteps_Roof4_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps_Final\Footsteps\Roof\Footsteps_Roof4		22150
