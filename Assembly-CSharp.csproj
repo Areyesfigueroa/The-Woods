@@ -54,12 +54,14 @@
      <Compile Include="Assets\Scripts\Enviroment\Ladders.cs" />
      <Compile Include="Assets\Scripts\Enviroment\MovingPlatform.cs" />
      <Compile Include="Assets\Scripts\Enviroment\PowerUpPickUp.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\playerStick.cs" />
      <Compile Include="Assets\Scripts\Events\AudioEventControl.cs" />
      <Compile Include="Assets\Scripts\Events\AudioEventSystem.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyAnimationEvents.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerAnimationEvents.cs" />
      <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\ScenesManager.cs" />
      <Compile Include="Assets\Scripts\Manager\_UiManager.cs" />
      <Compile Include="Assets\Scripts\Player\Attack.cs" />
      <Compile Include="Assets\Scripts\Player\Controller2D.cs" />

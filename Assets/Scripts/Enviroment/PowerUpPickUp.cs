@@ -11,6 +11,7 @@ public class PowerUpPickUp : MonoBehaviour {
 
     Vector2 startPos;
     float timeStartedLerping;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -44,7 +45,8 @@ public class PowerUpPickUp : MonoBehaviour {
             //Call Pick up AudioEvent
             Debug.Log("Collided");
             AudioEventSystem.PowerUpPickUp();//play audio event
-            Destroy(this.gameObject);
+			Controller2D.Instance.activatePowerUp ();
+            Destroy(this.gameObject, 0.2f);
         }
     }
 }

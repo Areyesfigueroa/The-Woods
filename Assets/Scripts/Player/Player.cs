@@ -104,6 +104,7 @@ public class Player : MonoBehaviour {
             //Rotates the player obj based on direction
             controller.Direction(input);
             controller.Attack();
+			controller.Invisibility();
 
             if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
             {
