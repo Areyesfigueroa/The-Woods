@@ -40,4 +40,6 @@ public class _UiManager : MonoBehaviour {
 		_cCanvas.enabled = false;
 		_mCanvas.enabled = true;
 	}
+
+
 }

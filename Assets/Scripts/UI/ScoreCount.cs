@@ -43,7 +43,7 @@ public class ScoreCount : MonoBehaviour
 		if (finalTimer <= 0.0f) 
 		{
 			//DeathScene
-			ScenesManager.Instance.LoadScene (2);
+			//ScenesManager.Instance.LoadScene (2);
 		}
 	}
 }

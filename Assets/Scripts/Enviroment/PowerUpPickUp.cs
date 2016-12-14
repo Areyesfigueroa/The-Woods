@@ -46,6 +46,7 @@ public class PowerUpPickUp : MonoBehaviour {
             Debug.Log("Collided");
             AudioEventSystem.PowerUpPickUp();//play audio event
 			Controller2D.Instance.activatePowerUp ();
+			GUIManager.Instance.displayPowerUpUI();
             Destroy(this.gameObject, 0.2f);
         }
     }
