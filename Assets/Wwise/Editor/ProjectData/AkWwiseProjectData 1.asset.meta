@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: b4ff6e1ad11af4efe8bbc822131b4c81
 timeCreated: 1481716508
+=======
+guid: b4a0e4ab4a022427cbd28274a2b0d58f
+timeCreated: 1481101487
+>>>>>>> TestingAudioMerging
 licenseType: Free
 NativeFormatImporter:
   userData: 
