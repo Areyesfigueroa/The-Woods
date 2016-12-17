@@ -89,9 +89,6 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Cabin_Reverb" ID="{CCFC8D3E-91D5-4FCA-8034-28D2BBA86D23}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Cabin_Wind" ID="{975B4257-0694-44C3-ACA7-CB47A8C64496}" ShortID="1043678290" Type="SoundFX">
@@ -196,9 +193,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Cave_Reverb" ID="{F3CD6E05-DDE3-4EA0-A60D-B3BEAF21AC2A}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -671,9 +665,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Forest_Reverb" ID="{07F61FB9-5918-4D99-98F5-6D6496240B99}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2121,9 +2112,14 @@
 						</BlendContainer>
 						<BlendContainer Name="PowerUpContinuous" ID="{1A328B1D-BE6F-4B47-94DB-A98BDCDAB739}" ShortID="558647536">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>20</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -2132,6 +2128,11 @@
 									</ValueList>
 								</Property>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -4034,6 +4035,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="PlayerFound" ID="{DAB75AA2-18ED-4B9B-A0E0-36B3EF62B441}" ShortID="690211824">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9AE9FC1D-AD1C-4447-8544-26E095D9F726}"/>

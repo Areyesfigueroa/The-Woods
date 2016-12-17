@@ -474,6 +474,17 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Mute" ID="{95968012-5222-4DD9-B2D7-E4556BBC07A7}" ShortID="82840928" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3BDCDDFC-6B67-4E5B-A834-1690989F16BE}" Global="false">
+											<ObjectRef Name="Menu_Music" ID="{B31D5B3E-8565-4CA7-8D41-7AE390414B65}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Twilight" ID="{DA2FFE9B-3B82-48C0-A781-4A2266E8D0BC}">

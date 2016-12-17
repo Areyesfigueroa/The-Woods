@@ -143,7 +143,7 @@ public class AudioEventControl : MonoBehaviour
     void PlayerStep()
     {
         Debug.Log("Stepping Sound");
-		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
+		AkSoundEngine.PostEvent ("Footsteps", gameObject);
 
     }
     void PlayerIdle()
@@ -153,6 +153,7 @@ public class AudioEventControl : MonoBehaviour
     void PlayerJumping()
     {
         Debug.Log("Jumping Sound");
+		AkSoundEngine.PostEvent ("Jumping", gameObject);
     }
 
     void PlayerFall()
@@ -163,12 +164,13 @@ public class AudioEventControl : MonoBehaviour
     void PlayerDeath()
     {
         Debug.Log("Death Sound");
-		AkSoundEngine.PostEvent ("Death_Player", gameObject);
+		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
     }
 
     void PlayerAttack()
     {
         Debug.Log("Attacking Sound");
+		AkSoundEngine.PostEvent ("Collection", gameObject);
     }
 
     void PlayerInvisible()
@@ -193,7 +195,7 @@ public class AudioEventControl : MonoBehaviour
     void EnemyStep()
     {
         Debug.Log("Stepping Sound");
-		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
+		AkSoundEngine.PostEvent ("NPC_Footstep", gameObject);
 
     }
 
@@ -205,6 +207,7 @@ public class AudioEventControl : MonoBehaviour
     void EnemyAlert()
     {
         Debug.Log("Alert Sound");
+		AkSoundEngine.PostEvent ("NPCFound", gameObject);
     }
 
     void EnemyEscape()

@@ -43,7 +43,8 @@ public class PowerUpPickUp : MonoBehaviour {
         {
             //Call Pick up AudioEvent
             Debug.Log("Collided");
-            AudioEventSystem.PowerUpPickUp();//play audio event
+			AkSoundEngine.PostEvent ("PowerUpCollection", gameObject);
+            //AudioEventSystem.PowerUpPickUp();//play audio event
             Destroy(this.gameObject);
         }
     }

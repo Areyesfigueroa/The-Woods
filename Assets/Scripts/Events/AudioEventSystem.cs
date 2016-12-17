@@ -71,6 +71,7 @@ public class AudioEventSystem : MonoBehaviour
         if (onPlayerJump != null)
         {
             onPlayerJump();
+
         }
     }
     public static void PlayerFall() //Player Script

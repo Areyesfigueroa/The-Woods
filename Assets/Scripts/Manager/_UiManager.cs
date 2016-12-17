@@ -12,6 +12,7 @@ public class _UiManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+		AkSoundEngine.PostEvent ("Menu_Music", gameObject);
 		_sCanvas.enabled = false;
 		_cCanvas.enabled = false;
 		_mCanvas.enabled = true;
@@ -19,16 +20,21 @@ public class _UiManager : MonoBehaviour {
 		
 	public void onPlayButton()
 	{
+		AkSoundEngine.PostEvent ("Night", gameObject);
+		AkSoundEngine.PostEvent ("Menu_Button", gameObject);
 		SceneManager.LoadScene (1);
+
 	}
 	public void onStoryButton()
 	{
+		AkSoundEngine.PostEvent ("Menu_Button", gameObject);
 		_mCanvas.enabled = false;
 		_cCanvas.enabled = false;
 		_sCanvas.enabled = true;
 	}
 	public void onCreditsButton()
 	{
+		AkSoundEngine.PostEvent ("Menu_Button", gameObject);
 		_mCanvas.enabled = false;
 		_sCanvas.enabled = false;
 		_cCanvas.enabled = true;
@@ -36,6 +42,7 @@ public class _UiManager : MonoBehaviour {
 
 	public void onBackButton()
 	{
+		AkSoundEngine.PostEvent ("Menu_Button", gameObject);
 		_sCanvas.enabled = false;
 		_cCanvas.enabled = false;
 		_mCanvas.enabled = true;
