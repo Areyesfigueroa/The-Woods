@@ -56,7 +56,6 @@ public class PlayerAnimationEvents : MonoBehaviour {
         if (Player.Instance.isPlayerFalling())
         {
             Debug.Log("Player Falling Event Fired");
-			AkSoundEngine.PostEvent ("Jumping", gameObject);
             AudioEventSystem.PlayerFall();
         }
     }
