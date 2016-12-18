@@ -2442,6 +2442,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="PLayer_growl" ID="{E87F76F5-9B86-4BEA-B443-BA75E5649D23}" ShortID="350427543" Type="SoundFX">
+											<ExcludedPlatformList>
+												<Platform>Mac</Platform>
+											</ExcludedPlatformList>
 											<PropertyList>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
@@ -2469,6 +2472,25 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="PLayer_growl" ID="{85257770-522C-4A62-A9C0-6EF01FEFAD77}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Bark" ID="{8C83566B-1568-4447-806D-3763AE40AAF9}" ShortID="967032409" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9AE9FC1D-AD1C-4447-8544-26E095D9F726}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0E317441-B981-4C27-B59D-C00270E51761}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Bark" ID="{0FF18E23-4C4B-49E6-A426-40C66CCECF29}" ShortID="418108760">
+													<Language>SFX</Language>
+													<AudioFile>Bark.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Bark" ID="{0FF18E23-4C4B-49E6-A426-40C66CCECF29}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

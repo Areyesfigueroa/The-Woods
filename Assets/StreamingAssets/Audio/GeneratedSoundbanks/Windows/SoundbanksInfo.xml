@@ -261,6 +261,10 @@
 					<ShortName>PowerUpCharacter.wav</ShortName>
 					<Path>SFX/PowerUpCharacter_4B8CC0C5.wem</Path>
 				</File>
+				<File Id="418108760" Language="SFX">
+					<ShortName>Bark.wav</ShortName>
+					<Path>SFX/Bark_9E69E797.wem</Path>
+				</File>
 				<File Id="464749404" Language="SFX">
 					<ShortName>InFlashlight.wav</ShortName>
 					<Path>SFX/InFlashlight_9E69E797.wem</Path>

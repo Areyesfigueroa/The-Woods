@@ -14,13 +14,13 @@
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983870000000"/>
 				<File Name="NPC" Hash="324557200" Timestamp="131264907050000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="399686303" Timestamp="131264907720000000"/>
+				<File Name="Player" Hash="3559192485" Timestamp="131264945660000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983870000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2393684333" Timestamp="131264907720000000"/>
+				<File Name="" Hash="316681138" Timestamp="131264945660000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -38,13 +38,13 @@
 				<File Name="Music2" Hash="1430915803" Timestamp="131252983860000000"/>
 				<File Name="NPC" Hash="324557200" Timestamp="131264907030000000"/>
 				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
-				<File Name="Player" Hash="399686303" Timestamp="131264907720000000"/>
+				<File Name="Player" Hash="3060354446" Timestamp="131264945650000000"/>
 				<File Name="Player2" Hash="3815834500" Timestamp="131252983860000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2025533507" Timestamp="131264907720000000"/>
+				<File Name="" Hash="1794527252" Timestamp="131264945650000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
