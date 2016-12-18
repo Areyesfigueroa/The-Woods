@@ -101,7 +101,7 @@ public class FieldOfView : MonoBehaviour {
                         isVisible = true;
                         runOnce = false;
                         Debug.Log("Visible: " + isVisible);
-						AkSoundEngine.PostEvent("NPCFound",gameObject);
+						AkSoundEngine.PostEvent("InFlashlight",gameObject);
                     }
                     visibleTargets.Add(target);
                 }

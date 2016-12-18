@@ -89,6 +89,9 @@
 						<Event Name="Collection" ID="{60E2BF2F-3DF6-4FCB-834B-DEE82F3D42E8}">
 							<ChildrenList>
 								<Action Name="Play" ID="{3B1B8B7A-2382-4DA8-A016-46DC3043CF1D}" ShortID="719373734" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="5"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{DEBDE54E-3C12-4EB9-990A-70C09066F0EB}" Global="false">
 											<ObjectRef Name="Collect" ID="{3F8282CA-AFAA-476E-A792-7D3FC1E3309B}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
@@ -118,17 +121,6 @@
 									<ElementList>
 										<Element ID="{539914CF-6370-4B72-9545-B5A88391C2CB}" Global="false">
 											<ObjectRef Name="InFlashlight" ID="{F8F82B91-138C-4E39-A05F-3D2E50B3CE78}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{9B71C7E3-C042-4FAC-BAC9-1A528FBF43E0}" ShortID="779649849" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="FadeCurve" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{758EC657-3149-479E-8E7A-29AF2B69B8BE}" Global="false">
-											<ObjectRef Name="InLight" ID="{0B92596A-E768-49F7-9D75-0232869F5272}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
 										</Element>
 									</ElementList>
 								</Action>
