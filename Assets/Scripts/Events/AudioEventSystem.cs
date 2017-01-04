@@ -20,7 +20,8 @@ public class AudioEventSystem : MonoBehaviour
     public static event AudioEventHandler onPlayerAttack; //SetUp Done, Need Animation
 
     //Init Done
-    public static event AudioEventHandler onPlayerInivisible;
+    public static event AudioEventHandler onPlayerInivisibleOn; //Not implemented
+    public static event AudioEventHandler onPlayerInvisibleOff; //Not implemented
     public static event AudioEventHandler onPlayerVisibleWarning; //ConeOfVision Script, init done
     public static event AudioEventHandler onPlayerLand; //Player Script, init done
 
@@ -35,6 +36,7 @@ public class AudioEventSystem : MonoBehaviour
     public static event AudioEventHandler onEnemyIdle; //EnemyMovement Script
     public static event AudioEventHandler onEnemyAlert; //ConeOfVision Script
     public static event AudioEventHandler onEnemyEscape; //EnemyMovement Script, Not Implemented
+    public static event AudioEventHandler onEnemyCapture; //NOT IMPLEMENTED
 
     //Enviroment //Init Done
     public static event AudioEventHandler onCabinLightsOn; //Cabin Lights Script
@@ -71,7 +73,6 @@ public class AudioEventSystem : MonoBehaviour
         if (onPlayerJump != null)
         {
             onPlayerJump();
-
         }
     }
     public static void PlayerFall() //Player Script
@@ -96,11 +97,19 @@ public class AudioEventSystem : MonoBehaviour
         }
     }
 
-    public static void PlayerInvisible() //not subscribed yet
+    public static void PlayerInvisibleOn() //not subscribed yet
     {
-        if (onPlayerInivisible != null)
+        if (onPlayerInivisibleOn != null)
         {
-            onPlayerInivisible();
+            onPlayerInivisibleOn();
+        }
+    }
+
+    public static void PlayerInvisibleOff() //TO BE IMPLEMENTED
+    {
+        if (onPlayerInvisibleOff != null)
+        {
+            onPlayerInvisibleOff();
         }
     }
 
@@ -154,6 +163,14 @@ public class AudioEventSystem : MonoBehaviour
         if (onEnemyEscape != null)
         {
             onEnemyEscape();
+        }
+    }
+
+    public static void EnemyCapture()
+    {
+        if (onEnemyCapture != null)
+        {
+            onEnemyCapture();
         }
     }
 

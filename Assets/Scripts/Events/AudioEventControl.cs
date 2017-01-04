@@ -63,7 +63,8 @@ public class AudioEventControl : MonoBehaviour
         AudioEventSystem.onPlayerFall += this.PlayerFall;
         AudioEventSystem.onPlayerDeath += this.PlayerDeath;
         AudioEventSystem.onPlayerAttack += this.PlayerAttack;
-        AudioEventSystem.onPlayerInivisible += this.PlayerInvisible;
+        AudioEventSystem.onPlayerInivisibleOn += this.PlayerInvisibleOn;
+        AudioEventSystem.onPlayerInvisibleOff += this.PlayerInvisibleOff;
         AudioEventSystem.onPlayerVisibleWarning += this.PlayerVisibleWarning;
         AudioEventSystem.onPlayerLand += this.PlayerLand;
 
@@ -78,6 +79,7 @@ public class AudioEventControl : MonoBehaviour
         AudioEventSystem.onEnemyIdle += this.EnemyIdle;
         AudioEventSystem.onEnemyEscape += this.EnemyEscape;
         AudioEventSystem.onEnemyAlert += this.EnemyAlert;
+        AudioEventSystem.onEnemyCapture += this.EnemyCapture;
 
         //Enviroment Events
         AudioEventSystem.onCabinLightsOn += this.CabinLightsOn;
@@ -104,7 +106,8 @@ public class AudioEventControl : MonoBehaviour
         AudioEventSystem.onPlayerFall -= this.PlayerFall;
         AudioEventSystem.onPlayerDeath -= this.PlayerDeath;
         AudioEventSystem.onPlayerAttack -= this.PlayerAttack;
-        AudioEventSystem.onPlayerInivisible -= this.PlayerInvisible;
+        AudioEventSystem.onPlayerInivisibleOn -= this.PlayerInvisibleOn;
+        AudioEventSystem.onPlayerInvisibleOff -= this.PlayerInvisibleOff;
         AudioEventSystem.onPlayerVisibleWarning -= this.PlayerVisibleWarning;
         AudioEventSystem.onPlayerLand -= this.PlayerLand;
 
@@ -119,6 +122,7 @@ public class AudioEventControl : MonoBehaviour
         AudioEventSystem.onEnemyIdle -= this.EnemyIdle;
         AudioEventSystem.onEnemyEscape -= this.EnemyEscape;
         AudioEventSystem.onEnemyAlert -= this.EnemyAlert;
+        AudioEventSystem.onEnemyCapture -= this.EnemyCapture;
 
         //Enviroment Events
         AudioEventSystem.onCabinLightsOn -= this.CabinLightsOn;
@@ -149,6 +153,8 @@ public class AudioEventControl : MonoBehaviour
     void PlayerIdle()
     {
         Debug.Log("Idle Sound");
+		AkSoundEngine.PostEvent ("Player_Idle", gameObject);
+
     }
     void PlayerJumping()
     {
@@ -159,6 +165,8 @@ public class AudioEventControl : MonoBehaviour
     void PlayerFall()
     {
         Debug.Log("Fall sound");
+		AkSoundEngine.PostEvent ("Landing", gameObject); //May not be included
+
     }
 
     void PlayerDeath()
@@ -167,25 +175,40 @@ public class AudioEventControl : MonoBehaviour
 		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
     }
 
+    void PlayerVictory()
+    {
+        Debug.Log("PlayerVictory Sound");
+        AkSoundEngine.PostEvent("PlayerVictory", gameObject);
+    }
+
     void PlayerAttack()
     {
         Debug.Log("Attacking Sound");
 		AkSoundEngine.PostEvent ("Collection", gameObject);
     }
 
-    void PlayerInvisible()
+    void PlayerInvisibleOn() //Changing
     {
         Debug.Log("Invisible sound");
+        AkSoundEngine.PostEvent("PowerUpToggleOn", gameObject);
+    }
+
+    void PlayerInvisibleOff() //add to Event system
+    {
+        Debug.Log("Invisible Off Sound");
+        AkSoundEngine.PostEvent("PowerUpToggleOff", gameObject);
     }
 
     void PlayerVisibleWarning()
     {
         Debug.Log("Warning Visibility Sound");
+        AkSoundEngine.PostEvent("NPCFound", gameObject);
     }
 
     void PlayerLand()
     {
         Debug.Log("Landing Sound");
+        AkSoundEngine.PostEvent("Landing", gameObject); //May not be needed on in the banks
     }
 
     #endregion
@@ -195,13 +218,14 @@ public class AudioEventControl : MonoBehaviour
     void EnemyStep()
     {
         Debug.Log("Stepping Sound");
-		AkSoundEngine.PostEvent ("NPC_Footstep", gameObject);
+		AkSoundEngine.PostEvent ("NPC_Footsteps", gameObject);
 
     }
 
     void EnemyIdle()
     {
         Debug.Log("Idle Sound");
+		AkSoundEngine.PostEvent ("NPC_Ambience", gameObject);
     }
 
     void EnemyAlert()
@@ -213,6 +237,12 @@ public class AudioEventControl : MonoBehaviour
     void EnemyEscape()
     {
         Debug.Log("Enemy Escape");
+    }
+
+    void EnemyCapture()
+    {
+        Debug.Log("NPC Captured");
+        AkSoundEngine.PostEvent("NPCCap", gameObject);
     }
 
     #endregion
@@ -227,16 +257,19 @@ public class AudioEventControl : MonoBehaviour
     void PlayerHide()
     {
         Debug.Log("Player Hide Sound");
+        AkSoundEngine.PostEvent("Hide", gameObject);
     }
 
     void PlayerExitHide()
     {
         Debug.Log("Player Exit Sound");
+        AkSoundEngine.PostEvent("ExitHide", gameObject);
     }
 
     void PlayerLadderClimb()
     {
         Debug.Log("Player Ladded Climb Sound");
+        AkSoundEngine.PostEvent("Climbing", gameObject);
     }
 
     #endregion
@@ -246,11 +279,13 @@ public class AudioEventControl : MonoBehaviour
     void CabinLightsOn()
     {
         Debug.Log("Cabin Lights on Sound");
+        AkSoundEngine.PostEvent("InLight", gameObject);
     }
 
     void CabinLightsOff()
     {
         Debug.Log("Cabin Lights Off Sound");
+        AkSoundEngine.PostEvent("OutLight", gameObject);
     }
 
     void MovingPlatform()
@@ -275,11 +310,15 @@ public class AudioEventControl : MonoBehaviour
     void InGameSoundTrack()
     {
         Debug.Log("In Game Sound");
+		//AkSoundEngine.PostEvent ("Player_Ambience", gameObject);
+        AkSoundEngine.PostEvent("Night", gameObject);
+
     }
 
     void MainMenuSoundTrack()
     {
         Debug.Log("Main Menu Sound");
+        AkSoundEngine.PostEvent("Game_Start", gameObject);
     }
 
     #endregion
@@ -289,6 +328,7 @@ public class AudioEventControl : MonoBehaviour
     void ButtonPress()
     {
         Debug.Log("Button Pressed Sound");
+        AkSoundEngine.PostEvent("Menu_Button", gameObject);
     }
 
     #endregion
