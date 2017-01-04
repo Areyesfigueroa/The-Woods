@@ -46,7 +46,6 @@ public class PlayerAnimationEvents : MonoBehaviour {
         if (Player.Instance.isPlayerJumping())
         {
             Debug.Log("Player Jumping Event Fired");
-			AkSoundEngine.PostEvent ("Jumping", gameObject);
             AudioEventSystem.PlayerJump();
         }
     }
@@ -64,14 +63,13 @@ public class PlayerAnimationEvents : MonoBehaviour {
     public void onPlayerDeath()
     {
         Debug.Log("Player Death Event Fired");
-		AkSoundEngine.PostEvent ("PlayerDefeat", gameObject);
-        //AudioEventSystem.PlayerDeath();
+        AudioEventSystem.PlayerDeath();
     }
 
     public void onPlayerAttack()
     {
         Debug.Log("Player Attack Event Fired");
-        //AudioEventSystem.PlayerAttack();
+        AudioEventSystem.PlayerAttack();
     }
 
 }

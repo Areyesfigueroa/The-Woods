@@ -108,7 +108,6 @@ public class Player : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
             {
                 velocity.y = jumpVelocity;
-				AkSoundEngine.PostEvent ("Jumping", gameObject);
             }
 
             float targetVelocityX = input.x * moveSpeed; //smooth movement on x axis
@@ -136,7 +135,6 @@ public class Player : MonoBehaviour {
     }
 
     //Checks Player Behaviour
-
     public bool isPlayerMoving() //Used for Audio Event firing
     {
         if (Mathf.Abs(input.x) > 0) //check if he is moving
@@ -177,10 +175,7 @@ public class Player : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
         {
-			
             return true;
-			AkSoundEngine.PostEvent ("Jumping", gameObject);
-
         }
         else
         {
