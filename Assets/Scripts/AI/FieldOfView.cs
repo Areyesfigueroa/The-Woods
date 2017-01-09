@@ -33,7 +33,10 @@ public class FieldOfView : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(delay);
-            FindVisibleTargets2D();
+			if (!Controller2D.Instance.isInvisible) //if not invisible
+			{
+				FindVisibleTargets2D();
+			}
         }
     }
 

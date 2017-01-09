@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Main_Level.unity
+=======
+- path: Assets/Scenes/Menu.unity
+>>>>>>> refs/remotes/origin/MergeUpdate_AudioTest
   isLoaded: 1
   isActive: 1
