@@ -57,11 +57,13 @@ public class AudioEventControl : MonoBehaviour
     public void AddSubscribers()
     {
         //Player Events, Set Up Done, Waiting on Animations
+        AudioEventSystem.onPlayerAmbience += this.PlayerAmbience;
         AudioEventSystem.onPlayerStep += this.PlayerStep;
         AudioEventSystem.onPlayerIdle += this.PlayerIdle;
         AudioEventSystem.onPlayerJump += this.PlayerJumping;
         AudioEventSystem.onPlayerFall += this.PlayerFall;
         AudioEventSystem.onPlayerDeath += this.PlayerDeath;
+        AudioEventSystem.onPlayerVictory += this.PlayerVictory;
         AudioEventSystem.onPlayerAttack += this.PlayerAttack;
         AudioEventSystem.onPlayerInivisibleOn += this.PlayerInvisibleOn;
         AudioEventSystem.onPlayerInvisibleOff += this.PlayerInvisibleOff;
@@ -100,11 +102,13 @@ public class AudioEventControl : MonoBehaviour
     public void RemoveSubscribers()
     {
         //Player Events, Set Up Done, Waiting on Animations
+        AudioEventSystem.onPlayerAmbience -= this.PlayerAmbience;
         AudioEventSystem.onPlayerStep -= this.PlayerStep;
         AudioEventSystem.onPlayerIdle -= this.PlayerIdle;
         AudioEventSystem.onPlayerJump -= this.PlayerJumping;
         AudioEventSystem.onPlayerFall -= this.PlayerFall;
         AudioEventSystem.onPlayerDeath -= this.PlayerDeath;
+        AudioEventSystem.onPlayerVictory -= this.PlayerVictory;
         AudioEventSystem.onPlayerAttack -= this.PlayerAttack;
         AudioEventSystem.onPlayerInivisibleOn -= this.PlayerInvisibleOn;
         AudioEventSystem.onPlayerInvisibleOff -= this.PlayerInvisibleOff;
@@ -144,6 +148,12 @@ public class AudioEventControl : MonoBehaviour
 
     #region Player Events Functionality
 
+    void PlayerAmbience()
+    {
+        Debug.Log("Player Ambience");
+        AkSoundEngine.PostEvent ("Player_Ambience", gameObject);
+
+    }
     void PlayerStep()
     {
         Debug.Log("Stepping Sound");
@@ -222,7 +232,7 @@ public class AudioEventControl : MonoBehaviour
 
     }
 
-    void EnemyIdle()
+    void EnemyIdle() 
     {
         Debug.Log("Idle Sound");
 		AkSoundEngine.PostEvent ("NPC_Ambience", gameObject);
@@ -252,6 +262,8 @@ public class AudioEventControl : MonoBehaviour
     void PlayerPowerUpPickUp()
     {
         Debug.Log("PowerUp PickUp Sound Functionality");
+        AkSoundEngine.PostEvent("PowerUpCollection", gameObject);
+
     }
 
     void PlayerHide()
@@ -310,7 +322,6 @@ public class AudioEventControl : MonoBehaviour
     void InGameSoundTrack()
     {
         Debug.Log("In Game Sound");
-		//AkSoundEngine.PostEvent ("Player_Ambience", gameObject);
         AkSoundEngine.PostEvent("Night", gameObject);
 
     }

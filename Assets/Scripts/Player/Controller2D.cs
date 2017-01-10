@@ -125,6 +125,8 @@ public class Controller2D : MonoBehaviour
 	{
 		yield return new WaitForSeconds (invisibleTimer);
 		sprite.enabled = true;
+        //cue sound
+        AudioEventSystem.PlayerInvisibleOff();
 		isInvisible = false;
 		yield return new WaitForSeconds (invisibilityCooldown);
 		canUse = true;
@@ -141,6 +143,9 @@ public class Controller2D : MonoBehaviour
 			Debug.Log ("Invisible");
 
 			if (canUse) {
+
+                //cue the sound
+                AudioEventSystem.PlayerInvisibleOn();
 				//turn sprite off 
 				sprite.enabled = false;
 				//For enemy script

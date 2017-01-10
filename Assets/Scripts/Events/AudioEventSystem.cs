@@ -12,16 +12,18 @@ public class AudioEventSystem : MonoBehaviour
     //TODO:
 
     //Player Movement Events//Init done
+    public static event AudioEventHandler onPlayerAmbience; //SetUp Done
     public static event AudioEventHandler onPlayerStep; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerIdle; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerJump; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerFall; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerDeath; //SetUp Done, Need Animation
+    public static event AudioEventHandler onPlayerVictory; //SetUp Done, No Animation
     public static event AudioEventHandler onPlayerAttack; //SetUp Done, Need Animation
 
     //Init Done
-    public static event AudioEventHandler onPlayerInivisibleOn; //Not implemented
-    public static event AudioEventHandler onPlayerInvisibleOff; //Not implemented
+    public static event AudioEventHandler onPlayerInivisibleOn; //SetUp Done
+    public static event AudioEventHandler onPlayerInvisibleOff; //SetUp Done
     public static event AudioEventHandler onPlayerVisibleWarning; //ConeOfVision Script, init done
     public static event AudioEventHandler onPlayerLand; //Player Script, init done
 
@@ -54,6 +56,14 @@ public class AudioEventSystem : MonoBehaviour
 
     //NOT ALL EVENTS CALLS ARE IMPLEMENTED. WAITING ON ANIMATION CLIPS TO TIME THE FRAMES
     //Init Player Movement Event Triggers
+
+    public static void PlayerAmbience()
+    {
+        if (onPlayerAmbience != null)
+        {
+            onPlayerAmbience();
+        }
+    }
     public static void PlayerStep()
     {
         if (onPlayerStep != null) //check if there are any subscribers, Player Animation Event, TO BE IMPLEMENTED
@@ -87,6 +97,13 @@ public class AudioEventSystem : MonoBehaviour
         if (onPlayerDeath != null)
         {
             onPlayerDeath();
+        }
+    }
+    public static void PlayerVictory()
+    {
+        if (onPlayerVictory != null)
+        {
+            onPlayerVictory();
         }
     }
     public static void PlayerAttack() //Undetermined, TO BE IMPLEMENTED
