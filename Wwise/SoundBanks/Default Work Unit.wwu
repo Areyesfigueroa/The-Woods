@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{370183A3-5988-4E62-B4C3-6270CC20BED8}" SchemaVersion="72">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{370183A3-5988-4E62-B4C3-6270CC20BED8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Ambience" ID="{5EC93203-D404-46B0-BB75-5B3C499A6C1E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience" ID="{F02531D5-0601-4A51-9B6B-9DF5CB6C5EAB}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Player" ID="{D985F5F8-2209-4B56-B913-01C1E21123AF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Player" ID="{81CC4B48-B27B-4CA7-8A04-C78556A6A446}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Footsteps" ID="{0CC428F2-FFB3-497D-845B-7F4CA92E1B87}">
+					<ObjectInclusionList>
+						<ObjectRef Name="FootstepsFolder" ID="{434A7E19-327D-4B7C-8985-E947363509E0}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="NPC" ID="{45340232-BC32-46BB-B67F-FF2C50EAB6DF}">
+					<ObjectInclusionList>
+						<ObjectRef Name="NPC" ID="{EA2F15A8-F804-48B0-8401-F2F87DB384A6}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{0BD19195-D087-4C56-8753-CD18F9020464}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Music" ID="{717AF5E3-F82D-4E97-B02A-BFDB674A672F}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Menu" ID="{4C31662B-6EE9-42D7-811B-85C6FF4DA3C4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Menu" ID="{07C36A47-0956-4354-B03C-519DC9869549}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Ambience2" ID="{4638B75D-F13C-457B-8640-7347A7491EEA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Ambience2" ID="{0A1BA502-FE23-4A2A-A8E5-B1E54EAB1659}" WorkUnitID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -12,15 +12,18 @@ public class AudioEventSystem : MonoBehaviour
     //TODO:
 
     //Player Movement Events//Init done
+    public static event AudioEventHandler onPlayerAmbience; //SetUp Done
     public static event AudioEventHandler onPlayerStep; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerIdle; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerJump; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerFall; //SetUp Done, Need Animation
     public static event AudioEventHandler onPlayerDeath; //SetUp Done, Need Animation
+    public static event AudioEventHandler onPlayerVictory; //SetUp Done, No Animation
     public static event AudioEventHandler onPlayerAttack; //SetUp Done, Need Animation
 
     //Init Done
-    public static event AudioEventHandler onPlayerInivisible;
+    public static event AudioEventHandler onPlayerInivisibleOn; //SetUp Done
+    public static event AudioEventHandler onPlayerInvisibleOff; //SetUp Done
     public static event AudioEventHandler onPlayerVisibleWarning; //ConeOfVision Script, init done
     public static event AudioEventHandler onPlayerLand; //Player Script, init done
 
@@ -35,6 +38,7 @@ public class AudioEventSystem : MonoBehaviour
     public static event AudioEventHandler onEnemyIdle; //EnemyMovement Script
     public static event AudioEventHandler onEnemyAlert; //ConeOfVision Script
     public static event AudioEventHandler onEnemyEscape; //EnemyMovement Script, Not Implemented
+    public static event AudioEventHandler onEnemyCapture; //NOT IMPLEMENTED
 
     //Enviroment //Init Done
     public static event AudioEventHandler onCabinLightsOn; //Cabin Lights Script
@@ -52,6 +56,14 @@ public class AudioEventSystem : MonoBehaviour
 
     //NOT ALL EVENTS CALLS ARE IMPLEMENTED. WAITING ON ANIMATION CLIPS TO TIME THE FRAMES
     //Init Player Movement Event Triggers
+
+    public static void PlayerAmbience()
+    {
+        if (onPlayerAmbience != null)
+        {
+            onPlayerAmbience();
+        }
+    }
     public static void PlayerStep()
     {
         if (onPlayerStep != null) //check if there are any subscribers, Player Animation Event, TO BE IMPLEMENTED
@@ -87,6 +99,13 @@ public class AudioEventSystem : MonoBehaviour
             onPlayerDeath();
         }
     }
+    public static void PlayerVictory()
+    {
+        if (onPlayerVictory != null)
+        {
+            onPlayerVictory();
+        }
+    }
     public static void PlayerAttack() //Undetermined, TO BE IMPLEMENTED
     {
         if (onPlayerAttack != null)
@@ -95,11 +114,19 @@ public class AudioEventSystem : MonoBehaviour
         }
     }
 
-    public static void PlayerInvisible() //not subscribed yet
+    public static void PlayerInvisibleOn() //not subscribed yet
     {
-        if (onPlayerInivisible != null)
+        if (onPlayerInivisibleOn != null)
         {
-            onPlayerInivisible();
+            onPlayerInivisibleOn();
+        }
+    }
+
+    public static void PlayerInvisibleOff() //TO BE IMPLEMENTED
+    {
+        if (onPlayerInvisibleOff != null)
+        {
+            onPlayerInvisibleOff();
         }
     }
 
@@ -153,6 +180,14 @@ public class AudioEventSystem : MonoBehaviour
         if (onEnemyEscape != null)
         {
             onEnemyEscape();
+        }
+    }
+
+    public static void EnemyCapture()
+    {
+        if (onEnemyCapture != null)
+        {
+            onEnemyCapture();
         }
     }
 

@@ -33,7 +33,10 @@ public class FieldOfView : MonoBehaviour {
         while (true)
         {
             yield return new WaitForSeconds(delay);
-            FindVisibleTargets2D();
+			if (!Controller2D.Instance.isInvisible) //if not invisible
+			{
+				FindVisibleTargets2D();
+			}
         }
     }
 
@@ -44,8 +47,8 @@ public class FieldOfView : MonoBehaviour {
             col.enabled = false; //disable colliders
             enemyAiScript.enabled = false;//disable movement script
             transform.parent.Translate(Vector2.right); //Move the ai away from the screen, goes opposite from the player
-            Debug.Log(Vector2.Distance(this.transform.position, Player.Instance.transform.position));
-
+           // Debug.Log(Vector2.Distance(this.transform.position, Player.Instance.transform.position));
+		
             //Check the distance in order to destroy the gameObject
             if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) > 100)
             {
@@ -101,6 +104,7 @@ public class FieldOfView : MonoBehaviour {
                         isVisible = true;
                         runOnce = false;
                         Debug.Log("Visible: " + isVisible);
+                        AudioEventSystem.EnemyAlert();
                     }
                     visibleTargets.Add(target);
                 }

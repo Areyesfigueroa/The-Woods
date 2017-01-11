@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" SchemaVersion="72">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{20A4F530-14EC-4BDE-A660-B5F86AB2077D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Ambience" ID="{F02531D5-0601-4A51-9B6B-9DF5CB6C5EAB}" ShortID="505205558">
+					<ChildrenList>
+						<Event Name="Cave" ID="{1F47648C-1D9B-441F-8559-C96CD11AEE37}">
+							<ChildrenList>
+								<Action Name="Play" ID="{049E17BA-4674-4C25-A4E7-2D4D578D3F95}" ShortID="1053487559" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{060978D7-4198-498B-A085-BE25440E759E}" Global="false">
+											<ObjectRef Name="Cave_Amb" ID="{D2EEF265-6335-4BA8-9B5F-C45D9EB11C41}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cabin_Lights" ID="{7C255D0D-BED6-4FEF-99D9-52EBA8AA1E28}">
+							<ChildrenList>
+								<Action Name="Play" ID="{985AB87B-EA6D-4281-ABD0-9CDAA98EA9B1}" ShortID="506746625" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6D7E8786-CB66-473C-B0E2-83017A170702}" Global="false">
+											<ObjectRef Name="Lights" ID="{9D9F80B0-45FE-41A8-BAA9-6236FA008F27}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cabin" ID="{D097720B-0EC1-4354-9E31-C70A97E09FBB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{734BF385-F289-401C-8257-22AB4E42ABE5}" ShortID="43154529" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1C856573-E915-4772-B71B-0A85860A4A60}" Global="false">
+											<ObjectRef Name="Cabin_Amb" ID="{917C1B18-3A00-4252-B254-9489BBE578A7}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Player" ID="{81CC4B48-B27B-4CA7-8A04-C78556A6A446}" ShortID="619136373">
+					<ChildrenList>
+						<Event Name="Jumping" ID="{1D9148F3-796E-47B7-B68A-616A588D94D6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{B31DD6DE-6019-440F-A259-A1DB8A00A12B}" ShortID="541791510" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EFD0E7AD-C527-46BA-A84C-934C435708FF}" Global="false">
+											<ObjectRef Name="Jumping" ID="{B2716FAA-FD4D-4CD4-82E0-79AB42ADC048}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Climbing" ID="{5379E6E1-4640-4913-A77C-8D732C9F8C01}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BA8A2C65-0417-465C-A5A9-01720274ABB3}" ShortID="886143635" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3F0A9D6E-9390-4D3C-AE54-D20524369D68}" Global="false">
+											<ObjectRef Name="Climbing" ID="{BB8EDC51-292C-4D54-9F2B-7CD11E0E5EC6}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Hide" ID="{A303BBA1-5B00-45D2-9322-E8D6671E1C88}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E29DD924-E637-45AB-828D-C02729B0EBC8}" ShortID="23700983" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{00514EEA-ED98-4F01-A3ED-05305AF89C4F}" Global="false">
+											<ObjectRef Name="Hide" ID="{EAE39387-3189-4202-8135-D1D8B7E441F7}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ExitHide" ID="{43D918D3-89F4-4C8A-8479-12F9E48954B3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{663595FB-B741-4C5D-8186-5DF6366E3A1F}" ShortID="653006278" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B84D5710-052F-489B-A0AE-CD0B373513C5}" Global="false">
+											<ObjectRef Name="ExitHide" ID="{B2A4469D-68BE-4463-81B6-08A1E65B021E}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Collection" ID="{60E2BF2F-3DF6-4FCB-834B-DEE82F3D42E8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{3B1B8B7A-2382-4DA8-A016-46DC3043CF1D}" ShortID="719373734" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DEBDE54E-3C12-4EB9-990A-70C09066F0EB}" Global="false">
+											<ObjectRef Name="Collect" ID="{3F8282CA-AFAA-476E-A792-7D3FC1E3309B}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="InLight" ID="{C23B6439-0405-4232-B896-DDB303482BC6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6FE301DC-92D8-4CC2-804A-EF431BEBCA1B}" ShortID="679944320" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{529D81C7-2EF6-4209-A1C1-5E976518E1BE}" Global="false">
+											<ObjectRef Name="InLight" ID="{0B92596A-E768-49F7-9D75-0232869F5272}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="InFlashlight" ID="{DE7228A2-607F-4D70-87F0-B5B4A0C78B68}">
+							<ChildrenList>
+								<Action Name="Play" ID="{40B26B43-8E12-46A9-8CB1-26DF016EA148}" ShortID="934134991" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{539914CF-6370-4B72-9545-B5A88391C2CB}" Global="false">
+											<ObjectRef Name="InFlashlight" ID="{F8F82B91-138C-4E39-A05F-3D2E50B3CE78}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="LockedDoor" ID="{0344FA38-B1C9-4B7D-8C04-79DD6823BB56}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9820FC7F-BC2C-4D84-87CD-52B7B4FFFC0A}" ShortID="730170028" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9B7F8BB6-A3A1-458C-8124-5ECC1CBA8EBB}" Global="false">
+											<ObjectRef Name="LockedDoor" ID="{71B8E718-CAF3-4F78-A081-5816E204329D}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PowerUpCollection" ID="{50B08888-D8C2-42EC-AC5B-E0EF7EBE6955}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5854E74E-7AFE-4111-81CC-CBAD20A77B64}" ShortID="6368" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6F16D845-F05E-4896-A198-00A4690CEB9E}" Global="false">
+											<ObjectRef Name="PowerUp_Collect" ID="{482B9901-5B53-4093-91BA-3376C4B457C6}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PowerUpToggleOn" ID="{FB515A3F-ED77-49CE-BBB2-1B21996BDE50}">
+							<ChildrenList>
+								<Action Name="Play" ID="{4B9D50FF-7E21-48D0-8E8C-23DF570B60EE}" ShortID="214549977" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="8"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E03E2116-52EE-4F1F-A790-E18D1546AB4A}" Global="false">
+											<ObjectRef Name="PowerUp_ToggleOn" ID="{AE675C13-943A-4705-9BFC-32F83F0597C3}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{EC3A2E79-B60E-44C4-97B4-353F843311AC}" ShortID="750025655" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A2079001-68E5-412A-AFE3-6AD32C742D4E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{061330CF-CC3F-4CAE-B339-3ACFC001B6F9}" Global="false">
+											<ObjectRef Name="PowerUpContinuous" ID="{1A328B1D-BE6F-4B47-94DB-A98BDCDAB739}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerVictory" ID="{11A2AFFB-F0EF-4D2C-BAD9-58A18AF914DD}">
+							<ChildrenList>
+								<Action Name="Mute" ID="{4B0AC774-097C-4771-9815-EC9F24D12BA0}" ShortID="522439556" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B48F7B5C-2985-40C2-9CDA-073C00D1FE18}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{32C1F947-4851-40F1-AC2E-B34FB86894E9}" ShortID="932235602" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{12F8DD79-4A7C-432D-9E42-EDA8D2A8A605}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{EF678E25-0300-4C6A-B2E1-95CAF9EAF47D}" ShortID="519287884" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{6F44DC47-AC54-417A-9C1E-2661A2C7C829}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{E86596F0-5802-417E-8E2D-58B104128074}" ShortID="966569025" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="8"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{71E16A45-C07F-4CA1-8412-8A2E3578A098}" Global="false">
+											<ObjectRef Name="Player_Victory" ID="{0A5241E2-4BD4-46FA-A073-B94E5F6473D5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerDefeat" ID="{6B765442-522C-4EF6-9BE4-F9DEB5778D7F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7EB809EF-DC85-4E35-9A99-7F4A92F13B22}" ShortID="931164283" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{18D690F7-3DF2-4DBB-A342-4E7C30FAD90F}" Global="false">
+											<ObjectRef Name="Player_Defeat" ID="{01BDFF12-AD9D-4E86-8D94-97FAC1089072}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PowerUpToggleOff" ID="{684E20FB-8306-41F7-9D8A-5BDFE1D4563E}">
+							<ChildrenList>
+								<Action Name="Mute" ID="{295CACB1-73AE-414C-BD9F-42A2276F218E}" ShortID="493728237" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{292DEDC5-4416-4D71-BB40-165683F060DC}" Global="false">
+											<ObjectRef Name="PowerUpContinuous" ID="{1A328B1D-BE6F-4B47-94DB-A98BDCDAB739}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OutLight" ID="{DDE5BC2D-1427-4490-858E-F64A0D465FEE}">
+							<ChildrenList>
+								<Action Name="Mute" ID="{93BE3DD9-4510-48E8-B9B8-F28A591CCBE1}" ShortID="918166305" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="0"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{BD9CE7ED-4158-4794-AE0D-F2060EF30F11}" Global="false">
+											<ObjectRef Name="InLight" ID="{0B92596A-E768-49F7-9D75-0232869F5272}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="NPC" ID="{EA2F15A8-F804-48B0-8401-F2F87DB384A6}" ShortID="1038787485">
+					<ChildrenList>
+						<Event Name="NPCCap" ID="{744D374B-4A59-4490-B1FB-EB8C9E16D25E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{72D92661-D9E1-468A-8926-B3D0A30A0147}" ShortID="956412924" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{FE9A3D98-B7FD-4315-AD3A-F1B495153E01}" Global="false">
+											<ObjectRef Name="Collected" ID="{5354596F-51A6-4542-9201-DA0F3262A1B1}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{A0779C1E-42E1-4723-BE19-1AAF891C6CA2}" ShortID="965957487" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E85EE0E6-685F-4B9A-9B80-67D2D26874C5}" Global="false">
+											<ObjectRef Name="NPCPoints" ID="{BEEC3393-E848-4DAD-8182-D25A7A7FC83C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="NPCFound" ID="{0A8F12C3-5E15-454A-A658-E04306E45C8C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9F471CBB-57D7-4165-9B4A-0574A15F93C6}" ShortID="140128963" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EA1E856D-9116-4115-8B33-EE35CE19A36A}" Global="false">
+											<ObjectRef Name="PlayerFound" ID="{DAB75AA2-18ED-4B9B-A0E0-36B3EF62B441}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{717AF5E3-F82D-4E97-B02A-BFDB674A672F}" ShortID="575477758">
+					<ChildrenList>
+						<Event Name="Dawn" ID="{404B8314-53CE-4C03-9A35-B74EC1CB5056}">
+							<ChildrenList>
+								<Action Name="UnMute" ID="{4DAB55E7-1219-46E1-A597-04EEE1050F8C}" ShortID="218728522" Type="UnMute" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{965E0A10-1135-475A-B394-0FCE89EB41A7}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{D2AC63A4-7DE1-4A3B-9941-679DD788E6BA}" ShortID="922188133" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A6005623-C60E-42E3-BBAD-5D3AC595BE53}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{F646E76F-38A5-4977-B861-DD72380A40EB}" ShortID="254615615" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{13EE874E-830D-4C3E-84B2-A2828D6BC924}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{D5C598B2-0C2E-427E-83B5-88A5A4650301}" ShortID="712855834" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2EE88155-F13C-44F5-984E-34CA3A55BDA9}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{842A3178-2BCB-46AB-9E9E-A711E18098DE}" ShortID="875551536" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{09FA096C-4CD5-43CE-9C73-1B450717FA0C}" Global="false">
+											<ObjectRef Name="Day_Music" ID="{911626B9-C6BC-41E2-A2BF-1AEED7160136}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Day" ID="{A64EC887-F7C6-4CAE-9556-4F904C117DF3}">
+							<ChildrenList>
+								<Action Name="UnMute" ID="{A7F615A7-362F-4FF4-88E8-701E3BCD54F3}" ShortID="979986100" Type="UnMute" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{70DDED14-652E-438D-A793-CC3569904BAD}" Global="false">
+											<ObjectRef Name="Day_Music" ID="{911626B9-C6BC-41E2-A2BF-1AEED7160136}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{A2A50BCB-B98A-4128-9BC9-334C19807B07}" ShortID="575542071" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3D77FFB2-09BB-469F-902B-4DCD86B3207C}" Global="false">
+											<ObjectRef Name="Day_Music" ID="{911626B9-C6BC-41E2-A2BF-1AEED7160136}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{FDFCB152-D234-462E-8FA8-DDDA0D9FAAD9}" ShortID="800874052" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{ACA0C7A9-BA4A-4B6B-81A0-9BBCC012EFBA}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{3DD623EF-C0EA-47A6-8D2C-1397BB0D72BA}" ShortID="973444817" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{C865334F-26D5-45EF-BFD7-1FC3FBEEF1BE}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{94B14825-B209-4265-A76C-BAFD75DADEF7}" ShortID="315029805" Type="Mute" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5283BE28-33A9-49D4-9242-56BFB2DEF216}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Night" ID="{C7888C01-CE1B-47F6-A3A2-8B8F29501AAC}">
+							<ChildrenList>
+								<Action Name="UnMute" ID="{CC0C8003-451E-4BF3-A1D7-640FD2EE4703}" ShortID="926513486" Type="UnMute" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1A3C4943-9E5C-48C4-89EF-D592A9E10B58}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{C2C1FC3D-5695-4E3D-8931-5382D04FF363}" ShortID="783985078" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{D6F22286-B43A-49AE-AC85-F07E303FBF75}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{801C94B9-F152-4EAE-954E-91D1254C2E67}" ShortID="156811007" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E2883453-0AE5-4DC5-B64B-51E6125CBBCE}" Global="false">
+											<ObjectRef Name="Day_Music" ID="{911626B9-C6BC-41E2-A2BF-1AEED7160136}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{923C294E-BBFA-4BAD-AD0B-B4F6FBB4A74D}" ShortID="911798918" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2AF88484-A036-4CED-9CF7-BCABAE2DC4CF}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{DAC266E8-2A68-4C94-930A-BAAA588510CF}" ShortID="289852981" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{53B98933-FAB1-41CD-AB67-CACE037AE708}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{95968012-5222-4DD9-B2D7-E4556BBC07A7}" ShortID="82840928" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3BDCDDFC-6B67-4E5B-A834-1690989F16BE}" Global="false">
+											<ObjectRef Name="Menu_Music" ID="{B31D5B3E-8565-4CA7-8D41-7AE390414B65}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Twilight" ID="{DA2FFE9B-3B82-48C0-A781-4A2266E8D0BC}">
+							<ChildrenList>
+								<Action Name="UnMute" ID="{EE5DBFD7-053A-43C9-A50A-214972E3B1B4}" ShortID="23833499" Type="UnMute" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{311DBC30-6C7F-4F4F-9C67-A783B8ADA30E}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{137D3F03-944D-498A-A50F-FA8749A8FCF9}" ShortID="962665982" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{512A6FA8-B2A7-4592-A2AA-56D12977932B}" Global="false">
+											<ObjectRef Name="Twilight_Music" ID="{735FB6F1-A2F4-4E91-8033-29E539A2B71C}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{4F69F432-D258-4C72-A727-C09ABA962335}" ShortID="483319483" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E2F6B36B-1925-4A21-B11E-176F97C74CF4}" Global="false">
+											<ObjectRef Name="Day_Music" ID="{911626B9-C6BC-41E2-A2BF-1AEED7160136}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{C7956B1D-0E00-4AE9-AE58-F951C7ADBFF6}" ShortID="390572341" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F6411E47-AE17-460E-BC29-970A8A70DE75}" Global="false">
+											<ObjectRef Name="Night_Music" ID="{2764F7EA-9D04-4934-8530-F45F825557C9}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{F670F191-B2CC-4550-ABCD-89D21B507EDF}" ShortID="587716857" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{610D45A5-1E56-4029-BC91-0C13146D4DE5}" Global="false">
+											<ObjectRef Name="Dawn_Music" ID="{4EB988FC-4311-4378-9779-EABC6F9D80E5}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Menu" ID="{07C36A47-0956-4354-B03C-519DC9869549}" ShortID="27537035">
+					<ChildrenList>
+						<Event Name="Menu_Button" ID="{BB2E17AC-B4E7-4502-8B4D-CE752B3A828D}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A3407D91-97F5-4F55-BE82-E352FFEE917A}" ShortID="586598563" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{565B4348-EBB2-4599-9F54-3FABDB2E2CA9}" Global="false">
+											<ObjectRef Name="Menu_Button" ID="{4784B9F6-E1D9-4A40-B91E-BDD0C3785ADB}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Game_Start" ID="{D96EC842-FB37-4DB0-BF40-54EBCD9C92D5}">
+							<ChildrenList>
+								<Action Name="Mute" ID="{78DE6E78-5A6A-4CD2-882A-CFA867192EF9}" ShortID="210876018" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{D4452181-C4AC-4E84-8FDE-9E1F50BEFABF}" Global="false">
+											<ObjectRef Name="Menu_Music" ID="{B31D5B3E-8565-4CA7-8D41-7AE390414B65}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Menu_Music" ID="{1EEC3D7B-8E83-4EE3-A0DD-B141580B6973}">
+							<ChildrenList>
+								<Action Name="Play" ID="{03863FA6-7C24-4D54-89A9-D400F1DE2F4C}" ShortID="608270398" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{46290F8A-DE79-4994-9E94-F85213D2DF48}" Global="false">
+											<ObjectRef Name="Menu_Music" ID="{B31D5B3E-8565-4CA7-8D41-7AE390414B65}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience2" ID="{0A1BA502-FE23-4A2A-A8E5-B1E54EAB1659}" ShortID="677632825">
+					<ChildrenList>
+						<Event Name="NPC_Ambience" ID="{B996BB60-FC26-4D1A-B335-14B8C73EE8B1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{23EC4661-A117-4178-9C7C-E3A724FB005C}" ShortID="216663832" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C9848301-FD35-4D2E-96F6-D2F25ACD700C}" Global="false">
+											<ObjectRef Name="NPC_Amb" ID="{9070BE33-9B1A-4419-80CB-9D935FB29651}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Ambience" ID="{65795161-7DC1-4009-B271-4D4BB6DE3D37}">
+							<ChildrenList>
+								<Action Name="Play" ID="{9F72F3A8-E18D-4273-BE6D-1933D1148325}" ShortID="1066274441" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F938AFEB-F9BC-4AE1-99BD-A364DB41A057}" Global="false">
+											<ObjectRef Name="Player_Amb" ID="{CEB93A60-4904-476E-B5A5-813F374E7ABB}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{412F2C2C-1A84-4E79-AD90-EF01E4307B3D}" ShortID="421994260" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{CA82BFD4-044C-4D31-8354-38ECB6783A66}" Global="false">
+											<ObjectRef Name="Player_Idle" ID="{F18CFDB6-A719-4A96-9A98-492F28731E13}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MovingPlatform" ID="{12DFF0E0-B81E-48DA-B41E-97698F6852DB}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6E827D6D-3752-4B38-983D-B3338201C7F0}" ShortID="842051118" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{3C860D50-4F05-4D72-9405-2EE2DD0A0C3D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3B5A2F73-1283-4155-8855-D0C1F78E4746}" Global="false">
+											<ObjectRef Name="MovingPlatform" ID="{D6E901AF-9BE0-4E30-AB92-3E1927108A53}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Idle" ID="{79F50EC0-4CF9-4E4A-A607-E37B6F8FDAFC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5F9F4907-9241-4097-B59B-D31B495FD4F4}" ShortID="143701939" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{7A80A654-A73E-4A5D-8736-0C4A69CBA64E}" Global="false">
+											<ObjectRef Name="Player_Idle" ID="{F18CFDB6-A719-4A96-9A98-492F28731E13}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Mute" ID="{8F32C1FD-7A99-4D53-948D-37530E3A286A}" ShortID="541632045" Type="Mute" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DCB3B6AA-241C-416E-81A8-D1FDDC693228}" Global="false">
+											<ObjectRef Name="Player_Amb" ID="{CEB93A60-4904-476E-B5A5-813F374E7ABB}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Forest" ID="{BC5DDD65-6F83-4089-A658-A620DF6ECEAC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5514AADB-1D37-4F9A-B27D-B4C4C011F5D5}" ShortID="788727828" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2B33F9F3-177C-4539-A732-9501860F87C8}" Global="false">
+											<ObjectRef Name="Forest_Amb" ID="{8F4672B8-81D3-4A74-9449-3DD9AC69A134}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="FootstepsFolder" ID="{434A7E19-327D-4B7C-8985-E947363509E0}" ShortID="112384068">
+					<ChildrenList>
+						<Event Name="Footsteps" ID="{8899C587-B855-43B7-BD3F-F82DC425DDA6}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5D245265-B01C-4E5B-8075-FBEC903C1954}" ShortID="324542661" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D0AA945C-912F-405A-A9DE-72DA0326352A}" Global="false">
+											<ObjectRef Name="Footsteps_Final" ID="{7860DCA9-383C-440A-802E-AB85C0E4693A}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="NPC_Footsteps" ID="{4EB587DE-C5DD-4D41-81C7-7E0DF6BAED81}">
+							<ChildrenList>
+								<Action Name="Play" ID="{53145439-2583-4624-846B-A4D2B4AEF755}" ShortID="691964941" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{58D0E69A-9EAF-4314-B682-464CE07C7471}" Global="false">
+											<ObjectRef Name="NPC_Footsteps_Final" ID="{C717027F-27E8-436C-AE59-D3972B87B774}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Landing" ID="{AB1C4AB4-71FC-4100-A5E1-1EB4F5B163D1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{439D6A79-E8FC-455E-B85C-EE444D83D530}" ShortID="695182296" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E3269499-7B18-45CD-8EFE-001FFFF858B1}" Global="false">
+											<ObjectRef Name="Landing" ID="{539AD0A3-638E-403D-BF48-885BD075BE0F}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{2594A462-5EEC-496E-86F1-C0BFBE4951AB}" ShortID="754158581" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.05"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{8D0F9FBE-5AC6-46C1-8BEF-5CA203ED7315}" Global="false">
+											<ObjectRef Name="Landing" ID="{539AD0A3-638E-403D-BF48-885BD075BE0F}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{9E5D54C6-D82E-4AE4-AA0F-16486A84DE12}" ShortID="1038362405" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.07"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{FEE7C5ED-AA4F-478E-9AC0-C0FA18260D04}" Global="false">
+											<ObjectRef Name="Landing" ID="{539AD0A3-638E-403D-BF48-885BD075BE0F}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{7362F880-9849-48B5-85DD-70BFC710CD70}" ShortID="740268607" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.07"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{AE262452-5994-446C-B7BB-4979F234E28D}" Global="false">
+											<ObjectRef Name="Landing" ID="{539AD0A3-638E-403D-BF48-885BD075BE0F}" WorkUnitID="{B460E503-C005-4A2F-A6E5-FE429927C58C}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

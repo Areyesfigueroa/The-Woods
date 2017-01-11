@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_2;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -36,12 +36,13 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -49,31 +50,181 @@
      <Compile Include="Assets\Scripts\AI\EnemyAi.cs" />
      <Compile Include="Assets\Scripts\AI\EnemyAiV2.cs" />
      <Compile Include="Assets\Scripts\AI\FieldOfView.cs" />
+     <Compile Include="Assets\Scripts\CallEvent.cs" />
      <Compile Include="Assets\Scripts\ColliderTrigger.cs" />
      <Compile Include="Assets\Scripts\Enviroment\Ladders.cs" />
      <Compile Include="Assets\Scripts\Enviroment\MovingPlatform.cs" />
      <Compile Include="Assets\Scripts\Enviroment\PowerUpPickUp.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\playerStick.cs" />
      <Compile Include="Assets\Scripts\Events\AudioEventControl.cs" />
      <Compile Include="Assets\Scripts\Events\AudioEventSystem.cs" />
      <Compile Include="Assets\Scripts\Events\EnemyAnimationEvents.cs" />
      <Compile Include="Assets\Scripts\Events\PlayerAnimationEvents.cs" />
+     <Compile Include="Assets\Scripts\Manager\DeathSceneUIManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\GUIManager.cs" />
      <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\ScenesManager.cs" />
+     <Compile Include="Assets\Scripts\Manager\WinSceneUIManager.cs" />
      <Compile Include="Assets\Scripts\Manager\_UiManager.cs" />
      <Compile Include="Assets\Scripts\Player\Attack.cs" />
      <Compile Include="Assets\Scripts\Player\Controller2D.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\UI\ScoreCount.cs" />
+     <Compile Include="Assets\Scripts\Win_Trigger.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkActionOnEventType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioFormat.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAudioSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAuxSendValue.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkBankContent.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkBusType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCallbackSerializer.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCallbackType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkChannelConfig.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkChannelConfigType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkChannelEmitter.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkChannelOrdering.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkConnectionType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCurveInterpolation.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkDeviceSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkExternalSourceInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkGlobalCallbackLocation.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkGroupType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkInitSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMIDIEvent.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMIDIEventCallbackInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMIDIPost.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMemSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMeteringFlags.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMusicPlaylistCallbackInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkMusicSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkNodeType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkObjectInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkOutputSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPannerType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPanningRule.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPlaylistArray.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPositionSourceType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkPositioningInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkRamp.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkSegmentInfo.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkSourceSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkStreamMgrSettings.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkTransform.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkVector.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\DynamicSequenceType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\EnvelopePoint.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\ErrorCode.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\ErrorLevel.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Iterator.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\MultiPositionType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Playlist.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\PlaylistItem.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\PreparationType.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\RTPCValue_type.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\WwiseObjectID.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\WwiseObjectIDext.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\_ArrayPoolDefault.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\_ArrayPoolLEngineDefault.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkAudioOutputType_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkMemPoolAttributes_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkPlatformInitSettings_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkSoundEnginePINVOKE_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkSoundEngine_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Generated\Mac\AkThreadProperties_Mac.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\AkAutoObject.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\AkAuxSendArray.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\AkCallbackManager.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\AkChannelEmitterArray.cs" />
+     <Compile Include="Assets\Wwise\Deployment\API\Handwritten\AkPositionArray.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkAmbient.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkAudioListener.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkBank.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkBankManager.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkBasePathGetter.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkDragDropHelper.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkEnvironment.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkEnvironmentPortal.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkEvent.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkEventCallbackData.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObj.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjEnvironmentData.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjPositionData.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkGameObjPositionOffsetData.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkInitializer.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkMemBankLoader.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkState.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkSwitch.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTerminator.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerBase.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerCollisionEnter.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerCollisionExit.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerDisable.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerEnable.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerEnter.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerExit.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseDown.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseEnter.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseExit.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkUnityEventHandler.cs" />
+     <Compile Include="Assets\Wwise\Deployment\Components\AkUtilities.cs" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Ambience2.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\NPC.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Footsteps.txt" />
      <None Include="Assets\Animations\AnimDocuments\EnemyWalkingEventFrames.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Menu.txt" />
      <None Include="Assets\Animations\EnemyWalkingEventFrames.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Init.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Player.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Menu.txt" />
+     <None Include="Assets\StreamingAssets\desc.txt" />
+     <None Include="Assets\WwiseSettings.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Ambience.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Music.txt" />
+     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Profile\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\PluginInfo.xml" />
+     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Debug\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
+     <None Include="Assets\Wwise\Version.txt" />
      <None Include="Assets\Sprites\DarkSaber\Howl\repeat the last 2 frames  in a loop, for the howl..txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Music.txt" />
      <None Include="Assets\Sprites\DarkSaber\run\Loop the run from frame 5 to 17.txt" />
+     <None Include="Assets\Wwise\Deployment\Plugins\Mac\Release\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Player.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Ambience2.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Ambience.txt" />
+     <None Include="Assets\Wwise\Readme.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
      <None Include="Assets\Sprites\DarkSaber\idle\the same animation repeats from frame 50, but with a shake.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Footsteps.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\SoundbanksInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\NPC.txt" />
  <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Common">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

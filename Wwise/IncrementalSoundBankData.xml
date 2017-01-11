@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="4259130660">
+	<Platform GUID="{F5B3564D-4693-4409-9D94-D1562B3AF06B}">
+		<Banks>
+			<Language ID="0">
+				<File Name="Ambience" Hash="1742997554" Timestamp="131264907040000000"/>
+				<File Name="Ambience2" Hash="3458708652" Timestamp="131264907040000000"/>
+				<File Name="Footsteps" Hash="2426241537" Timestamp="131264907040000000"/>
+				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
+				<File Name="Init" Hash="1216749302" Timestamp="131258946270000000"/>
+				<File Name="Menu" Hash="3232307012" Timestamp="131264907050000000"/>
+				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
+				<File Name="Music" Hash="4257313702" Timestamp="131264907050000000"/>
+				<File Name="Music2" Hash="1430915803" Timestamp="131252983870000000"/>
+				<File Name="NPC" Hash="324557200" Timestamp="131264907050000000"/>
+				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
+				<File Name="Player" Hash="3559192485" Timestamp="131264945660000000"/>
+				<File Name="Player2" Hash="3815834500" Timestamp="131252983870000000"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="316681138" Timestamp="131264945660000000"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{B2F188F0-53C8-47FA-8DE1-902F1ECCD59E}">
+		<Banks>
+			<Language ID="0">
+				<File Name="Ambience" Hash="1742997554" Timestamp="131264907030000000"/>
+				<File Name="Ambience2" Hash="3458708652" Timestamp="131264907030000000"/>
+				<File Name="Footsteps" Hash="2426241537" Timestamp="131264907030000000"/>
+				<File Name="Footsteps2" Hash="2086258687" Timestamp="131252983870000000"/>
+				<File Name="Init" Hash="3492723720" Timestamp="131258946260000000"/>
+				<File Name="Menu" Hash="3232307012" Timestamp="131264907030000000"/>
+				<File Name="Menu2" Hash="3549385648" Timestamp="131252983870000000"/>
+				<File Name="Music" Hash="4257313702" Timestamp="131264907030000000"/>
+				<File Name="Music2" Hash="1430915803" Timestamp="131252983860000000"/>
+				<File Name="NPC" Hash="324557200" Timestamp="131264907030000000"/>
+				<File Name="NPC2" Hash="127442986" Timestamp="131252983870000000"/>
+				<File Name="Player" Hash="3060354446" Timestamp="131264945650000000"/>
+				<File Name="Player2" Hash="3815834500" Timestamp="131252983860000000"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="1794527252" Timestamp="131264945650000000"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>

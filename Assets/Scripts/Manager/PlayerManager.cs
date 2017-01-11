@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour {
         anim.SetBool("isDead", isDead);
         anim.SetFloat("Speed", Mathf.Abs(Player.Instance.Velocity.x) / playerMaxSpeed);
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+		if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
             Attack();
         }
@@ -51,6 +51,7 @@ public class PlayerManager : MonoBehaviour {
     void Attack()
     {
         anim.SetTrigger("Attack");
+		AkSoundEngine.PostEvent ("Collection", gameObject);
     }
 
 }

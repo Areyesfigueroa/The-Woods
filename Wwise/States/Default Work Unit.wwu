@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6DD9E14C-1229-4660-8F71-7B364948B5A6}" SchemaVersion="72">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{6DD9E14C-1229-4660-8F71-7B364948B5A6}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Player_States" ID="{0C6B332A-CC82-407D-A90F-AA51CC25EF39}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.75"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{FE47E000-5585-4AFE-83AF-436A1E67F2CA}"/>
+						<State Name="Hiding" ID="{6D718B8D-6DC5-4892-B823-875331E838EC}"/>
+						<State Name="Dawn" ID="{3B7094EB-FBD3-48D5-8919-FC0EDB289842}"/>
+						<State Name="Invisible" ID="{E91FFDFB-E583-425F-B9DF-6565BEE0F074}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{FE47E000-5585-4AFE-83AF-436A1E67F2CA}"/>
+							<EndState Name="Hiding" ID="{6D718B8D-6DC5-4892-B823-875331E838EC}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Hiding" ID="{6D718B8D-6DC5-4892-B823-875331E838EC}"/>
+							<EndState Name="Dawn" ID="{3B7094EB-FBD3-48D5-8919-FC0EDB289842}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Invisible" ID="{E91FFDFB-E583-425F-B9DF-6565BEE0F074}"/>
+							<EndState Name="Hiding" ID="{6D718B8D-6DC5-4892-B823-875331E838EC}"/>
+							<Time>0.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

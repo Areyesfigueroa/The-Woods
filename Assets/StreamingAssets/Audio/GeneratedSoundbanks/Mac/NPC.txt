@@ -1,0 +1,13 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3637320158	NPCFound			\Default Work Unit\NPC\NPCFound	
+	4108877698	NPCCap			\Default Work Unit\NPC\NPCCap	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	144900218	PlayerFound-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-01		89666
+	482439562	NPCCapped	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\NPCCapped_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\Collected\NPCCapped		50388
+	553291230	PlayerFound-05	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-05		122892
+	689404725	NPCPoints	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\CoinCollected_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\NPCPoints		79354
+	765460409	PlayerFound-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-02		81320
+	807241287	PlayerFound-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-03		70926
+	855468080	PlayerFound-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-04		85100
+

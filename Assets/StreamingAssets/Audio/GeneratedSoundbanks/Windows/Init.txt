@@ -1,0 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1378987991	Player_States			\Default Work Unit\Player_States	
+
+State	ID	Name	State Group			Notes
+	511597058	Invisible	Player_States			
+	748895195	None	Player_States			
+	2009803003	Dawn	Player_States			
+	3538823496	Hiding	Player_States			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	4854142	Invisible	Player_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	426633043	Hiding	Player_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+	517872105	Dawn	Player_States	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	841660990	TestVerb			\Default Work Unit\Master Audio Bus\TestVerb	
+	920301845	Forest_Reverb			\Default Work Unit\Master Audio Bus\Forest_Reverb	
+	2917601739	Cabin_Reverb			\Default Work Unit\Master Audio Bus\Cabin_Reverb	
+	3177428469	Cave_Reverb			\Default Work Unit\Master Audio Bus\Cave_Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
+	1291433344	Bass	Wwise Flanger			
+	2995775460	Room_Small	Wwise RoomVerb			
+	3900114836	Metal_Hangar	Wwise RoomVerb			
+

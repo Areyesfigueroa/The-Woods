@@ -104,6 +104,7 @@ public class Player : MonoBehaviour {
             //Rotates the player obj based on direction
             controller.Direction(input);
             controller.Attack();
+			controller.Invisibility();
 
             if (Input.GetKeyDown(KeyCode.Space) && controller.collisions.below)
             {
@@ -135,7 +136,6 @@ public class Player : MonoBehaviour {
     }
 
     //Checks Player Behaviour
-
     public bool isPlayerMoving() //Used for Audio Event firing
     {
         if (Mathf.Abs(input.x) > 0) //check if he is moving
