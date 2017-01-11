@@ -23,24 +23,23 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	587727806	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\Silence\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	41490363	Heartbeat2	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Heartbeat2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat2		65128
-	42994206	Heartbeat3	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Heartbeat3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat3		63408
-	43325978	Monster Speech	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Monster Speech_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Amb\Player_OneShots\Monster Speech		506994
-	122364332	Whimper	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Whimper_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_OneShots\Whimper		169690
-	189147393	LightBreathing	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\LightBreathing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_OneShots\LightBreathing		796482
-	193758149	Forest_Wind	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Forest_Wind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_Wind		23832536
-	333950875	Crickets-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Crickets-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Crickets-02		22482
-	346780615	Monster One Shot	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Monster One Shot_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\Monster One Shot		573444
-	347510309	Branch Break	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Branch Break_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Branch Break		15464
-	359009475	Crickets	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Crickets_Loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Crickets		2327588
-	388443478	MonsterOneShot2	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\MonsterOneShot2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Amb\Player_OneShots\MonsterOneShot2		220644
-	400815517	Creepy	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Creepy_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Creepy		5077494
-	657890918	Crickets-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Crickets-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Crickets-01		18936
-	795346543	MonsterOneShot3	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\MonsterOneShot3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Amb\Player_OneShots\MonsterOneShot3		253720
-	799385039	Heartbeat1	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Heartbeat1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat1		56530
-	862903648	MonsterPurr	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\MonsterPurr_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\MonsterPurr		639592
-	866941795	Owl-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Owl-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Owl-02		75912
-	867682134	Owl-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Owl-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Owl-01		54700
-	1022292028	MovingPlatform	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\MechanicalPlatforms_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\MovingPlatform		5326616
-	1067156602	Demogorgon	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Demogorgon_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\Demogorgon		441144
+	41490363	Heartbeat2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Heartbeat2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat2		65128
+	42994206	Heartbeat3	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Heartbeat3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat3		63408
+	122364332	Whimper	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Whimper_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_OneShots\Whimper		169690
+	189147393	LightBreathing	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\LightBreathing_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_OneShots\LightBreathing		796482
+	193758149	Forest_Wind	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Forest_Wind_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_Wind		23832536
+	333950875	Crickets-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Crickets-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Crickets-02		22482
+	346780615	Monster One Shot	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Monster One Shot_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\Monster One Shot		573444
+	347510309	Branch Break	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Branch Break_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Branch Break		15464
+	359009475	Crickets	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Crickets_Loop_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Crickets		2327588
+	388443478	MonsterOneShot2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\MonsterOneShot2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Amb\Player_OneShots\MonsterOneShot2		220644
+	400815517	Creepy	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Creepy_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Creepy		5077494
+	657890918	Crickets-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Crickets-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Crickets-01		18936
+	795346543	MonsterOneShot3	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\MonsterOneShot3_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Amb\Player_OneShots\MonsterOneShot3		253720
+	799385039	Heartbeat1	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Heartbeat1_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\NPC_Amb\NPC_Background\Heartbeat1		56530
+	862903648	MonsterPurr	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\MonsterPurr_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\MonsterPurr		639592
+	866941795	Owl-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Owl-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Owl-02		75912
+	867682134	Owl-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Owl-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Forest_Amb\Forest_OneShots\Owl-01		54700
+	1022292028	MovingPlatform	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\MechanicalPlatforms_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\MovingPlatform		5326616
+	1067156602	Demogorgon	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Demogorgon_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Player_Idle\Player_Idle_OneShots\Demogorgon		441144
 

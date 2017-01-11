@@ -4,6 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	4055567060	Menu_Music			\Default Work Unit\Menu\Menu_Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	371202491	Menu_Button	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Menu_Click2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_Button		18752
-	907556213	Menu_Music	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Evil Vortex_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_Music		4697456
+	371202491	Menu_Button	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Menu_Click2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_Button		18752
+	1054609367	Menu_Music	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Evil Vortex_Long_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu_Music		25598524
 

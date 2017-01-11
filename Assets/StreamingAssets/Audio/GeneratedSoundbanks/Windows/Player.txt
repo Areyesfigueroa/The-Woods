@@ -3,10 +3,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	68157183	Jumping			\Default Work Unit\Player\Jumping	
 	208550326	PowerUpToggleOff			\Default Work Unit\Player\PowerUpToggleOff	
 	407595966	InFlashlight			\Default Work Unit\Player\InFlashlight	
+	416825592	PowerUpToggleOn			\Default Work Unit\Player\PowerUpToggleOn	
 	681756373	ExitHide			\Default Work Unit\Player\ExitHide	
-	1131585479	PowerToggleOn			\Default Work Unit\Player\PowerToggleOn	
 	1594614136	InLight			\Default Work Unit\Player\InLight	
-	1739301117	OutFlashlight			\Default Work Unit\Player\OutFlashlight	
 	2676402489	OutLight			\Default Work Unit\Player\OutLight	
 	2925776965	Collection			\Default Work Unit\Player\Collection	
 	3111020472	PlayerVictory			\Default Work Unit\Player\PlayerVictory	
@@ -18,33 +17,37 @@ Event	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	949863463	Many_Even_Harm_Notches	Wwise Flanger			
 	1588715066	Echoes_Linear	Wwise Delay			
-	1711423976	Many_Odd_Harm_Notches	Wwise Flanger			
 	1976939195	Deep	Wwise Flanger			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	2568359573	Secret_message	Wwise Harmonizer			
 	3354577677	Fast_LF_Tremolo	Wwise Tremolo			
 	3487820010	One_Tap_Half_Second	Wwise Delay			
 	3851006675	Secret_message_Distant	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	108528293	Jump-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Jump-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-03		14296
-	118694503	Jump-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Jump-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-01		15486
-	172791182	InLight	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\InLight_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InLight		899534
-	375974299	PowerUp_Collection	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\PowerUpCollect_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_Collect\PowerUp_Collection		191182
-	378928499	LockedDoor	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\LockedDoor_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\LockedDoor		63204
-	404403917	PowerUpCharacter	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\PowerUpCharacter_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\PowerUpContinuous\PowerUpCharacter		70244
-	464749404	InFlashlight	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\InFlashlight_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InFlashlight		109894
-	470469558	Growl	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\PowerUpPulseGrowl_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\PowerUpContinuous\Growl		1056078
-	481163220	Death2	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Death2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\Death2\Death2		262740
-	573936289	ExitHide	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\ExitHide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\ExitHide		60486
-	616813507	PowerUp_ToggleOn	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\PowerUpToggleOnFinal_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_ToggleOn		69878
-	697489118	Climbing-01	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Climbing-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-01		8016
-	770789818	Jump-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Jump-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-02		17830
-	836712023	Climbing-04	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Climbing-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-04		8628
-	1003263194	Victory_Laugh	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\VictoryLaugh_Low_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Victory\Victory_Laugh		455986
-	1007028901	Climbing-02	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Climbing-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-02		10220
-	1039063284	Hide	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Enter Hide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Hide		71852
-	1064878353	Climbing-03	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Climbing-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-03		9088
+	108528293	Jump-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Jump-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-03		14296
+	118694503	Jump-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Jump-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-01		15486
+	172791182	InLight	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\InLight_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InLight		899534
+	317191113	Player_Teeth	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\teeth_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect\Player_Teeth		4138
+	375974299	PowerUp_Collection	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\PowerUpCollect_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_Collect\PowerUp_Collection		191182
+	378928499	LockedDoor	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\LockedDoor_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\LockedDoor		63204
+	404403917	PowerUpCharacter	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\PowerUpCharacter_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\PowerUpContinuous\PowerUpCharacter		70244
+	418108760	Bark	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Bark_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect\Collection\Bark		54234
+	464749404	InFlashlight	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\InFlashlight_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InFlashlight		109894
+	470469558	Growl	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\PowerUpPulseGrowl_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\PowerUpContinuous\Growl		1056078
+	481163220	Death2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Death2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\Death2\Death2		262740
+	573936289	ExitHide	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\ExitHide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\ExitHide		60486
+	616813507	PowerUp_ToggleOn	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\PowerUpToggleOnFinal_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_ToggleOn		69878
+	697489118	Climbing-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Climbing-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-01		8016
+	770789818	Jump-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Jump-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-02		17830
+	822934434	Victory_Laugh	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\VictoryLaugh_Low2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Victory\Victory_Laugh		322392
+	836712023	Climbing-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Climbing-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-04		8628
+	840245676	PLayer_growl	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\PLayer_growl_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect\Collection\PLayer_growl		52144
+	858915653	playergrowls	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\playergrowls_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\playergrowls		134922
+	1007028901	Climbing-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Climbing-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-02		10220
+	1039063284	Hide	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Enter Hide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Hide		71852
+	1064878353	Climbing-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Climbing-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-03		9088
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	497097725	Death	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Death1_9E69E797.wem	497097725.wem	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\Death1\Death	
+	497097725	Death	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Death1_9E69E797.wem	497097725.wem	\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\Death1\Death	
 

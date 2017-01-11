@@ -5,8 +5,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3852896201	Twilight			\Default Work Unit\Music\Twilight	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	137171961	Dawn_Music	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Rocking Flashback_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Dawn_Music		2822492
-	468798595	Day_Music	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\LookingThroughBrokenGlass_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Day_Music		3390448
-	496580417	Twilight_Music	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Crusher_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Twilight_Music		6210456
-	815332817	Night_Music	Y:\Desktop\The-Woods-MergedUpdate\Wwise\.cache\Windows\SFX\Stalking_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Night_Music		2960332
+	137171961	Dawn_Music	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Rocking Flashback_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Dawn_Music		2822492
+	468798595	Day_Music	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\LookingThroughBrokenGlass_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Day_Music		3390448
+	496580417	Twilight_Music	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Crusher_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Twilight_Music		6210456
+	815332817	Night_Music	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Windows\SFX\Stalking_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Night_Music		2960332
 

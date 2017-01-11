@@ -51,6 +51,7 @@ public class PlayerManager : MonoBehaviour {
     void Attack()
     {
         anim.SetTrigger("Attack");
+		AkSoundEngine.PostEvent ("Collection", gameObject);
     }
 
 }

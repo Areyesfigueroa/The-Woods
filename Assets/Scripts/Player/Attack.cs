@@ -9,6 +9,7 @@ public class Attack : MonoBehaviour {
         {
             Debug.Log("Working");
             PlayerManager.Instance.PeopleKilled++;
+            AudioEventSystem.EnemyCapture();
             Destroy(other.gameObject, .2f);
         }
     }

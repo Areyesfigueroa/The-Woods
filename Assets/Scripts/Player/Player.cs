@@ -136,7 +136,6 @@ public class Player : MonoBehaviour {
     }
 
     //Checks Player Behaviour
-
     public bool isPlayerMoving() //Used for Audio Event firing
     {
         if (Mathf.Abs(input.x) > 0) //check if he is moving

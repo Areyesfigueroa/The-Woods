@@ -48,7 +48,7 @@ public class FieldOfView : MonoBehaviour {
             enemyAiScript.enabled = false;//disable movement script
             transform.parent.Translate(Vector2.right); //Move the ai away from the screen, goes opposite from the player
            // Debug.Log(Vector2.Distance(this.transform.position, Player.Instance.transform.position));
-
+		
             //Check the distance in order to destroy the gameObject
             if (Vector2.Distance(this.transform.position, Player.Instance.transform.position) > 100)
             {
@@ -104,6 +104,7 @@ public class FieldOfView : MonoBehaviour {
                         isVisible = true;
                         runOnce = false;
                         Debug.Log("Visible: " + isVisible);
+                        AudioEventSystem.EnemyAlert();
                     }
                     visibleTargets.Add(target);
                 }

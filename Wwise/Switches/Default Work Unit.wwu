@@ -9,6 +9,8 @@
 						<Switch Name="Grass" ID="{E6FCA9F1-6097-4EAB-BA5C-AA255A0FF699}"/>
 						<Switch Name="Cabin" ID="{4C6DAA49-6FD8-4FA7-855A-1B6EBCF42EE2}"/>
 						<Switch Name="Roof" ID="{EE28A13F-966A-45D5-88DA-DC07496FE1AD}"/>
+						<Switch Name="Branches" ID="{C1965BD1-9D7A-4549-BB9A-FFC61A3182DC}"/>
+						<Switch Name="Silence" ID="{0A68AC0C-F084-4661-A5ED-07C41AFC1FB0}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

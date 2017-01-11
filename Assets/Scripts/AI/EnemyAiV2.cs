@@ -92,6 +92,9 @@ public class EnemyAiV2 : MonoBehaviour {
     {
         Debug.Log("Coroutine Start: ");
 
+        //Play the Idle Sound, There is no idle animation
+        AudioEventSystem.EnemyIdle();
+
         yield return new WaitForSeconds(delay);
 
         if (triggerLeftPosDelay && triggerRightPosDelay) //check for both triggers
