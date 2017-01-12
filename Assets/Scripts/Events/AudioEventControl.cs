@@ -16,10 +16,6 @@ public class AudioEventControl : MonoBehaviour
     public static AudioEventControl Instance { get { return instance; } }
     static protected AudioEventControl instance;
 
-    [HideInInspector]
-    public AudioSource audioSource;
-    public AudioClip[] audioClip;
-
     #region Engine Functions
     void Awake()
     {
@@ -33,11 +29,6 @@ public class AudioEventControl : MonoBehaviour
         {
             instance = this;
         }
-    }
-
-    void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
     }
 
     void OnEnable()
@@ -227,7 +218,7 @@ public class AudioEventControl : MonoBehaviour
 
     void EnemyStep()
     {
-        Debug.Log("Stepping Sound");
+        Debug.Log("NPC Stepping Sound");
 		AkSoundEngine.PostEvent ("NPC_Footsteps", gameObject);
 
     }
@@ -349,7 +340,7 @@ public class AudioEventControl : MonoBehaviour
     IEnumerator PlayAudio(float audioLength)
     {
         playAudio = false; //keeps it from overriding
-        audioSource.Play();
+//        audioSource.Play();
         yield return new WaitForSeconds(audioLength + .03f); //Error margin
         playAudio = true;
           

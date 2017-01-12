@@ -6,7 +6,11 @@ public class EnemyAnimationEvents : MonoBehaviour {
     //Enemy Animation events, works
     //Plays when the animation is fired
 
-    //Done
+	void Start (){
+		print ("Hello Is It me Your looking for?");
+	}
+
+	//Done
     public void onEnemyStep()
     {
         Debug.Log("Enemy Move event Fired");
