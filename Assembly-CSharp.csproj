@@ -19,7 +19,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_2;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VIDEO;ENABLE_VR;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -36,12 +36,13 @@
     <Reference Include="System" />
     <Reference Include="System.XML" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+      <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -163,43 +164,55 @@
      <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkUnityEventHandler.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkUtilities.cs" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Ambience2.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\PluginInfo.xml" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\NPC.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Footsteps.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Ambience2.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\NPC.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Footsteps.txt" />
      <None Include="Assets\Animations\AnimDocuments\EnemyWalkingEventFrames.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Menu.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Menu.txt" />
      <None Include="Assets\Animations\EnemyWalkingEventFrames.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Init.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Player.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Menu.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Init.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Player.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Menu.txt" />
      <None Include="Assets\StreamingAssets\desc.txt" />
      <None Include="Assets\WwiseSettings.xml" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Ambience.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Music.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Ambience.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Music.txt" />
      <None Include="Assets\Wwise\Deployment\Plugins\Mac\Profile\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\PluginInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\PluginInfo.xml" />
      <None Include="Assets\Wwise\Deployment\Plugins\Mac\Debug\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Init.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
      <None Include="Assets\Wwise\Version.txt" />
      <None Include="Assets\Sprites\DarkSaber\Howl\repeat the last 2 frames  in a loop, for the howl..txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Music.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Music.txt" />
      <None Include="Assets\Sprites\DarkSaber\run\Loop the run from frame 5 to 17.txt" />
      <None Include="Assets\Wwise\Deployment\Plugins\Mac\Release\AkSoundEngine.bundle\Contents\Resources\readme.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Player.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Ambience2.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\Ambience.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Player.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Ambience2.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\Ambience.txt" />
      <None Include="Assets\Wwise\Readme.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\SoundbanksInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\SoundbanksInfo.xml" />
      <None Include="Assets\Sprites\DarkSaber\idle\the same animation repeats from frame 50, but with a shake.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Windows\Footsteps.txt" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\SoundbanksInfo.xml" />
-     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundbanks\Mac\NPC.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Footsteps.txt" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\SoundbanksInfo.xml" />
+     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\NPC.txt" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
