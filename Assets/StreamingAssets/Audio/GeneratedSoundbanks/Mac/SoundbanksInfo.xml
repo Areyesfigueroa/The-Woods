@@ -241,6 +241,10 @@
 					<ShortName>Jump-01.wav</ShortName>
 					<Path>SFX/Jump-01_9E69E797.wem</Path>
 				</File>
+				<File Id="144900218" Language="SFX">
+					<ShortName>PlayerFound-01.wav</ShortName>
+					<Path>SFX/PlayerFound-01_9E69E797.wem</Path>
+				</File>
 				<File Id="172791182" Language="SFX">
 					<ShortName>InLight.wav</ShortName>
 					<Path>SFX/InLight_4B8CC0C5.wem</Path>
@@ -277,6 +281,10 @@
 					<ShortName>Death2.wav</ShortName>
 					<Path>SFX/Death2_9E69E797.wem</Path>
 				</File>
+				<File Id="553291230" Language="SFX">
+					<ShortName>PlayerFound-05.wav</ShortName>
+					<Path>SFX/PlayerFound-05_9E69E797.wem</Path>
+				</File>
 				<File Id="573936289" Language="SFX">
 					<ShortName>ExitHide.wav</ShortName>
 					<Path>SFX/ExitHide_9E69E797.wem</Path>
@@ -289,9 +297,17 @@
 					<ShortName>Climbing-01.wav</ShortName>
 					<Path>SFX/Climbing-01_9E69E797.wem</Path>
 				</File>
+				<File Id="765460409" Language="SFX">
+					<ShortName>PlayerFound-02.wav</ShortName>
+					<Path>SFX/PlayerFound-02_9E69E797.wem</Path>
+				</File>
 				<File Id="770789818" Language="SFX">
 					<ShortName>Jump-02.wav</ShortName>
 					<Path>SFX/Jump-02_9E69E797.wem</Path>
+				</File>
+				<File Id="807241287" Language="SFX">
+					<ShortName>PlayerFound-03.wav</ShortName>
+					<Path>SFX/PlayerFound-03_9E69E797.wem</Path>
 				</File>
 				<File Id="822934434" Language="SFX">
 					<ShortName>VictoryLaugh_Low2.wav</ShortName>
@@ -300,6 +316,10 @@
 				<File Id="836712023" Language="SFX">
 					<ShortName>Climbing-04.wav</ShortName>
 					<Path>SFX/Climbing-04_9E69E797.wem</Path>
+				</File>
+				<File Id="855468080" Language="SFX">
+					<ShortName>PlayerFound-04.wav</ShortName>
+					<Path>SFX/PlayerFound-04_9E69E797.wem</Path>
 				</File>
 				<File Id="858915653" Language="SFX">
 					<ShortName>playergrowls.wav</ShortName>

@@ -19,6 +19,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1588715066	Echoes_Linear	Wwise Delay			
 	1976939195	Deep	Wwise Flanger			
 	2180422931	One_Tap_Quarter_Second	Wwise Delay			
+	3043085106	High_Impact	Wwise Compressor			
 	3354577677	Fast_LF_Tremolo	Wwise Tremolo			
 	3487820010	One_Tap_Half_Second	Wwise Delay			
 	3851006675	Secret_message_Distant	Wwise Harmonizer			
@@ -26,6 +27,7 @@ Effect plug-ins	ID	Name	Type				Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	108528293	Jump-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Jump-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-03		14296
 	118694503	Jump-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Jump-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-01		15486
+	144900218	PlayerFound-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-01		89666
 	172791182	InLight	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\InLight_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InLight		899534
 	317191113	Player_Teeth	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\teeth_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Collect\Player_Teeth		4138
 	375974299	PowerUp_Collection	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PowerUpCollect_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_Collect\PowerUp_Collection		191182
@@ -35,12 +37,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	464749404	InFlashlight	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\InFlashlight_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\InFlashlight		109894
 	470469558	Growl	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PowerUpPulseGrowl_4B8CC0C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\PowerUpContinuous\Growl		1056078
 	481163220	Death2	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Death2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\Death2\Death2		262740
+	553291230	PlayerFound-05	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-05_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-05		122892
 	573936289	ExitHide	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\ExitHide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\ExitHide		60486
 	616813507	PowerUp_ToggleOn	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PowerUpToggleOnFinal_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PowerUp_ToggleOn		69878
 	697489118	Climbing-01	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Climbing-01_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-01		8016
+	765460409	PlayerFound-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-02		81320
 	770789818	Jump-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Jump-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jumping\Jump-02		17830
+	807241287	PlayerFound-03	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-03_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-03		70926
 	822934434	Victory_Laugh	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\VictoryLaugh_Low2_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Victory\Victory_Laugh		322392
 	836712023	Climbing-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Climbing-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-04		8628
+	855468080	PlayerFound-04	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\PlayerFound-04_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\NPC\PlayerFound\PlayerFound-04		85100
 	858915653	playergrowls	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\playergrowls_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Defeat\playergrowls		134922
 	1007028901	Climbing-02	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Climbing-02_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Climbing\Climbing-02		10220
 	1039063284	Hide	Y:\Desktop\The Woods\The-Woods\Wwise\.cache\Mac\SFX\Enter Hide_9E69E797.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Hide		71852
