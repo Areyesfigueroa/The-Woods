@@ -4,7 +4,7 @@
 Temp/
 Obj/
 UnityGenerated/
-Library/*
+Library/
 Library/AssetImportState
 Library/AssetServerCacheV3
 Library/FailedAssetImports.txt
@@ -43,3 +43,14 @@ ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
+Library/shadercompiler-UnityShaderCompiler.exe0.log
+Library/shadercompiler-UnityShaderCompiler.exe0.log
+*.dll
+Library/UnityAssemblies/UnityEditor.iOS.Extensions.Xcode.dll
+Library/UnityAssemblies/UnityEngine.UI.xml
+*.txt
+Library/UnityAssemblies/version.txt
+Library/UnityAssemblies/UnityEngine.UI.xml
+Library/UnityAssemblies/UnityEditor.iOS.Extensions.Xcode.dll
+Library/UnityAssemblies/UnityEditor.iOS.Extensions.Common.dll
+Library/shadercompiler-UnityShaderCompiler.exe0.log
